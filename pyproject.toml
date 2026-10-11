@@ -36,3 +36,8 @@ packages = ["pacegame"]
 include = ["/pacegame", "/examples", "/docs", "/.github", "/README.md",
            "/LICENSE", "/CHANGELOG.md", "/pyproject.toml", "/INPUT_PROVENANCE.json",
            "/requirements-reproduce.txt", "/requirements-core.txt", "/requirements-reproduce-lock.txt"]
+
+[project.urls]
+Repository = "https://github.com/NaLi11477/PACEgame"
+Documentation = "https://github.com/NaLi11477/PACEgame#readme"
+DOI = "https://doi.org/10.5281/zenodo.23295744"

@@ -1,6 +1,6 @@
 # PACEgame 0.2.11
 
-A Python toolkit for inspecting continuous-time sequential entry and signalling models. It constructs symbolic demand integrals, searches a declared domain, labels numerical candidates and tests sampled claims. MIT licensed. This is a local review release; no public repository, PyPI publication or archival DOI has been verified.
+A Python toolkit for inspecting continuous-time sequential entry and signalling models. It constructs symbolic demand integrals, searches a declared domain, labels numerical candidates and tests sampled claims. MIT licensed. This release is archived at DOI 10.5281/zenodo.23295744 and published on GitHub. PyPI publication is not used.
 
 ## Install
 
@@ -162,7 +162,7 @@ All 424 parent test methods remain, with 26 new methods for 450 total. Eleven ex
 
 - R12-01: admit every declared payoff_for objective at the retained candidate before fixed, skipped-stage or derivative branches. Known non-real/non-finite values are required violations; unknown admission is required unavailable. Different finite owner objectives and negative net payoffs remain legal.
 - R12-02: Solution.retained_payoffs binds each final payoff to its own parameters and candidate. Outcome.payoff_value and Solution.payoff_value expose finite-real retained values; binary64 payoffs remain display/compatibility values. Ranking, ties, dominance, crossings and constrained payoff finite differences subtract retained operands first. Unavailable comparison cannot become a zero, tie or weak pass; complete=False or explicit ValueError/skip propagates. Existing absolute thresholds stay unchanged.
-- 43 regression methods join 450 parent cases: 493 total. Twelve exporters cover 41 numbered acceptance groups. Source, installed full wheel and offline core installation are validated separately; hosted cross-platform CI remains unexecuted.
-- Word, XeLaTeX, metadata, evidence and release manifests are synchronized. Independent re-audit, confirmed authors/declarations, permanent public identifiers and current official-template certification remain pending.
+- 43 regression methods join 450 parent cases: 493 total. Twelve exporters cover 41 numbered acceptance groups. Source, installed full wheel and offline core installation are validated separately; hosted cross-platform CI executes the wheel, audit and figure validation across the os × python-version matrix.
+- Word, XeLaTeX, metadata, evidence and release manifests are synchronized. The Zenodo DOI 10.5281/zenodo.23295744 provides a permanent public identifier. Independent re-audit, confirmed authors/declarations and current official-template certification remain pending.
 
 See docs/audit_0211.md for retained payoff access, unavailable status and fixed-candidate analytic controls.
