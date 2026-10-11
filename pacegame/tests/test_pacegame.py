@@ -1150,12 +1150,19 @@ class TestV016Regressions(unittest.TestCase):
         spec = importlib.util.spec_from_file_location("_bench", path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        self.assertFalse(mod.wait_for_quiet(limit=-1.0, patience=0))
-        self.assertTrue(mod.wait_for_quiet(limit=1e9, patience=0))
-        # the threshold must actually reach the test; 0.1.7 rewrote the busy
-        # check and left `limit` accepted and ignored for one revision
-        self.assertTrue(mod.busy(limit=-1.0)[0])
-        self.assertFalse(mod.busy(limit=1e9)[0])
+        if mod.load() is None:
+            # os.getloadavg() is POSIX-only. Where no load average exists the
+            # script cannot observe contention and no threshold can bite, so
+            # only the documented "unavailable" answer is assertable here.
+            self.assertFalse(mod.busy(limit=-1.0)[0])
+            self.assertFalse(mod.busy(limit=1e9)[0])
+        else:
+            self.assertFalse(mod.wait_for_quiet(limit=-1.0, patience=0))
+            self.assertTrue(mod.wait_for_quiet(limit=1e9, patience=0))
+            # the threshold must actually reach the test; 0.1.7 rewrote the busy
+            # check and left `limit` accepted and ignored for one revision
+            self.assertTrue(mod.busy(limit=-1.0)[0])
+            self.assertFalse(mod.busy(limit=1e9)[0])
         # 0.1.7 pools the spread across rounds, so n is repeats x rounds; the
         # property asserted -- that the reported n matches what was run -- is
         # unchanged

@@ -1,4 +1,5 @@
 """Analytic regressions for parameter, candidate and derivative retention."""
+import importlib
 import unittest
 from unittest.mock import patch
 import sympy as sp
@@ -119,7 +120,8 @@ def incomplete_symbolic(self):
         if subs and game.entry in subs and sp.sympify(expr)==game.objective:
             raise ValueError('unavailable independent payoff route')
         return original(expr,subs)
-    with patch('pacegame.solve.engine.exact_numeric',side_effect=missing):
+    engine=importlib.import_module('pacegame.solve.engine')
+    with patch.object(engine,'exact_numeric',side_effect=missing):
         solution=pg.solve(game,game.strategies[0],params)
     self.assertFalse(solution.rankable)
     self.assertFalse(solution.feasibility.complete)

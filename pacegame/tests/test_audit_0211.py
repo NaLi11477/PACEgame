@@ -1,4 +1,5 @@
 """Regression tests for Round12 owner admission and retained payoff differences."""
+import importlib
 import unittest
 from unittest.mock import patch
 import sympy as sp
@@ -72,7 +73,8 @@ def unknown(self):
 add('unknown_comparison_incomplete',unknown)
 def claim_unavailable(self):
  g=fixture(2**53)
- with patch('pacegame.solve.engine.Solution.payoff_value',side_effect=ValueError('unavailable retained payoff')):
+ engine=importlib.import_module('pacegame.solve.engine')
+ with patch.object(engine.Solution,'payoff_value',side_effect=ValueError('unavailable retained payoff')):
   r=verify.check(g,[verify.Dominates('RL','RF',strict=False)],over={},fixed=POINT)
  self.assertEqual(r.results[0].passed,0);self.assertEqual(r.results[0].skipped,1);self.assertFalse(r.results[0].holds)
 add('unknown_weak_never_passes',claim_unavailable)

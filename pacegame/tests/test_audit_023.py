@@ -1,4 +1,5 @@
 """Fourth-audit public-state, target binding and iterable sweep regressions."""
+import importlib
 import math
 import unittest
 from dataclasses import dataclass, replace
@@ -119,7 +120,8 @@ class Audit023(unittest.TestCase):
         self.assertEqual(selected.iterations,1)
     def test_invalid_pools_rejected_before_solves(self):
         g=self.fixed();st=strategy(g,'DF')
-        with patch('pacegame.analyze.equilibrium.solve',side_effect=AssertionError('must not solve')):
+        equilibrium=importlib.import_module('pacegame.analyze.equilibrium')
+        with patch.object(equilibrium,'solve',side_effect=AssertionError('must not solve')):
             for pool in [[],[st,st],[pg.Strategy('TYPO',False,True)],['DF']]:
                 with self.subTest(pool=pool),self.assertRaises(ValueError):
                     sweep(g,'phi',[.8,.9],{'sigma':.1,'hatvarsigma':.3},pool)

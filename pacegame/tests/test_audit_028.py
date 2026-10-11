@@ -1,4 +1,5 @@
 """Analytic curvature counterexamples, owner/stage/domain scope controls."""
+import importlib
 import unittest
 from unittest.mock import patch
 import sympy as sp
@@ -86,7 +87,8 @@ class JointScope(unittest.TestCase):
         r=low(-U**2-V**2+3*U*V,bounds={U:(0,0),V:(-1,1)})
         self.assertTrue(r.ok and r.complete)
     def test_unavailable_joint_hessian_blocks_completion(self):
-        with patch('pacegame.solve.feasible.sp.hessian',side_effect=ValueError('unavailable')):
+        feasible=importlib.import_module('pacegame.solve.feasible')
+        with patch.object(feasible.sp,'hessian',side_effect=ValueError('unavailable')):
             r=low(-U**2-V**2,bounds={U:(-1,1),V:(-1,1)})
         self.assertFalse(r.complete);self.assertTrue(any(f.check=='joint curvature' and f.required and f.status=='warning' for f in r.findings))
     def test_rank_and_feasible_do_not_accept_wrong_origin(self):
