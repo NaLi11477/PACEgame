@@ -1,0 +1,91 @@
+{
+  "code": [
+    [
+      "C1",
+      "Current code version",
+      "0.2.11"
+    ],
+    [
+      "C2",
+      "Permanent link to code/repository used for this code version",
+      "Pending verified public release; the review delivery is PACEgame_v0_2_11_software.zip."
+    ],
+    [
+      "C3",
+      "Permanent link to Reproducible Capsule",
+      "Pending permanent archival identifier; local version-bound evidence is supplied."
+    ],
+    [
+      "C4",
+      "Legal Code License",
+      "MIT"
+    ],
+    [
+      "C5",
+      "Code versioning system used",
+      "Public Git history not supplied; archive and wheel are bound by SHA-256 checksums."
+    ],
+    [
+      "C6",
+      "Software code languages, tools and services used",
+      "Python >=3.10 syntax; SymPy >=1.12. Recorded Linux/CPython 3.12.14; SymPy 1.14.0, mpmath 1.3.0; optional Matplotlib 3.10.8 and NumPy 2.3.5."
+    ],
+    [
+      "C7",
+      "Compilation requirements, operating environments and dependencies",
+      "Pure Python; no compilation. Audited Linux. Core offline wheels: SymPy 1.14.0, mpmath 1.3.0. Other platform/version combinations are CI targets."
+    ],
+    [
+      "C8",
+      "If available, link to developer documentation/manual",
+      "README.md; docs/model.md; docs/audit_0211.md; retained historical audit notes; shipped tests and examples."
+    ],
+    [
+      "C9",
+      "Support email for questions",
+      "Verified maintainer contact to be supplied by confirmed authors."
+    ]
+  ],
+  "software": [
+    [
+      "S1",
+      "Current software version",
+      "0.2.11"
+    ],
+    [
+      "S2",
+      "Permanent link to executables of this version",
+      "Local review wheel: dist/pacegame-0.2.11-py3-none-any.whl; permanent public distribution link pending."
+    ],
+    [
+      "S3",
+      "Permanent link to Reproducible Capsule",
+      "Permanent archive pending; see the included validation and benchmark records."
+    ],
+    [
+      "S4",
+      "Legal Software License",
+      "MIT"
+    ],
+    [
+      "S5",
+      "Computing platforms / Operating Systems",
+      "Linux audited; macOS and Windows configured as CI targets, not completed audit runs."
+    ],
+    [
+      "S6",
+      "Installation requirements and dependencies",
+      "Python >=3.10. Offline core: python -m pip install --no-index --find-links vendor dist/pacegame-0.2.11-py3-none-any.whl. Plotting dependencies are optional and separately installed."
+    ],
+    [
+      "S7",
+      "If available, link to user manual",
+      "README.md and docs/model.md, included in the source archive."
+    ],
+    [
+      "S8",
+      "Support email for questions",
+      "Verified maintainer contact to be supplied by confirmed authors."
+    ]
+  ]
+}

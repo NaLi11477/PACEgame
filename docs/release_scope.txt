@@ -1,0 +1,5 @@
+PACEgame 0.2.11 implements the Round12 audit revision. R12-01 and R12-02 meet the listed implementation acceptance; a new independent re-audit remains pending.
+493 test methods retain all 450 parent methods and add 43 new methods. Twelve exporters cover 41 numbered acceptance groups. Source, full installed wheel and offline core-only results are separately recorded.
+Every declared owner objective requires finite-real admission before fixed/skipped/derivative branches. Final comparisons and constrained payoff finite differences retain each candidate's parameters and payoffs before subtraction. Float payoffs remain display values; unavailable precision must propagate explicitly.
+Prior retained endpoint, tolerance-sign, ceiling, coefficient and Hessian guards remain. Heuristic binary64 search, necessary local conditions and sampled claims do not certify global optima, continuous-domain propositions or Nash equilibrium.
+Author identities, contacts, declarations, permanent public identifiers and current official-template certification remain pending. No new timing, external adoption or empirical application is asserted.

@@ -1,0 +1,254 @@
+[
+  {
+    "name": "tests",
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/source_env/bin/python",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/run_test_suite.py",
+      "--out",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source/test_suite",
+      "--source-root",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11"
+    ],
+    "returncode": 0,
+    "seconds": 351.2704137030014,
+    "outside_checkout": true,
+    "cwd": "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source/execution",
+    "package_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/pacegame",
+    "package_members": 61,
+    "package_unchanged": true,
+    "wheel_unchanged": true,
+    "wheel_sha256": "e262475e08da36b5b82a1eaa67eaf79d07c55a8446ebf74ba881848d8b0940ae",
+    "test_summary": {
+      "package_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/pacegame/__init__.py",
+      "discovered": 493,
+      "tests_run": 493,
+      "passed": 493,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "successful": true,
+      "seconds": 350.0266092859965,
+      "production_files_modified": false,
+      "runner_only_change": "Explicit stream and durable result ledger; same shipped load_suite()."
+    }
+  },
+  {
+    "name": "validate_release",
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/source_env/bin/python",
+      "-m",
+      "pacegame.examples.validate_release",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source"
+    ],
+    "returncode": 0,
+    "seconds": 53.01521272899845,
+    "outside_checkout": true,
+    "cwd": "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source/execution",
+    "package_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/pacegame",
+    "package_members": 61,
+    "package_unchanged": true,
+    "wheel_unchanged": true,
+    "wheel_sha256": "e262475e08da36b5b82a1eaa67eaf79d07c55a8446ebf74ba881848d8b0940ae"
+  },
+  {
+    "name": "validate_audit_021",
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/source_env/bin/python",
+      "-m",
+      "pacegame.examples.validate_audit_021",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source"
+    ],
+    "returncode": 0,
+    "seconds": 20.771134427006473,
+    "outside_checkout": true,
+    "cwd": "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source/execution",
+    "package_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/pacegame",
+    "package_members": 61,
+    "package_unchanged": true,
+    "wheel_unchanged": true,
+    "wheel_sha256": "e262475e08da36b5b82a1eaa67eaf79d07c55a8446ebf74ba881848d8b0940ae"
+  },
+  {
+    "name": "validate_audit_022",
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/source_env/bin/python",
+      "-m",
+      "pacegame.examples.validate_audit_022",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source"
+    ],
+    "returncode": 0,
+    "seconds": 4.9588361580026685,
+    "outside_checkout": true,
+    "cwd": "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source/execution",
+    "package_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/pacegame",
+    "package_members": 61,
+    "package_unchanged": true,
+    "wheel_unchanged": true,
+    "wheel_sha256": "e262475e08da36b5b82a1eaa67eaf79d07c55a8446ebf74ba881848d8b0940ae"
+  },
+  {
+    "name": "validate_audit_023",
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/source_env/bin/python",
+      "-m",
+      "pacegame.examples.validate_audit_023",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source"
+    ],
+    "returncode": 0,
+    "seconds": 5.661087550004595,
+    "outside_checkout": true,
+    "cwd": "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source/execution",
+    "package_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/pacegame",
+    "package_members": 61,
+    "package_unchanged": true,
+    "wheel_unchanged": true,
+    "wheel_sha256": "e262475e08da36b5b82a1eaa67eaf79d07c55a8446ebf74ba881848d8b0940ae"
+  },
+  {
+    "name": "validate_audit_024",
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/source_env/bin/python",
+      "-m",
+      "pacegame.examples.validate_audit_024",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/evidence/metadata_tables.json",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/.github/workflows/tests.yml"
+    ],
+    "returncode": 0,
+    "seconds": 6.356761658003961,
+    "outside_checkout": true,
+    "cwd": "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source/execution",
+    "package_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/pacegame",
+    "package_members": 61,
+    "package_unchanged": true,
+    "wheel_unchanged": true,
+    "wheel_sha256": "e262475e08da36b5b82a1eaa67eaf79d07c55a8446ebf74ba881848d8b0940ae"
+  },
+  {
+    "name": "validate_audit_025",
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/source_env/bin/python",
+      "-m",
+      "pacegame.examples.validate_audit_025",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/requirements-reproduce.txt"
+    ],
+    "returncode": 0,
+    "seconds": 2.6604067559965188,
+    "outside_checkout": true,
+    "cwd": "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source/execution",
+    "package_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/pacegame",
+    "package_members": 61,
+    "package_unchanged": true,
+    "wheel_unchanged": true,
+    "wheel_sha256": "e262475e08da36b5b82a1eaa67eaf79d07c55a8446ebf74ba881848d8b0940ae"
+  },
+  {
+    "name": "validate_audit_026",
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/source_env/bin/python",
+      "-m",
+      "pacegame.examples.validate_audit_026",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source"
+    ],
+    "returncode": 0,
+    "seconds": 0.42224993200215977,
+    "outside_checkout": true,
+    "cwd": "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source/execution",
+    "package_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/pacegame",
+    "package_members": 61,
+    "package_unchanged": true,
+    "wheel_unchanged": true,
+    "wheel_sha256": "e262475e08da36b5b82a1eaa67eaf79d07c55a8446ebf74ba881848d8b0940ae"
+  },
+  {
+    "name": "validate_audit_027",
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/source_env/bin/python",
+      "-m",
+      "pacegame.examples.validate_audit_027",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source"
+    ],
+    "returncode": 0,
+    "seconds": 0.7228677180028171,
+    "outside_checkout": true,
+    "cwd": "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source/execution",
+    "package_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/pacegame",
+    "package_members": 61,
+    "package_unchanged": true,
+    "wheel_unchanged": true,
+    "wheel_sha256": "e262475e08da36b5b82a1eaa67eaf79d07c55a8446ebf74ba881848d8b0940ae"
+  },
+  {
+    "name": "validate_audit_028",
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/source_env/bin/python",
+      "-m",
+      "pacegame.examples.validate_audit_028",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source"
+    ],
+    "returncode": 0,
+    "seconds": 0.964643706996867,
+    "outside_checkout": true,
+    "cwd": "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source/execution",
+    "package_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/pacegame",
+    "package_members": 61,
+    "package_unchanged": true,
+    "wheel_unchanged": true,
+    "wheel_sha256": "e262475e08da36b5b82a1eaa67eaf79d07c55a8446ebf74ba881848d8b0940ae"
+  },
+  {
+    "name": "validate_audit_029",
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/source_env/bin/python",
+      "-m",
+      "pacegame.examples.validate_audit_029",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source"
+    ],
+    "returncode": 0,
+    "seconds": 1.1962277040001936,
+    "outside_checkout": true,
+    "cwd": "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source/execution",
+    "package_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/pacegame",
+    "package_members": 61,
+    "package_unchanged": true,
+    "wheel_unchanged": true,
+    "wheel_sha256": "e262475e08da36b5b82a1eaa67eaf79d07c55a8446ebf74ba881848d8b0940ae"
+  },
+  {
+    "name": "validate_audit_0210",
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/source_env/bin/python",
+      "-m",
+      "pacegame.examples.validate_audit_0210",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source"
+    ],
+    "returncode": 0,
+    "seconds": 0.480105561997334,
+    "outside_checkout": true,
+    "cwd": "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source/execution",
+    "package_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/pacegame",
+    "package_members": 61,
+    "package_unchanged": true,
+    "wheel_unchanged": true,
+    "wheel_sha256": "e262475e08da36b5b82a1eaa67eaf79d07c55a8446ebf74ba881848d8b0940ae"
+  },
+  {
+    "name": "validate_audit_0211",
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/source_env/bin/python",
+      "-m",
+      "pacegame.examples.validate_audit_0211",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source"
+    ],
+    "returncode": 0,
+    "seconds": 0.7271155710041057,
+    "outside_checkout": true,
+    "cwd": "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/validation_source/execution",
+    "package_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/pacegame",
+    "package_members": 61,
+    "package_unchanged": true,
+    "wheel_unchanged": true,
+    "wheel_sha256": "e262475e08da36b5b82a1eaa67eaf79d07c55a8446ebf74ba881848d8b0940ae"
+  }
+]

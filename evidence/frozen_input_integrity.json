@@ -1,0 +1,20 @@
+[
+  {
+    "filename": "PACEgame_v0_2_10_software.zip",
+    "crc_passed": true,
+    "payload_manifest_files": 263,
+    "complete_manifest_matched": true
+  },
+  {
+    "filename": "PACEgame_Manuscript_v0_2_10_XeLaTeX.zip",
+    "crc_passed": true,
+    "payload_manifest_files": 29,
+    "complete_manifest_matched": true
+  },
+  {
+    "filename": "PACEgame_v0_2_10_Audit_Round12_Evidence.zip",
+    "crc_passed": true,
+    "payload_manifest_files": 170,
+    "complete_manifest_matched": true
+  }
+]

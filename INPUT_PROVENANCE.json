@@ -1,0 +1,28 @@
+{
+  "version": "0.2.11",
+  "parent_version": "0.2.10",
+  "authoritative_audit": "Round12",
+  "input_files": [
+    {
+      "name": "PACEgame_Manuscript_v0_2_10_XeLaTeX.zip",
+      "bytes": 1168045,
+      "sha256": "44d6ef596774f110dfe73e0ace04642eed65647c3d3b241020071ab137071202"
+    },
+    {
+      "name": "PACEgame_v0_2_10_Audit_Round12.docx",
+      "bytes": 46765,
+      "sha256": "c223f64bd807bfd6e9e99eb159de151f78502932f0d3fa2f0906dabc08938c51"
+    },
+    {
+      "name": "PACEgame_v0_2_10_Audit_Round12_Evidence.zip",
+      "bytes": 23392629,
+      "sha256": "757703f2f4ba0b63a0e2bdfeba940d27ac716aa9a26745b5265dc1d91cb86754"
+    },
+    {
+      "name": "PACEgame_v0_2_10_software.zip",
+      "bytes": 7747460,
+      "sha256": "bf211e58fc63341724c5804a1d5ec9bffc8efe442ce3a54acd31b552e1da0f6c"
+    }
+  ],
+  "previous_evidence": "Frozen Round12 evidence retained in complete release prior_audit; parent implementation evidence snapshot remains a separate local input, not new execution."
+}

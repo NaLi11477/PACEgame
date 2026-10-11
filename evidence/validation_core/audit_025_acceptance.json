@@ -1,0 +1,919 @@
+{
+  "environment": {
+    "pacegame": "0.2.11",
+    "import_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/core_env/lib/python3.12/site-packages/pacegame/__init__.py",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "sympy": "1.14.0",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+  },
+  "groups": {
+    "R6-01": {
+      "exact_width": "1",
+      "float_endpoints_equal": true,
+      "collapsed": {
+        "ok": true,
+        "complete": false,
+        "findings": [
+          {
+            "check": "bounds precision",
+            "status": "warning",
+            "detail": "u: bounds precision unavailable: non-singleton or unresolved interval (100000000000000000000, 100000000000000000001) collapses after numerical substitution/conversion; rescale the model or use independently validated higher-precision coordinates",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 0",
+            "required": false,
+            "verdict": null
+          }
+        ]
+      },
+      "solver_rejected": {
+        "type": "BoundsPrecisionError",
+        "reason": "bounds precision unavailable: non-singleton or unresolved interval (100000000000000000000, 100000000000000000001) collapses after numerical substitution/conversion; rescale the model or use independently validated higher-precision coordinates"
+      },
+      "ranking_rejected": {
+        "type": "BoundsPrecisionError",
+        "reason": "bounds precision unavailable: non-singleton or unresolved interval (100000000000000000000, 100000000000000000001) collapses after numerical substitution/conversion; rescale the model or use independently validated higher-precision coordinates"
+      },
+      "claim_errors": 1,
+      "reverse": {
+        "ok": false,
+        "complete": true,
+        "findings": [
+          {
+            "check": "bounds",
+            "status": "violation",
+            "detail": "u: lower bound exceeds upper bound",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 0",
+            "required": false,
+            "verdict": null
+          }
+        ]
+      },
+      "substituted_width": {
+        "ok": true,
+        "complete": false,
+        "findings": [
+          {
+            "check": "bounds precision",
+            "status": "warning",
+            "detail": "u: bounds precision unavailable: non-singleton or unresolved interval (100000000000000000000, 100000000000000000001) collapses after numerical substitution/conversion; rescale the model or use independently validated higher-precision coordinates",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 0",
+            "required": false,
+            "verdict": null
+          }
+        ]
+      },
+      "true_singleton": {
+        "point": {
+          "u": "1.00000000000000e+20"
+        },
+        "kind": {
+          "u": "fixed"
+        },
+        "payoffs": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "rankable": true,
+        "feasibility_ok": true,
+        "feasibility_complete": true,
+        "findings": [
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "u = 1e+20 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "fixed variable",
+            "status": "ok",
+            "detail": "u: singleton interval; no feasible direction, no one-sided KKT test",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "payoff finite",
+            "status": "ok",
+            "detail": "pi_x = 0",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "payoff finite",
+            "status": "ok",
+            "detail": "pi_y = 0",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 0",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "payoff magnitude",
+            "status": "ok",
+            "detail": "payoff <= ceiling 1.00000 within 1e-09",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "search assurance",
+            "status": "warning",
+            "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "evaluation coverage",
+            "status": "ok",
+            "detail": "pi_x: evaluated 2 times, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "evaluation coverage",
+            "status": "ok",
+            "detail": "pi_y: evaluated 1 time, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "competition",
+            "status": "warning",
+            "detail": "the payoff share channel does not respond to phi at this optimum: the share rule is inactive here, so the result is not about competition between the players",
+            "required": false,
+            "verdict": false
+          }
+        ]
+      },
+      "rescaled_unit": {
+        "point": {
+          "u": "1.00000000000000"
+        },
+        "kind": {
+          "u": "upper corner"
+        },
+        "payoffs": {
+          "x": 1.0,
+          "y": 0.0
+        },
+        "rankable": true,
+        "feasibility_ok": true,
+        "feasibility_complete": true,
+        "findings": [
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "u = 1 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "first order",
+            "status": "ok",
+            "detail": "d/du = +1 is consistent with the upper corner",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "joint curvature",
+            "status": "ok",
+            "detail": "boundary critical cone has no nonzero direction; necessary check only",
+            "required": true,
+            "verdict": true
+          },
+          {
+            "check": "payoff finite",
+            "status": "ok",
+            "detail": "pi_x = 1",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "payoff finite",
+            "status": "ok",
+            "detail": "pi_y = 0",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 1",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "payoff magnitude",
+            "status": "ok",
+            "detail": "payoff <= ceiling 1.00000 within 1e-09",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "search assurance",
+            "status": "warning",
+            "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "evaluation coverage",
+            "status": "ok",
+            "detail": "pi_x: 0 of 225 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "evaluation coverage",
+            "status": "ok",
+            "detail": "pi_y: evaluated 1 time, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "competition",
+            "status": "warning",
+            "detail": "the payoff share channel does not respond to phi at this optimum: the share rule is inactive here, so the result is not about competition between the players",
+            "required": false,
+            "verdict": false
+          }
+        ]
+      },
+      "narrow_control": {
+        "ok": true,
+        "complete": true,
+        "findings": [
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "u = 5e-11 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "stationarity",
+            "status": "ok",
+            "detail": "d/du = 0.0; tested against 1e-6",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "second order",
+            "status": "ok",
+            "detail": "d2/du2 = -2 < 0",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 1",
+            "required": false,
+            "verdict": null
+          }
+        ]
+      },
+      "accepted": true
+    },
+    "R6-02": {
+      "constructor_rejections": {
+        "time_as_rate": {
+          "type": "ValueError",
+          "reason": "parameter 't' must be independent of entry, signal and time"
+        },
+        "entry_as_phi": {
+          "type": "ValueError",
+          "reason": "parameter 'varsigma' must be independent of entry, signal and time"
+        },
+        "signal_equals_entry": {
+          "type": "ValueError",
+          "reason": "entry, signal and time must be distinct structural Symbols"
+        },
+        "time_equals_entry": {
+          "type": "ValueError",
+          "reason": "entry, signal and time must be distinct structural Symbols"
+        },
+        "nonscalar_signal": {
+          "type": "ValueError",
+          "reason": "entry, signal and time must be scalar Symbols"
+        }
+      },
+      "mutated_rate_rejected_before_integration": {
+        "type": "ValueError",
+        "reason": "parameter 't' must be independent of entry, signal and time"
+      },
+      "independent_rate_payoffs": {
+        "DF": 0.04456534772182254,
+        "DL": 0.01918465227817746
+      },
+      "constant_rate_payoffs": {
+        "DF": 0.04456534772182254,
+        "DL": 0.01918465227817746
+      },
+      "maximum_payoff_difference": 0.0,
+      "accepted": true
+    },
+    "R6-03": {
+      "audited_corner": {
+        "ok": false,
+        "complete": true,
+        "findings": [
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "u = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "v = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "first order",
+            "status": "ok",
+            "detail": "d/du = +0 is consistent with the lower corner",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "first order",
+            "status": "ok",
+            "detail": "d/dv = +0 is consistent with the lower corner",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "joint curvature",
+            "status": "violation",
+            "detail": "two-boundary critical cone: diagonal=(-2.00000000000, -2.00000000000), inward cross=3.00000000000, nonpositive envelope=2.00000000000; retained cross excess=1.00000000000; necessary local condition, not a maximum certificate",
+            "required": true,
+            "verdict": false
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 0",
+            "required": false,
+            "verdict": null
+          }
+        ]
+      },
+      "solver": {
+        "point": {
+          "u": "0.0",
+          "v": "0.0"
+        },
+        "kind": {
+          "u": "lower corner",
+          "v": "lower corner"
+        },
+        "payoffs": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "rankable": false,
+        "feasibility_ok": false,
+        "feasibility_complete": true,
+        "findings": [
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "u = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "v = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "first order",
+            "status": "ok",
+            "detail": "d/du = +0 is consistent with the lower corner",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "first order",
+            "status": "ok",
+            "detail": "d/dv = +0 is consistent with the lower corner",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "joint curvature",
+            "status": "violation",
+            "detail": "two-boundary critical cone: diagonal=(-2.00000000000, -2.00000000000), inward cross=3.00000000000, nonpositive envelope=2.00000000000; retained cross excess=1.00000000000; necessary local condition, not a maximum certificate",
+            "required": true,
+            "verdict": false
+          },
+          {
+            "check": "payoff finite",
+            "status": "ok",
+            "detail": "pi_x = 0",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "payoff finite",
+            "status": "ok",
+            "detail": "pi_y = 0",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 0",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "payoff magnitude",
+            "status": "ok",
+            "detail": "payoff <= ceiling 1.00000 within 1e-09",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "search assurance",
+            "status": "warning",
+            "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "evaluation coverage",
+            "status": "ok",
+            "detail": "pi_x: 0 of 1786 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "evaluation coverage",
+            "status": "ok",
+            "detail": "pi_y: evaluated 1 time, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "competition",
+            "status": "warning",
+            "detail": "the payoff share channel does not respond to phi at this optimum: the share rule is inactive here, so the result is not about competition between the players",
+            "required": false,
+            "verdict": false
+          }
+        ]
+      },
+      "exact_feasible_gain": "21/250000000000",
+      "concave_control": {
+        "ok": true,
+        "complete": true,
+        "findings": [
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "u = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "v = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "first order",
+            "status": "ok",
+            "detail": "d/du = +0 is consistent with the lower corner",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "first order",
+            "status": "ok",
+            "detail": "d/dv = +0 is consistent with the lower corner",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "joint curvature",
+            "status": "ok",
+            "detail": "two-boundary critical cone: diagonal=(-2.00000000000, -2.00000000000), inward cross=0, nonpositive envelope=2.00000000000; retained cross excess=-2.00000000000; necessary local condition, not a maximum certificate",
+            "required": true,
+            "verdict": true
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 0",
+            "required": false,
+            "verdict": null
+          }
+        ]
+      },
+      "infeasible_positive_eigenvalue_control": {
+        "ok": true,
+        "complete": true,
+        "findings": [
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "u = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "v = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "first order",
+            "status": "ok",
+            "detail": "d/du = +0 is consistent with the lower corner",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "first order",
+            "status": "ok",
+            "detail": "d/dv = +0 is consistent with the lower corner",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "joint curvature",
+            "status": "ok",
+            "detail": "two-boundary critical cone: diagonal=(-2.00000000000, -2.00000000000), inward cross=-3.00000000000, nonpositive envelope=2.00000000000; retained cross excess=-5.00000000000; necessary local condition, not a maximum certificate",
+            "required": true,
+            "verdict": true
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 0",
+            "required": false,
+            "verdict": null
+          }
+        ]
+      },
+      "strict_gradient_control": {
+        "ok": true,
+        "complete": true,
+        "findings": [
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "u = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "v = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "first order",
+            "status": "ok",
+            "detail": "d/du = -1 is consistent with the lower corner",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "first order",
+            "status": "ok",
+            "detail": "d/dv = +0 is consistent with the lower corner",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "joint curvature",
+            "status": "ok",
+            "detail": "one-dimensional critical curvature: -2.00000000000; necessary local condition, not a maximum certificate",
+            "required": true,
+            "verdict": true
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 0",
+            "required": false,
+            "verdict": null
+          }
+        ]
+      },
+      "mixed": {
+        "ok": false,
+        "complete": true,
+        "findings": [
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "u = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "v = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "first order",
+            "status": "ok",
+            "detail": "d/du = +0 is consistent with the lower corner",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "stationarity",
+            "status": "ok",
+            "detail": "d/dv = 0.0; tested against 1e-6",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "second order",
+            "status": "ok",
+            "detail": "d2/dv2 = -2 < 0",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "joint curvature",
+            "status": "violation",
+            "detail": "mixed boundary/interior critical Hessian eigenvalues: ['1.00000000000', '-5.00000000000']; necessary local condition, not a maximum certificate",
+            "required": true,
+            "verdict": false
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 0",
+            "required": false,
+            "verdict": null
+          }
+        ]
+      },
+      "upper_lower": {
+        "ok": false,
+        "complete": true,
+        "findings": [
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "u = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "v = 1 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "first order",
+            "status": "ok",
+            "detail": "d/du = +0 is consistent with the lower corner",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "first order",
+            "status": "ok",
+            "detail": "d/dv = +0 is consistent with the upper corner",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "joint curvature",
+            "status": "violation",
+            "detail": "two-boundary critical cone: diagonal=(-2.00000000000, -2.00000000000), inward cross=3.00000000000, nonpositive envelope=2.00000000000; retained cross excess=1.00000000000; necessary local condition, not a maximum certificate",
+            "required": true,
+            "verdict": false
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 0",
+            "required": false,
+            "verdict": null
+          }
+        ]
+      },
+      "flat_higher_order_warning": {
+        "ok": true,
+        "complete": true,
+        "findings": [
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "u = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "v = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "first order",
+            "status": "ok",
+            "detail": "d/du = +0 is consistent with the lower corner",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "first order",
+            "status": "ok",
+            "detail": "d/dv = +0 is consistent with the lower corner",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "joint curvature",
+            "status": "ok",
+            "detail": "two-boundary critical cone: diagonal=(0, 0), inward cross=0, nonpositive envelope=0; retained cross excess=0; necessary local condition, not a maximum certificate",
+            "required": true,
+            "verdict": true
+          },
+          {
+            "check": "joint curvature scope",
+            "status": "warning",
+            "detail": "flat feasible curvature does not resolve higher-order behavior",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 0",
+            "required": false,
+            "verdict": null
+          }
+        ]
+      },
+      "three_dimensional_incomplete": {
+        "ok": true,
+        "complete": false,
+        "findings": [
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "u = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "v = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "w = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "first order",
+            "status": "ok",
+            "detail": "d/du = +0 is consistent with the lower corner",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "first order",
+            "status": "ok",
+            "detail": "d/dv = +0 is consistent with the lower corner",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "first order",
+            "status": "ok",
+            "detail": "d/dw = +0 is consistent with the lower corner",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "joint curvature",
+            "status": "warning",
+            "detail": "boundary critical cone has dimension 3; only one/two-dimensional cones are covered",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 0",
+            "required": false,
+            "verdict": null
+          }
+        ]
+      },
+      "scope": "Necessary curvature checks for boundary groups with one or two critical directions; finite global search remains heuristic.",
+      "accepted": true
+    },
+    "R6-04": {
+      "duplicate_constructor": {
+        "type": "ValueError",
+        "reason": "two-player Game requires distinct player identities"
+      },
+      "mutated_duplicate": {
+        "stocks": {
+          "type": "ValueError",
+          "reason": "two-player Game requires distinct player identities"
+        },
+        "shares": {
+          "type": "ValueError",
+          "reason": "two-player Game requires distinct player identities"
+        },
+        "payoffs": {
+          "type": "ValueError",
+          "reason": "two-player Game requires distinct player identities"
+        },
+        "rank": {
+          "type": "ValueError",
+          "reason": "two-player Game requires distinct player identities"
+        }
+      },
+      "custom_player_payoffs": {
+        "DF": 0.004383464027881504,
+        "DL": 0.0019915359721184964
+      },
+      "default_player_payoffs": {
+        "DF": 0.004383464027881504,
+        "DL": 0.0019915359721184964
+      },
+      "two_keys_preserved": true,
+      "accepted": true
+    },
+    "R6-05": {
+      "packaged_pins": {
+        "sympy": "1.14.0",
+        "mpmath": "1.3.0",
+        "matplotlib": "3.10.8",
+        "numpy": "2.3.5"
+      },
+      "installed_versions": {
+        "sympy": "1.14.0",
+        "mpmath": "1.3.0",
+        "matplotlib": null,
+        "numpy": null
+      },
+      "actual_requirements_checked": true,
+      "installed_matches_snapshot": false,
+      "core_runs_without_plotting_imports": true,
+      "scope": "Core solver tests and all acceptance exporters require only SymPy and mpmath. Matplotlib and NumPy are optional figure dependencies. Pins record this release environment, not a cross-platform bitwise guarantee.",
+      "accepted": true
+    }
+  },
+  "all_accepted": true
+}

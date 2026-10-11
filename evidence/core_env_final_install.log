@@ -1,0 +1,7 @@
+Processing ./revision_v0211/work/PACEgame_v0_2_11/dist/pacegame-0.2.11-py3-none-any.whl
+Installing collected packages: pacegame
+  Attempting uninstall: pacegame
+    Found existing installation: pacegame 0.2.11
+    Uninstalling pacegame-0.2.11:
+      Successfully uninstalled pacegame-0.2.11
+Successfully installed pacegame-0.2.11

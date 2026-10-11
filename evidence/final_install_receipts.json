@@ -1,0 +1,32 @@
+[
+  {
+    "environment": "wheel",
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/wheel_env/bin/python",
+      "-m",
+      "pip",
+      "install",
+      "--force-reinstall",
+      "--no-deps",
+      "--no-index",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/dist/pacegame-0.2.11-py3-none-any.whl"
+    ],
+    "returncode": 0,
+    "wheel_sha256": "e262475e08da36b5b82a1eaa67eaf79d07c55a8446ebf74ba881848d8b0940ae"
+  },
+  {
+    "environment": "core",
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/core_env/bin/python",
+      "-m",
+      "pip",
+      "install",
+      "--force-reinstall",
+      "--no-deps",
+      "--no-index",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/dist/pacegame-0.2.11-py3-none-any.whl"
+    ],
+    "returncode": 0,
+    "wheel_sha256": "e262475e08da36b5b82a1eaa67eaf79d07c55a8446ebf74ba881848d8b0940ae"
+  }
+]

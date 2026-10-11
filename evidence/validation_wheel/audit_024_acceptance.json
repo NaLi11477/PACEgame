@@ -1,0 +1,453 @@
+{
+  "environment": {
+    "pacegame": "0.2.11",
+    "import_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/wheel_env/lib/python3.12/site-packages/pacegame/__init__.py",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "sympy": "1.14.0",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+  },
+  "groups": {
+    "R5-01": {
+      "wrong_kinds": {
+        "upper": {
+          "ok": false,
+          "complete": true,
+          "findings": [
+            {
+              "check": "candidate metadata",
+              "status": "violation",
+              "detail": "x: unknown candidate kind 'upper'",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 0.5",
+              "required": false,
+              "verdict": null
+            }
+          ]
+        },
+        "upper corner": {
+          "ok": false,
+          "complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "x = 0.5 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "candidate metadata",
+              "status": "violation",
+              "detail": "x: kind 'upper corner' does not match interior at the declared interval",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 0.5",
+              "required": false,
+              "verdict": null
+            }
+          ]
+        },
+        "fixed": {
+          "ok": false,
+          "complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "x = 0.5 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "candidate metadata",
+              "status": "violation",
+              "detail": "x: kind 'fixed' does not match interior at the declared interval",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 0.5",
+              "required": false,
+              "verdict": null
+            }
+          ]
+        }
+      },
+      "missing_coordinate": {
+        "ok": false,
+        "complete": true,
+        "findings": [
+          {
+            "check": "candidate metadata",
+            "status": "violation",
+            "detail": "y: missing coordinate",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "x = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "bounds",
+            "status": "violation",
+            "detail": "y: lower bound exceeds upper bound",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "fixed variable",
+            "status": "ok",
+            "detail": "x: singleton interval; no feasible direction, no one-sided KKT test",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 0",
+            "required": false,
+            "verdict": null
+          }
+        ]
+      },
+      "true_upper": {
+        "ok": true,
+        "complete": true,
+        "findings": [
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "x = 1 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "first order",
+            "status": "ok",
+            "detail": "d/dx = +1 is consistent with the upper corner",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "joint curvature",
+            "status": "ok",
+            "detail": "boundary critical cone has no nonzero direction; necessary check only",
+            "required": true,
+            "verdict": true
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 1",
+            "required": false,
+            "verdict": null
+          }
+        ]
+      },
+      "true_fixed": {
+        "ok": true,
+        "complete": true,
+        "findings": [
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "x = 0.5 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "fixed variable",
+            "status": "ok",
+            "detail": "x: singleton interval; no feasible direction, no one-sided KKT test",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 0.5",
+            "required": false,
+            "verdict": null
+          }
+        ]
+      },
+      "nonstationary_interior": {
+        "ok": false,
+        "complete": true,
+        "findings": [
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "x = 0.5 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "stationarity",
+            "status": "violation",
+            "detail": "d/dx = 1.0; tested against 1e-6",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "second order",
+            "status": "warning",
+            "detail": "d2/dx2 = +0 is flat",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 0.5",
+            "required": false,
+            "verdict": null
+          }
+        ]
+      },
+      "accepted": true
+    },
+    "R5-02": {
+      "unknown_key_rejected": {
+        "type": "ValueError",
+        "reason": "quality contains unknown player(s): z"
+      },
+      "partial": {
+        "payoffs": {
+          "DF": 0.005049179648657607,
+          "DL": 0.002659132458035566
+        },
+        "rival_payoffs": {
+          "DF": 0.0013258203513423932,
+          "DL": 0.0037158675419644346
+        },
+        "alike": {
+          "DF": false,
+          "DL": false
+        },
+        "best": "DF",
+        "complete": true,
+        "role_conflict": null
+      },
+      "normalized": {
+        "payoffs": {
+          "DF": 0.005049179648657607,
+          "DL": 0.002659132458035566
+        },
+        "rival_payoffs": {
+          "DF": 0.0013258203513423932,
+          "DL": 0.0037158675419644346
+        },
+        "alike": {
+          "DF": false,
+          "DL": false
+        },
+        "best": "DF",
+        "complete": true,
+        "role_conflict": null
+      },
+      "equal": {
+        "payoffs": {
+          "DF": 0.004383464027881504,
+          "DL": 0.0019915359721184964
+        },
+        "rival_payoffs": {
+          "DF": 0.0019915359721184964,
+          "DL": 0.004383464027881504
+        },
+        "alike": {
+          "DF": true,
+          "DL": true
+        },
+        "best": "DF",
+        "complete": true,
+        "role_conflict": 0.0023919280557630077
+      },
+      "custom_names": {
+        "payoffs": {
+          "DF": 0.005049179648657607,
+          "DL": 0.002659132458035566
+        },
+        "rival_payoffs": {
+          "DF": 0.0013258203513423932,
+          "DL": 0.0037158675419644346
+        },
+        "alike": {
+          "DF": false,
+          "DL": false
+        },
+        "best": "DF",
+        "complete": true,
+        "role_conflict": null
+      },
+      "accepted": true
+    },
+    "R5-03": {
+      "test_count_loaded": 493,
+      "test_modules": [
+        "pacegame.tests.test_audit_020",
+        "pacegame.tests.test_audit_021",
+        "pacegame.tests.test_audit_0210",
+        "pacegame.tests.test_audit_0211",
+        "pacegame.tests.test_audit_022",
+        "pacegame.tests.test_audit_023",
+        "pacegame.tests.test_audit_024",
+        "pacegame.tests.test_audit_025",
+        "pacegame.tests.test_audit_026",
+        "pacegame.tests.test_audit_027",
+        "pacegame.tests.test_audit_028",
+        "pacegame.tests.test_audit_029",
+        "pacegame.tests.test_pacegame"
+      ],
+      "exporters": [
+        "validate_release",
+        "validate_audit_021",
+        "validate_audit_022",
+        "validate_audit_023",
+        "validate_audit_024"
+      ],
+      "workflow_checked": true,
+      "hosted_matrix_executed": false,
+      "accepted": true
+    },
+    "R5-04": {
+      "configurations": {
+        "constant": {
+          "parameters": [
+            "hatvarsigma",
+            "lambda",
+            "sigma"
+          ],
+          "coefficient": "17/20",
+          "outcome": {
+            "payoffs": {
+              "DF": 0.004383464027881503,
+              "DL": 0.0019915359721184964
+            },
+            "rival_payoffs": {
+              "DF": 0.0019915359721184964,
+              "DL": 0.004383464027881503
+            },
+            "alike": {
+              "DF": true,
+              "DL": true
+            },
+            "best": "DF",
+            "complete": true,
+            "role_conflict": 0.0023919280557630077
+          },
+          "reference_outcome": {
+            "payoffs": {
+              "DF": 0.004383464027881504,
+              "DL": 0.0019915359721184964
+            },
+            "rival_payoffs": {
+              "DF": 0.0019915359721184964,
+              "DL": 0.004383464027881504
+            },
+            "alike": {
+              "DF": true,
+              "DL": true
+            },
+            "best": "DF",
+            "complete": true,
+            "role_conflict": 0.0023919280557630077
+          },
+          "maximum_payoff_difference": 8.673617379884035e-19,
+          "payoffs_agree_within_1e_minus15": true
+        },
+        "compound": {
+          "parameters": [
+            "alpha",
+            "hatvarsigma",
+            "lambda",
+            "sigma"
+          ],
+          "coefficient": "2*alpha",
+          "outcome": {
+            "payoffs": {
+              "DF": 0.004391856717897868,
+              "DL": 0.001983143282102132
+            },
+            "rival_payoffs": {
+              "DF": 0.001983143282102132,
+              "DL": 0.004391856717897868
+            },
+            "alike": {
+              "DF": true,
+              "DL": true
+            },
+            "best": "DF",
+            "complete": true,
+            "role_conflict": 0.0024087134357957366
+          },
+          "reference_outcome": {
+            "payoffs": {
+              "DF": 0.004391856717897868,
+              "DL": 0.001983143282102132
+            },
+            "rival_payoffs": {
+              "DF": 0.001983143282102132,
+              "DL": 0.004391856717897868
+            },
+            "alike": {
+              "DF": true,
+              "DL": true
+            },
+            "best": "DF",
+            "complete": true,
+            "role_conflict": 0.0024087134357957366
+          },
+          "maximum_payoff_difference": 0.0,
+          "payoffs_agree_within_1e_minus15": true
+        }
+      },
+      "explicit_player_statics": {
+        "x": {
+          "actual": 1.9664286386753417e-05,
+          "chain_rule_reference": 1.9664286386789958e-05
+        },
+        "y": {
+          "actual": -1.9664286386753417e-05,
+          "chain_rule_reference": -1.9664286386789958e-05
+        }
+      },
+      "invalid_inputs": [
+        {
+          "type": "KeyError",
+          "reason": "'missing parameter(s): alpha; this model takes alpha, hatvarsigma, lambda, sigma'"
+        },
+        {
+          "type": "ValueError",
+          "reason": "alpha must be positive"
+        }
+      ],
+      "accepted": true
+    },
+    "R5-05": {
+      "expected_fields": 17,
+      "checked_fields": 17,
+      "matched_fields": 17,
+      "comparison_basis": "supplied depth report Appendix C; current official template certification pending",
+      "support_field": "Support email for questions",
+      "contact_pending": true,
+      "accepted": true
+    }
+  },
+  "all_accepted": true
+}

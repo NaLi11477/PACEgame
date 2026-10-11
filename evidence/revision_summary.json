@@ -1,0 +1,100 @@
+{
+  "version": "0.2.11",
+  "parent_version": "0.2.10",
+  "date": "2026-10-08",
+  "implemented_and_validated": [
+    "R12-01",
+    "R12-02"
+  ],
+  "new_regression_methods": 43,
+  "tests": {
+    "source": {
+      "package_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/pacegame/__init__.py",
+      "discovered": 493,
+      "tests_run": 493,
+      "passed": 493,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "successful": true,
+      "seconds": 350.0266092859965,
+      "production_files_modified": false,
+      "runner_only_change": "Explicit stream and durable result ledger; same shipped load_suite()."
+    },
+    "wheel": {
+      "package_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/wheel_env/lib/python3.12/site-packages/pacegame/__init__.py",
+      "discovered": 493,
+      "tests_run": 493,
+      "passed": 493,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "successful": true,
+      "seconds": 356.15630784899986,
+      "production_files_modified": false,
+      "runner_only_change": "Explicit stream and durable result ledger; same shipped load_suite()."
+    },
+    "core": {
+      "package_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/core_env/lib/python3.12/site-packages/pacegame/__init__.py",
+      "discovered": 493,
+      "tests_run": 493,
+      "passed": 492,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 1,
+      "successful": true,
+      "seconds": 352.38958876200195,
+      "production_files_modified": false,
+      "runner_only_change": "Explicit stream and durable result ledger; same shipped load_suite()."
+    }
+  },
+  "exporters_per_environment": 12,
+  "acceptance_groups_per_environment": 41,
+  "independent_reaudit": "pending",
+  "submission_ready": false,
+  "official_template_certified": false,
+  "source_wheel_sdist_installed_package_equal": true,
+  "fresh_sdist_rebuild_performed": true,
+  "rebuilt_wheel_bytes_identical": true,
+  "artifact_checks": {
+    "version": "0.2.11",
+    "package_members": 61,
+    "source_wheel_sdist_byte_equal": true,
+    "installed_package_checks": [
+      {
+        "environment": "wheel_env",
+        "package_members": 61,
+        "byte_equal": true
+      },
+      {
+        "environment": "core_env",
+        "package_members": 61,
+        "byte_equal": true
+      }
+    ],
+    "examples_mirrored": true,
+    "body_words": 2979,
+    "abstract_words": 248,
+    "body_parts_checked": 33,
+    "table_cells_checked": 232,
+    "metadata_fields_matched": 17,
+    "word_tex_body_and_table_cells_equal": true,
+    "all_nonempty_word_texts_rendered": true,
+    "nonempty_word_texts_checked": 309,
+    "word_pages": 11,
+    "tex_pages": 11,
+    "tables": 5,
+    "figures": 3,
+    "all_figures_grayscale": true,
+    "highlights_characters": [
+      74,
+      73,
+      79,
+      73,
+      78
+    ],
+    "official_template_certified": false,
+    "fresh_sdist_rebuild_performed": true,
+    "rebuilt_wheel_bytes_identical": true
+  }
+}

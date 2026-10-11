@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/workspace/scratch/a8bea0bd94a7/audit_v0210/source_env/bin/python",
+    "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/verify_round12_fixes.py",
+    "--source-root",
+    "/workspace/scratch/a8bea0bd94a7/audit_v0210/work/PACEgame_v0_2_10",
+    "--out",
+    "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/parent_new_acceptance.json"
+  ],
+  "returncode": 1,
+  "expected_returncode": 1,
+  "acceptance_assertion_failed_on_parent": true,
+  "failure_scope": "Owner admission must reject the original false-complete passes; original parent probe separately completes and confirms both findings."
+}

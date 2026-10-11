@@ -1,0 +1,13 @@
+{
+  "package_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/core_env/lib/python3.12/site-packages/pacegame/__init__.py",
+  "discovered": 493,
+  "tests_run": 493,
+  "passed": 492,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 1,
+  "successful": true,
+  "seconds": 352.38958876200195,
+  "production_files_modified": false,
+  "runner_only_change": "Explicit stream and durable result ledger; same shipped load_suite()."
+}

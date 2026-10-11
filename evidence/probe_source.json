@@ -1,0 +1,1751 @@
+{
+  "version": "0.2.11",
+  "audit_round": 12,
+  "environment": {
+    "package_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/pacegame/__init__.py",
+    "python": "3.12.14",
+    "sympy": "1.14.0",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+  },
+  "production_files_modified": false,
+  "all_observations_asserted": true,
+  "independent_reaudit": "pending",
+  "all_revision_criteria_passed": true,
+  "all_accepted": true,
+  "groups": {
+    "R12-01": {
+      "priority": "P2",
+      "accepted": true,
+      "cases": [
+        {
+          "label": "tiny_complex",
+          "kind": "fixed",
+          "target_at_point": "I/10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 + 1",
+          "known_invalid": true,
+          "report": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit12_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "owner payoff (audit12_u)",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit12_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "false_complete_pass": false
+        },
+        {
+          "label": "tiny_complex",
+          "kind": "interior",
+          "target_at_point": "I/10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 + 1",
+          "known_invalid": true,
+          "report": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit12_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "owner payoff (audit12_u)",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "stationarity",
+                "status": "ok",
+                "detail": "d/daudit12_u = 0.0; tested against 1e-6",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "second order",
+                "status": "ok",
+                "detail": "d2/daudit12_u2 = -2 < 0",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "false_complete_pass": false
+        },
+        {
+          "label": "tiny_complex",
+          "kind": "lower",
+          "target_at_point": "I/10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 + 1",
+          "known_invalid": true,
+          "report": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit12_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "owner payoff (audit12_u)",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "first order",
+                "status": "ok",
+                "detail": "d/daudit12_u = -1 is consistent with the lower corner",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "joint curvature",
+                "status": "ok",
+                "detail": "boundary critical cone has no nonzero direction; necessary check only",
+                "required": true,
+                "verdict": true
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "false_complete_pass": false
+        },
+        {
+          "label": "tiny_complex",
+          "kind": "skipped",
+          "target_at_point": "I/10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 + 1",
+          "known_invalid": true,
+          "report": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit12_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "owner payoff (audit12_u)",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "reduced objective",
+                "status": "warning",
+                "detail": "audit12_u: leader objective includes a follower reaction; raw partial derivatives are not an optimality certificate",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "false_complete_pass": false
+        },
+        {
+          "label": "complex",
+          "kind": "fixed",
+          "target_at_point": "1 + I/10",
+          "known_invalid": true,
+          "report": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit12_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "owner payoff (audit12_u)",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit12_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "false_complete_pass": false
+        },
+        {
+          "label": "complex",
+          "kind": "interior",
+          "target_at_point": "1 + I/10",
+          "known_invalid": true,
+          "report": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit12_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "owner payoff (audit12_u)",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "stationarity",
+                "status": "ok",
+                "detail": "d/daudit12_u = 0.0; tested against 1e-6",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "second order",
+                "status": "ok",
+                "detail": "d2/daudit12_u2 = -2 < 0",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "false_complete_pass": false
+        },
+        {
+          "label": "complex",
+          "kind": "lower",
+          "target_at_point": "1 + I/10",
+          "known_invalid": true,
+          "report": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit12_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "owner payoff (audit12_u)",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "first order",
+                "status": "ok",
+                "detail": "d/daudit12_u = -1 is consistent with the lower corner",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "joint curvature",
+                "status": "ok",
+                "detail": "boundary critical cone has no nonzero direction; necessary check only",
+                "required": true,
+                "verdict": true
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "false_complete_pass": false
+        },
+        {
+          "label": "complex",
+          "kind": "skipped",
+          "target_at_point": "1 + I/10",
+          "known_invalid": true,
+          "report": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit12_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "owner payoff (audit12_u)",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "reduced objective",
+                "status": "warning",
+                "detail": "audit12_u: leader objective includes a follower reaction; raw partial derivatives are not an optimality certificate",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "false_complete_pass": false
+        },
+        {
+          "label": "nan",
+          "kind": "fixed",
+          "target_at_point": "nan",
+          "known_invalid": true,
+          "report": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit12_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "owner payoff (audit12_u)",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit12_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "false_complete_pass": false
+        },
+        {
+          "label": "nan",
+          "kind": "interior",
+          "target_at_point": "nan",
+          "known_invalid": true,
+          "report": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit12_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "owner payoff (audit12_u)",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "stationarity",
+                "status": "ok",
+                "detail": "d/daudit12_u = 0.0; tested against 1e-6",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "second order",
+                "status": "warning",
+                "detail": "d2/daudit12_u2 = +0 is flat",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "false_complete_pass": false
+        },
+        {
+          "label": "nan",
+          "kind": "lower",
+          "target_at_point": "nan",
+          "known_invalid": true,
+          "report": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit12_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "owner payoff (audit12_u)",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "first order",
+                "status": "ok",
+                "detail": "d/daudit12_u = +0 is consistent with the lower corner",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "joint curvature",
+                "status": "ok",
+                "detail": "one-dimensional critical curvature: 0; necessary local condition, not a maximum certificate",
+                "required": true,
+                "verdict": true
+              },
+              {
+                "check": "joint curvature scope",
+                "status": "warning",
+                "detail": "flat feasible curvature does not resolve higher-order behavior",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "false_complete_pass": false
+        },
+        {
+          "label": "nan",
+          "kind": "skipped",
+          "target_at_point": "nan",
+          "known_invalid": true,
+          "report": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit12_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "owner payoff (audit12_u)",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "reduced objective",
+                "status": "warning",
+                "detail": "audit12_u: leader objective includes a follower reaction; raw partial derivatives are not an optimality certificate",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "false_complete_pass": false
+        },
+        {
+          "label": "infinity",
+          "kind": "fixed",
+          "target_at_point": "oo",
+          "known_invalid": true,
+          "report": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit12_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "owner payoff (audit12_u)",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit12_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "false_complete_pass": false
+        },
+        {
+          "label": "infinity",
+          "kind": "interior",
+          "target_at_point": "oo",
+          "known_invalid": true,
+          "report": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit12_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "owner payoff (audit12_u)",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "stationarity",
+                "status": "ok",
+                "detail": "d/daudit12_u = 0.0; tested against 1e-6",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "second order",
+                "status": "warning",
+                "detail": "d2/daudit12_u2 = +0 is flat",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "false_complete_pass": false
+        },
+        {
+          "label": "infinity",
+          "kind": "lower",
+          "target_at_point": "oo",
+          "known_invalid": true,
+          "report": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit12_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "owner payoff (audit12_u)",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "first order",
+                "status": "ok",
+                "detail": "d/daudit12_u = +0 is consistent with the lower corner",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "joint curvature",
+                "status": "ok",
+                "detail": "one-dimensional critical curvature: 0; necessary local condition, not a maximum certificate",
+                "required": true,
+                "verdict": true
+              },
+              {
+                "check": "joint curvature scope",
+                "status": "warning",
+                "detail": "flat feasible curvature does not resolve higher-order behavior",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "false_complete_pass": false
+        },
+        {
+          "label": "infinity",
+          "kind": "skipped",
+          "target_at_point": "oo",
+          "known_invalid": true,
+          "report": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit12_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "owner payoff (audit12_u)",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "reduced objective",
+                "status": "warning",
+                "detail": "audit12_u: leader objective includes a follower reaction; raw partial derivatives are not an optimality certificate",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "false_complete_pass": false
+        },
+        {
+          "label": "unknown",
+          "kind": "fixed",
+          "target_at_point": "audit12_unresolved",
+          "known_invalid": false,
+          "report": {
+            "ok": true,
+            "complete": false,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit12_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "owner payoff (audit12_u)",
+                "status": "warning",
+                "detail": "retained payoff finite-real admission unavailable",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit12_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "false_complete_pass": false
+        },
+        {
+          "label": "unknown",
+          "kind": "interior",
+          "target_at_point": "audit12_unresolved",
+          "known_invalid": false,
+          "report": {
+            "ok": true,
+            "complete": false,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit12_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "owner payoff (audit12_u)",
+                "status": "warning",
+                "detail": "retained payoff finite-real admission unavailable",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "stationarity",
+                "status": "ok",
+                "detail": "d/daudit12_u = 0.0; tested against 1e-6",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "second order",
+                "status": "ok",
+                "detail": "d2/daudit12_u2 = -2 < 0",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "false_complete_pass": false
+        },
+        {
+          "label": "unknown",
+          "kind": "lower",
+          "target_at_point": "audit12_unresolved",
+          "known_invalid": false,
+          "report": {
+            "ok": true,
+            "complete": false,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit12_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "owner payoff (audit12_u)",
+                "status": "warning",
+                "detail": "retained payoff finite-real admission unavailable",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "first order",
+                "status": "ok",
+                "detail": "d/daudit12_u = -1 is consistent with the lower corner",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "joint curvature",
+                "status": "ok",
+                "detail": "boundary critical cone has no nonzero direction; necessary check only",
+                "required": true,
+                "verdict": true
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "false_complete_pass": false
+        },
+        {
+          "label": "unknown",
+          "kind": "skipped",
+          "target_at_point": "audit12_unresolved",
+          "known_invalid": false,
+          "report": {
+            "ok": true,
+            "complete": false,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit12_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "owner payoff (audit12_u)",
+                "status": "warning",
+                "detail": "retained payoff finite-real admission unavailable",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "reduced objective",
+                "status": "warning",
+                "detail": "audit12_u: leader objective includes a follower reaction; raw partial derivatives are not an optimality certificate",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "false_complete_pass": false
+        }
+      ],
+      "legal_controls": [
+        {
+          "ok": true,
+          "complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "audit12_u = 0 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "stationarity",
+              "status": "ok",
+              "detail": "d/daudit12_u = 0.0; tested against 1e-6",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "second order",
+              "status": "ok",
+              "detail": "d2/daudit12_u2 = -2 < 0",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 1",
+              "required": false,
+              "verdict": null
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "audit12_u = 0 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "stationarity",
+              "status": "ok",
+              "detail": "d/daudit12_u = 0.0; tested against 1e-6",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "second order",
+              "status": "ok",
+              "detail": "d2/daudit12_u2 = -2 < 0",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 1",
+              "required": false,
+              "verdict": null
+            }
+          ]
+        }
+      ],
+      "net_admission_control": {
+        "ok": false,
+        "complete": true,
+        "findings": [
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "audit12_u = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "fixed variable",
+            "status": "ok",
+            "detail": "audit12_u: singleton interval; no feasible direction, no one-sided KKT test",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "payoff",
+            "status": "violation",
+            "detail": "the supplied payoff is not a finite real number",
+            "required": true,
+            "verdict": null
+          }
+        ]
+      },
+      "scope": "Every declared owner objective requires retained finite-real admission before derivative or skip; known invalid values fail and unknown values are required unavailable."
+    },
+    "R12-02": {
+      "priority": "P2",
+      "accepted": true,
+      "cases": [
+        {
+          "base": "9007199254740992",
+          "exact_gap": "1",
+          "order": [
+            "RF",
+            "RL"
+          ],
+          "exact_payoffs": {
+            "RF": "9007199254740992",
+            "RL": "9007199254740993"
+          },
+          "binary64_payoffs": {
+            "RF": 9007199254740992.0,
+            "RL": 9007199254740992.0
+          },
+          "retained_gap": "1",
+          "best": "RL",
+          "ties": [
+            "RL"
+          ],
+          "complete": true,
+          "rankable": [
+            "RF",
+            "RL"
+          ],
+          "claims": [
+            {
+              "claim": "pi_RL > pi_RF",
+              "passed": 1,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 0,
+              "reasons": [],
+              "counterexamples": []
+            },
+            {
+              "claim": "pi_RF >= pi_RL",
+              "passed": 0,
+              "failed": 1,
+              "skipped": 0,
+              "errors": 0,
+              "reasons": [],
+              "counterexamples": [
+                [
+                  {
+                    "sigma": 0.1,
+                    "phi": 0.85,
+                    "hatvarsigma": 0.3
+                  },
+                  "gap = -1"
+                ]
+              ]
+            }
+          ],
+          "incorrect_weak_dominance_pass": false,
+          "missed_true_strict_dominance": false,
+          "incorrect_best": false
+        },
+        {
+          "base": "9007199254740992",
+          "exact_gap": "1",
+          "order": [
+            "RL",
+            "RF"
+          ],
+          "exact_payoffs": {
+            "RL": "9007199254740993",
+            "RF": "9007199254740992"
+          },
+          "binary64_payoffs": {
+            "RL": 9007199254740992.0,
+            "RF": 9007199254740992.0
+          },
+          "retained_gap": "1",
+          "best": "RL",
+          "ties": [
+            "RL"
+          ],
+          "complete": true,
+          "rankable": [
+            "RF",
+            "RL"
+          ],
+          "claims": [
+            {
+              "claim": "pi_RL > pi_RF",
+              "passed": 1,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 0,
+              "reasons": [],
+              "counterexamples": []
+            },
+            {
+              "claim": "pi_RF >= pi_RL",
+              "passed": 0,
+              "failed": 1,
+              "skipped": 0,
+              "errors": 0,
+              "reasons": [],
+              "counterexamples": [
+                [
+                  {
+                    "sigma": 0.1,
+                    "phi": 0.85,
+                    "hatvarsigma": 0.3
+                  },
+                  "gap = -1"
+                ]
+              ]
+            }
+          ],
+          "incorrect_weak_dominance_pass": false,
+          "missed_true_strict_dominance": false,
+          "incorrect_best": false
+        },
+        {
+          "base": "1152921504606846976",
+          "exact_gap": "1",
+          "order": [
+            "RF",
+            "RL"
+          ],
+          "exact_payoffs": {
+            "RF": "1152921504606846976",
+            "RL": "1152921504606846977"
+          },
+          "binary64_payoffs": {
+            "RF": 1.152921504606847e+18,
+            "RL": 1.152921504606847e+18
+          },
+          "retained_gap": "1",
+          "best": "RL",
+          "ties": [
+            "RL"
+          ],
+          "complete": true,
+          "rankable": [
+            "RF",
+            "RL"
+          ],
+          "claims": [
+            {
+              "claim": "pi_RL > pi_RF",
+              "passed": 1,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 0,
+              "reasons": [],
+              "counterexamples": []
+            },
+            {
+              "claim": "pi_RF >= pi_RL",
+              "passed": 0,
+              "failed": 1,
+              "skipped": 0,
+              "errors": 0,
+              "reasons": [],
+              "counterexamples": [
+                [
+                  {
+                    "sigma": 0.1,
+                    "phi": 0.85,
+                    "hatvarsigma": 0.3
+                  },
+                  "gap = -1"
+                ]
+              ]
+            }
+          ],
+          "incorrect_weak_dominance_pass": false,
+          "missed_true_strict_dominance": false,
+          "incorrect_best": false
+        },
+        {
+          "base": "1152921504606846976",
+          "exact_gap": "1",
+          "order": [
+            "RL",
+            "RF"
+          ],
+          "exact_payoffs": {
+            "RL": "1152921504606846977",
+            "RF": "1152921504606846976"
+          },
+          "binary64_payoffs": {
+            "RL": 1.152921504606847e+18,
+            "RF": 1.152921504606847e+18
+          },
+          "retained_gap": "1",
+          "best": "RL",
+          "ties": [
+            "RL"
+          ],
+          "complete": true,
+          "rankable": [
+            "RF",
+            "RL"
+          ],
+          "claims": [
+            {
+              "claim": "pi_RL > pi_RF",
+              "passed": 1,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 0,
+              "reasons": [],
+              "counterexamples": []
+            },
+            {
+              "claim": "pi_RF >= pi_RL",
+              "passed": 0,
+              "failed": 1,
+              "skipped": 0,
+              "errors": 0,
+              "reasons": [],
+              "counterexamples": [
+                [
+                  {
+                    "sigma": 0.1,
+                    "phi": 0.85,
+                    "hatvarsigma": 0.3
+                  },
+                  "gap = -1"
+                ]
+              ]
+            }
+          ],
+          "incorrect_weak_dominance_pass": false,
+          "missed_true_strict_dominance": false,
+          "incorrect_best": false
+        },
+        {
+          "base": "100000000000000000000",
+          "exact_gap": "1",
+          "order": [
+            "RF",
+            "RL"
+          ],
+          "exact_payoffs": {
+            "RF": "100000000000000000000",
+            "RL": "100000000000000000001"
+          },
+          "binary64_payoffs": {
+            "RF": 1e+20,
+            "RL": 1e+20
+          },
+          "retained_gap": "1",
+          "best": "RL",
+          "ties": [
+            "RL"
+          ],
+          "complete": true,
+          "rankable": [
+            "RF",
+            "RL"
+          ],
+          "claims": [
+            {
+              "claim": "pi_RL > pi_RF",
+              "passed": 1,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 0,
+              "reasons": [],
+              "counterexamples": []
+            },
+            {
+              "claim": "pi_RF >= pi_RL",
+              "passed": 0,
+              "failed": 1,
+              "skipped": 0,
+              "errors": 0,
+              "reasons": [],
+              "counterexamples": [
+                [
+                  {
+                    "sigma": 0.1,
+                    "phi": 0.85,
+                    "hatvarsigma": 0.3
+                  },
+                  "gap = -1"
+                ]
+              ]
+            }
+          ],
+          "incorrect_weak_dominance_pass": false,
+          "missed_true_strict_dominance": false,
+          "incorrect_best": false
+        },
+        {
+          "base": "100000000000000000000",
+          "exact_gap": "1",
+          "order": [
+            "RL",
+            "RF"
+          ],
+          "exact_payoffs": {
+            "RL": "100000000000000000001",
+            "RF": "100000000000000000000"
+          },
+          "binary64_payoffs": {
+            "RL": 1e+20,
+            "RF": 1e+20
+          },
+          "retained_gap": "1",
+          "best": "RL",
+          "ties": [
+            "RL"
+          ],
+          "complete": true,
+          "rankable": [
+            "RF",
+            "RL"
+          ],
+          "claims": [
+            {
+              "claim": "pi_RL > pi_RF",
+              "passed": 1,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 0,
+              "reasons": [],
+              "counterexamples": []
+            },
+            {
+              "claim": "pi_RF >= pi_RL",
+              "passed": 0,
+              "failed": 1,
+              "skipped": 0,
+              "errors": 0,
+              "reasons": [],
+              "counterexamples": [
+                [
+                  {
+                    "sigma": 0.1,
+                    "phi": 0.85,
+                    "hatvarsigma": 0.3
+                  },
+                  "gap = -1"
+                ]
+              ]
+            }
+          ],
+          "incorrect_weak_dominance_pass": false,
+          "missed_true_strict_dominance": false,
+          "incorrect_best": false
+        }
+      ],
+      "legal_controls": [
+        {
+          "base": "0",
+          "exact_gap": "1",
+          "order": [
+            "RF",
+            "RL"
+          ],
+          "exact_payoffs": {
+            "RF": "0",
+            "RL": "1"
+          },
+          "binary64_payoffs": {
+            "RF": 0.0,
+            "RL": 1.0
+          },
+          "retained_gap": "1",
+          "best": "RL",
+          "ties": [
+            "RL"
+          ],
+          "complete": true,
+          "rankable": [
+            "RF",
+            "RL"
+          ],
+          "claims": [
+            {
+              "claim": "pi_RL > pi_RF",
+              "passed": 1,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 0,
+              "reasons": [],
+              "counterexamples": []
+            },
+            {
+              "claim": "pi_RF >= pi_RL",
+              "passed": 0,
+              "failed": 1,
+              "skipped": 0,
+              "errors": 0,
+              "reasons": [],
+              "counterexamples": [
+                [
+                  {
+                    "sigma": 0.1,
+                    "phi": 0.85,
+                    "hatvarsigma": 0.3
+                  },
+                  "gap = -1"
+                ]
+              ]
+            }
+          ],
+          "incorrect_weak_dominance_pass": false,
+          "missed_true_strict_dominance": false,
+          "incorrect_best": false
+        },
+        {
+          "base": "1099511627776",
+          "exact_gap": "1",
+          "order": [
+            "RF",
+            "RL"
+          ],
+          "exact_payoffs": {
+            "RF": "1099511627776",
+            "RL": "1099511627777"
+          },
+          "binary64_payoffs": {
+            "RF": 1099511627776.0,
+            "RL": 1099511627777.0
+          },
+          "retained_gap": "1",
+          "best": "RL",
+          "ties": [
+            "RL"
+          ],
+          "complete": true,
+          "rankable": [
+            "RF",
+            "RL"
+          ],
+          "claims": [
+            {
+              "claim": "pi_RL > pi_RF",
+              "passed": 1,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 0,
+              "reasons": [],
+              "counterexamples": []
+            },
+            {
+              "claim": "pi_RF >= pi_RL",
+              "passed": 0,
+              "failed": 1,
+              "skipped": 0,
+              "errors": 0,
+              "reasons": [],
+              "counterexamples": [
+                [
+                  {
+                    "sigma": 0.1,
+                    "phi": 0.85,
+                    "hatvarsigma": 0.3
+                  },
+                  "gap = -1"
+                ]
+              ]
+            }
+          ],
+          "incorrect_weak_dominance_pass": false,
+          "missed_true_strict_dominance": false,
+          "incorrect_best": false
+        },
+        {
+          "base": "9007199254740992",
+          "exact_gap": "2",
+          "order": [
+            "RF",
+            "RL"
+          ],
+          "exact_payoffs": {
+            "RF": "9007199254740992",
+            "RL": "9007199254740994"
+          },
+          "binary64_payoffs": {
+            "RF": 9007199254740992.0,
+            "RL": 9007199254740994.0
+          },
+          "retained_gap": "2",
+          "best": "RL",
+          "ties": [
+            "RL"
+          ],
+          "complete": true,
+          "rankable": [
+            "RF",
+            "RL"
+          ],
+          "claims": [
+            {
+              "claim": "pi_RL > pi_RF",
+              "passed": 1,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 0,
+              "reasons": [],
+              "counterexamples": []
+            },
+            {
+              "claim": "pi_RF >= pi_RL",
+              "passed": 0,
+              "failed": 1,
+              "skipped": 0,
+              "errors": 0,
+              "reasons": [],
+              "counterexamples": [
+                [
+                  {
+                    "sigma": 0.1,
+                    "phi": 0.85,
+                    "hatvarsigma": 0.3
+                  },
+                  "gap = -2"
+                ]
+              ]
+            }
+          ],
+          "incorrect_weak_dominance_pass": false,
+          "missed_true_strict_dominance": false,
+          "incorrect_best": false
+        }
+      ],
+      "crossing": {
+        "exact_gap": "phi - 1/2",
+        "exact_crossing": "1/2",
+        "sampled_exact_signs": [
+          -1,
+          -1,
+          0,
+          1,
+          1
+        ],
+        "reported_threshold": 0.5,
+        "all_five_binary64_gaps_zero": true,
+        "samples": [
+          {
+            "phi": 0.25,
+            "reported_gap": 0.0,
+            "retained_gap": "-1/4",
+            "complete": true
+          },
+          {
+            "phi": 0.375,
+            "reported_gap": 0.0,
+            "retained_gap": "-1/8",
+            "complete": true
+          },
+          {
+            "phi": 0.5,
+            "reported_gap": 0.0,
+            "retained_gap": "0",
+            "complete": true
+          },
+          {
+            "phi": 0.625,
+            "reported_gap": 0.0,
+            "retained_gap": "1/8",
+            "complete": true
+          },
+          {
+            "phi": 0.75,
+            "reported_gap": 0.0,
+            "retained_gap": "1/4",
+            "complete": true
+          }
+        ]
+      },
+      "sensitivity": {
+        "exact_payoff": "2^53 + sigma",
+        "analytic_derivative": "1",
+        "reported_slope": 1.0,
+        "reported_sign": "+",
+        "stencil": "central"
+      },
+      "crossing_control": 0.5,
+      "sensitivity_control": 1.0,
+      "scope": "Comparisons subtract retained finite-real candidate-bound payoffs before conversion. Rank, dominance, threshold and constrained finite differences preserve the audited offsets."
+    }
+  },
+  "oracle": "Exact Integer/Rational payoffs and analytic derivative; no production numeric helpers as oracle."
+}

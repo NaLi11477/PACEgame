@@ -1,0 +1,48 @@
+{
+  "validation_environments": [
+    {
+      "python": "3.12.14",
+      "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+      "executable": "/workspace/scratch/a8bea0bd94a7/revision_v0211/source_env/bin/python",
+      "versions": {
+        "sympy": "1.14.0",
+        "mpmath": "1.3.0",
+        "matplotlib": "3.10.8",
+        "numpy": "2.3.5"
+      },
+      "environment": "source"
+    },
+    {
+      "python": "3.12.14",
+      "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+      "executable": "/workspace/scratch/a8bea0bd94a7/revision_v0211/wheel_env/bin/python",
+      "versions": {
+        "sympy": "1.14.0",
+        "mpmath": "1.3.0",
+        "matplotlib": "3.10.8",
+        "numpy": "2.3.5"
+      },
+      "environment": "wheel"
+    },
+    {
+      "python": "3.12.14",
+      "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+      "executable": "/workspace/scratch/a8bea0bd94a7/revision_v0211/core_env/bin/python",
+      "versions": {
+        "sympy": "1.14.0",
+        "mpmath": "1.3.0",
+        "matplotlib": null,
+        "numpy": null
+      },
+      "environment": "core"
+    }
+  ],
+  "build_environment_reused": true,
+  "build_tools": {
+    "build": "1.6.1",
+    "hatchling": "1.32.4",
+    "packaging": "26.3"
+  },
+  "remote_ci_executed": false,
+  "timing_newly_executed": false
+}

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/verify_round12_fixes.py", line 32, in <module>
+    assert not any(x['false_complete_pass'] for x in owned)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,17 @@
+{
+  "accepted": true,
+  "pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "all_pages_png_reviewed": true,
+  "all_nonempty_texts_rendered": true,
+  "nonempty_texts_checked": 122,
+  "page_text_inside_bounds": true,
+  "report_cjk_glyph_coverage_complete": true,
+  "docx_sha256": "d28fde5a6634841531f1ed32ed4efb46b5ea422848b95e46d3e1e8b580e1efbf",
+  "review": "All five final pages visually inspected at full resolution; readable glyphs, unclipped tables, no overlap or lost text."
+}

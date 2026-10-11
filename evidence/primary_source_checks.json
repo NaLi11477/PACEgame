@@ -1,0 +1,12 @@
+{
+  "audit_date": "2026-10-08",
+  "url": "https://www.sciencedirect.com/journal/softwarex/publish/guide-for-authors",
+  "status": "403 Forbidden on this audit retrieval",
+  "official_template_certified": false,
+  "uploaded_depth_report": "SoftwareX期刊文章特征深度分析报告(7).docx",
+  "full_text_read": true,
+  "raw_docx_bytes_retrieved": false,
+  "external_comparison_sources": "Prior official-source checks retained as historical evidence; no new verification claimed for all cited third-party tools.",
+  "reused_historical_audit_evidence": true,
+  "new_retrieval_in_revision_0211": false
+}

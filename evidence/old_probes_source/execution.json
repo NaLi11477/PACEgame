@@ -1,0 +1,86 @@
+[
+  {
+    "round": 7,
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/source_env/bin/python",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/verify_round7_fixes.py",
+      "--out",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/old_probes_source/round7.json",
+      "--source-root",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11"
+    ],
+    "returncode": 0,
+    "seconds": 0.3696356790023856,
+    "outside_checkout": true
+  },
+  {
+    "round": 8,
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/source_env/bin/python",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/verify_round8_fixes.py",
+      "--out",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/old_probes_source/round8.json",
+      "--source-root",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11"
+    ],
+    "returncode": 0,
+    "seconds": 0.5202186219976284,
+    "outside_checkout": true
+  },
+  {
+    "round": 9,
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/source_env/bin/python",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/probe_round9.py",
+      "--out",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/old_probes_source/round9.json",
+      "--source-root",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11"
+    ],
+    "returncode": 0,
+    "seconds": 0.8351354550031829,
+    "outside_checkout": true
+  },
+  {
+    "round": 10,
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/source_env/bin/python",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/verify_round10_fixes.py",
+      "--out",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/old_probes_source/round10.json",
+      "--source-root",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11"
+    ],
+    "returncode": 0,
+    "seconds": 1.931069963000482,
+    "outside_checkout": true
+  },
+  {
+    "round": 11,
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/source_env/bin/python",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/verify_round11_fixes.py",
+      "--out",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/old_probes_source/round11.json",
+      "--source-root",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11"
+    ],
+    "returncode": 0,
+    "seconds": 0.6003251300062402,
+    "outside_checkout": true
+  },
+  {
+    "round": 12,
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/source_env/bin/python",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/verify_round12_fixes.py",
+      "--out",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/old_probes_source/round12.json",
+      "--source-root",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11"
+    ],
+    "returncode": 0,
+    "seconds": 0.7992890590030584,
+    "outside_checkout": true
+  }
+]

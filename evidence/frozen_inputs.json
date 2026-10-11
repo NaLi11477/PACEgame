@@ -1,0 +1,34 @@
+[
+  {
+    "name": "PACEgame_Manuscript_v0_2_10_XeLaTeX.zip",
+    "bytes": 1168045,
+    "sha256": "44d6ef596774f110dfe73e0ace04642eed65647c3d3b241020071ab137071202",
+    "library_file_id": "libfile_e2b6289acb508191b40245a4d5b074e8",
+    "file_id": "file_000000004e9081f5899c9f60b405a9a9",
+    "current_version_number": 0
+  },
+  {
+    "name": "PACEgame_v0_2_10_Audit_Round12.docx",
+    "bytes": 46765,
+    "sha256": "c223f64bd807bfd6e9e99eb159de151f78502932f0d3fa2f0906dabc08938c51",
+    "library_file_id": "libfile_23c95ec8b1f88191a8599259c1a1898b",
+    "file_id": "file_000000009c6881f58c18d0febe444f6c",
+    "current_version_number": 0
+  },
+  {
+    "name": "PACEgame_v0_2_10_Audit_Round12_Evidence.zip",
+    "bytes": 23392629,
+    "sha256": "757703f2f4ba0b63a0e2bdfeba940d27ac716aa9a26745b5265dc1d91cb86754",
+    "library_file_id": "libfile_83a59b0792208191a0c56446e27ff026",
+    "file_id": "file_0000000011c081f7b79d6e578f9931cc",
+    "current_version_number": 0
+  },
+  {
+    "name": "PACEgame_v0_2_10_software.zip",
+    "bytes": 7747460,
+    "sha256": "bf211e58fc63341724c5804a1d5ec9bffc8efe442ce3a54acd31b552e1da0f6c",
+    "library_file_id": "libfile_4245515206e481919eba3185194da04c",
+    "file_id": "file_00000000d62c81f59cee1942de7c7061",
+    "current_version_number": 0
+  }
+]

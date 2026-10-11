@@ -1,0 +1,74 @@
+{
+  "sha256": "0dc703948cf0cb4eb3b713a3c59ef542ddd9038895fa0a74ca4ac4607969771c",
+  "fields": [
+    [
+      "C1",
+      "Current code version"
+    ],
+    [
+      "C2",
+      "Permanent link to code/repository used for this code version"
+    ],
+    [
+      "C3",
+      "Permanent link to Reproducible Capsule"
+    ],
+    [
+      "C4",
+      "Legal Code License"
+    ],
+    [
+      "C5",
+      "Code versioning system used"
+    ],
+    [
+      "C6",
+      "Software code languages, tools and services used"
+    ],
+    [
+      "C7",
+      "Compilation requirements, operating environments and dependencies"
+    ],
+    [
+      "C8",
+      "If available, link to developer documentation/manual"
+    ],
+    [
+      "C9",
+      "Support email for questions"
+    ],
+    [
+      "S1",
+      "Current software version"
+    ],
+    [
+      "S2",
+      "Permanent link to executables of this version"
+    ],
+    [
+      "S3",
+      "Permanent link to Reproducible Capsule"
+    ],
+    [
+      "S4",
+      "Legal Software License"
+    ],
+    [
+      "S5",
+      "Computing platforms / Operating Systems"
+    ],
+    [
+      "S6",
+      "Installation requirements and dependencies"
+    ],
+    [
+      "S7",
+      "If available, link to user manual"
+    ],
+    [
+      "S8",
+      "Support email for questions"
+    ]
+  ],
+  "basis": "supplied depth report Appendix C"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/workspace/scratch/a8bea0bd94a7/audit_v0210/source_env/bin/python",
+    "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/probe_round12_parent.py",
+    "--source-root",
+    "/workspace/scratch/a8bea0bd94a7/audit_v0210/work/PACEgame_v0_2_10",
+    "--out",
+    "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/probe_parent_defects.json"
+  ],
+  "returncode": 1,
+  "expected_returncode": 1,
+  "seconds": 0.8337697079987265,
+  "parent_both_defects_reproduced": true,
+  "probe_assertions_completed": true
+}

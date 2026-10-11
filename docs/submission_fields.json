@@ -1,0 +1,16 @@
+{
+  "status": "review release; not submission certified",
+  "pending": [
+    "confirmed author identities and contributions",
+    "verified support contact",
+    "public frozen repository and archival identifier",
+    "author declarations and rights",
+    "current official template verification"
+  ],
+  "excluded_claims": [
+    "global optimality certificate",
+    "Nash equilibrium certificate",
+    "real adoption or empirical application evidence",
+    "completed cross-platform audit"
+  ]
+}

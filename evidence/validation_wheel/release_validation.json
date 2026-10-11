@@ -1,0 +1,2721 @@
+{
+  "software_version": "0.2.11",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "sympy": "1.14.0",
+  "cases": [
+    {
+      "label": "baseline",
+      "parameters": {
+        "sigma": 0.1,
+        "phi": 0.85,
+        "hatvarsigma": 0.3
+      },
+      "best": "DF",
+      "complete": false,
+      "excluded": [
+        "RF",
+        "RL"
+      ],
+      "solutions": {
+        "RF": {
+          "point": {
+            "delta": 1000000.0,
+            "varsigma": 0.0
+          },
+          "kind": {
+            "delta": "search limit",
+            "varsigma": "lower corner"
+          },
+          "payoffs": {
+            "x": 0.006374992500017648,
+            "y": 7.499982352982699e-09
+          },
+          "rankable": false,
+          "unresolved": true,
+          "feasibility_complete": false,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "varsigma = 0 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "delta = 1e+06 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "optimality",
+              "status": "warning",
+              "detail": "delta: search limit is unresolved, not an optimality verdict",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "first order",
+              "status": "ok",
+              "detail": "d/dvarsigma = -2.94117e-08 is consistent with the lower corner",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "joint curvature",
+              "status": "ok",
+              "detail": "one-dimensional critical curvature: 2.94117013842E-8; necessary local condition, not a maximum certificate",
+              "required": true,
+              "verdict": true
+            },
+            {
+              "check": "joint curvature scope",
+              "status": "warning",
+              "detail": "flat feasible curvature does not resolve higher-order behavior",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_x = 0.00637499",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_y = 7.49998e-09",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 0.00637499",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "ok",
+              "detail": "payoff <= ceiling 0.00637500 within 1e-09",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "search assurance",
+              "status": "warning",
+              "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "search limit",
+              "status": "violation",
+              "detail": "delta: the open-domain probe exhausted signal_cap=1e+06; this is unresolved, not proof of an infinite payoff or no maximum",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_x: 0 of 267 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_y: 0 of 59809 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "competition",
+              "status": "ok",
+              "detail": "finite nonzero local share-channel sensitivity in phi",
+              "required": false,
+              "verdict": true
+            }
+          ]
+        },
+        "RL": {
+          "point": {
+            "delta": 1000000.0,
+            "varsigma": 0.0
+          },
+          "kind": {
+            "delta": "search limit",
+            "varsigma": "lower corner"
+          },
+          "payoffs": {
+            "y": 7.499982352982699e-09,
+            "x": 0.006374992500017648
+          },
+          "rankable": false,
+          "unresolved": true,
+          "feasibility_complete": false,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "varsigma = 0 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "delta = 1e+06 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "optimality",
+              "status": "warning",
+              "detail": "delta: search limit is unresolved, not an optimality verdict",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "first order",
+              "status": "ok",
+              "detail": "d/dvarsigma = -0.025 is consistent with the lower corner",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "joint curvature",
+              "status": "ok",
+              "detail": "boundary critical cone has no nonzero direction; necessary check only",
+              "required": true,
+              "verdict": true
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_y = 7.49998e-09",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_x = 0.00637499",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 0.00637499",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "ok",
+              "detail": "payoff <= ceiling 0.00637500 within 1e-09",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "search assurance",
+              "status": "warning",
+              "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "search limit",
+              "status": "violation",
+              "detail": "delta: the open-domain probe exhausted signal_cap=1e+06; this is unresolved, not proof of an infinite payoff or no maximum",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_x: 0 of 1809 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_y: evaluated 1 time, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "competition",
+              "status": "ok",
+              "detail": "finite nonzero local share-channel sensitivity in phi",
+              "required": false,
+              "verdict": true
+            }
+          ]
+        },
+        "DF": {
+          "point": {
+            "varsigma": 0.0
+          },
+          "kind": {
+            "varsigma": "lower corner"
+          },
+          "payoffs": {
+            "x": 0.0031875000000000002,
+            "y": 0.0031875000000000002
+          },
+          "rankable": true,
+          "unresolved": false,
+          "feasibility_complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "varsigma = 0 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "first order",
+              "status": "ok",
+              "detail": "d/dvarsigma = -0.0126355 is consistent with the lower corner",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "joint curvature",
+              "status": "ok",
+              "detail": "boundary critical cone has no nonzero direction; necessary check only",
+              "required": true,
+              "verdict": true
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_x = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_y = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "ok",
+              "detail": "payoff <= ceiling 0.00637500 within 1e-09",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "search assurance",
+              "status": "warning",
+              "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_x: evaluated 1 time, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_y: 0 of 225 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "competition",
+              "status": "warning",
+              "detail": "the payoff share channel does not respond to phi at this optimum: the share rule is inactive here, so the result is not about competition between the players",
+              "required": false,
+              "verdict": false
+            }
+          ]
+        },
+        "DL": {
+          "point": {
+            "varsigma": 0.0
+          },
+          "kind": {
+            "varsigma": "lower corner"
+          },
+          "payoffs": {
+            "y": 0.0031875000000000002,
+            "x": 0.0031875000000000002
+          },
+          "rankable": true,
+          "unresolved": false,
+          "feasibility_complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "varsigma = 0 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "first order",
+              "status": "ok",
+              "detail": "d/dvarsigma = -0.0126355 is consistent with the lower corner",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "joint curvature",
+              "status": "ok",
+              "detail": "boundary critical cone has no nonzero direction; necessary check only",
+              "required": true,
+              "verdict": true
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_y = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_x = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "ok",
+              "detail": "payoff <= ceiling 0.00637500 within 1e-09",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "search assurance",
+              "status": "warning",
+              "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_x: 0 of 225 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_y: evaluated 1 time, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "competition",
+              "status": "warning",
+              "detail": "the payoff share channel does not respond to phi at this optimum: the share rule is inactive here, so the result is not about competition between the players",
+              "required": false,
+              "verdict": false
+            }
+          ]
+        }
+      },
+      "claims": [
+        {
+          "claim": "pi_RL > pi_RF",
+          "passed": 0,
+          "failed": 0,
+          "skipped": 9,
+          "errors": 0,
+          "counterexamples": [],
+          "reasons": [
+            [
+              {
+                "hatvarsigma": 0.3,
+                "sigma": 0.05,
+                "phi": 0.3
+              },
+              "RL, RF is unresolved or invalid, so the comparison has no verdict"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "sigma": 0.05,
+                "phi": 0.625
+              },
+              "RL, RF is unresolved or invalid, so the comparison has no verdict"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "sigma": 0.05,
+                "phi": 0.95
+              },
+              "RL, RF is unresolved or invalid, so the comparison has no verdict"
+            ]
+          ]
+        },
+        {
+          "claim": "pi_DF > pi_DL",
+          "passed": 0,
+          "failed": 9,
+          "skipped": 0,
+          "errors": 0,
+          "counterexamples": [
+            [
+              {
+                "hatvarsigma": 0.3,
+                "sigma": 0.05,
+                "phi": 0.3
+              },
+              "gap = +0"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "sigma": 0.05,
+                "phi": 0.625
+              },
+              "gap = +0"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "sigma": 0.05,
+                "phi": 0.95
+              },
+              "gap = +0"
+            ]
+          ],
+          "reasons": []
+        },
+        {
+          "claim": "pi_RL > pi_DF",
+          "passed": 0,
+          "failed": 0,
+          "skipped": 9,
+          "errors": 0,
+          "counterexamples": [],
+          "reasons": [
+            [
+              {
+                "hatvarsigma": 0.3,
+                "sigma": 0.05,
+                "phi": 0.3
+              },
+              "RL is unresolved or invalid, so the comparison has no verdict"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "sigma": 0.05,
+                "phi": 0.625
+              },
+              "RL is unresolved or invalid, so the comparison has no verdict"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "sigma": 0.05,
+                "phi": 0.95
+              },
+              "RL is unresolved or invalid, so the comparison has no verdict"
+            ]
+          ]
+        },
+        {
+          "claim": "varsigma* is interior under RL",
+          "passed": 0,
+          "failed": 0,
+          "skipped": 9,
+          "errors": 0,
+          "counterexamples": [],
+          "reasons": [
+            [
+              {
+                "hatvarsigma": 0.3,
+                "sigma": 0.05,
+                "phi": 0.3
+              },
+              "candidate unresolved, invalid or required checks incomplete; no whole-candidate interior verdict"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "sigma": 0.05,
+                "phi": 0.625
+              },
+              "candidate unresolved, invalid or required checks incomplete; no whole-candidate interior verdict"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "sigma": 0.05,
+                "phi": 0.95
+              },
+              "candidate unresolved, invalid or required checks incomplete; no whole-candidate interior verdict"
+            ]
+          ]
+        },
+        {
+          "claim": "delta* is interior under RL",
+          "passed": 0,
+          "failed": 0,
+          "skipped": 9,
+          "errors": 0,
+          "counterexamples": [],
+          "reasons": [
+            [
+              {
+                "hatvarsigma": 0.3,
+                "sigma": 0.05,
+                "phi": 0.3
+              },
+              "candidate unresolved, invalid or required checks incomplete; no whole-candidate interior verdict"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "sigma": 0.05,
+                "phi": 0.625
+              },
+              "candidate unresolved, invalid or required checks incomplete; no whole-candidate interior verdict"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "sigma": 0.05,
+                "phi": 0.95
+              },
+              "candidate unresolved, invalid or required checks incomplete; no whole-candidate interior verdict"
+            ]
+          ]
+        },
+        {
+          "claim": "all optima feasible",
+          "passed": 0,
+          "failed": 9,
+          "skipped": 0,
+          "errors": 0,
+          "counterexamples": [
+            [
+              {
+                "hatvarsigma": 0.3,
+                "sigma": 0.05,
+                "phi": 0.3
+              },
+              "RF: delta: the open-domain probe exhausted signal_cap=1e+06; this is unresolved, not proof of an infinite payoff or no maximum; RL: delta: the open-domain probe exhausted signal_cap=1e+06; this is unresolved, not proof of an infinite payoff or no maximum"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "sigma": 0.05,
+                "phi": 0.625
+              },
+              "RF: delta: the open-domain probe exhausted signal_cap=1e+06; this is unresolved, not proof of an infinite payoff or no maximum; RL: delta: the open-domain probe exhausted signal_cap=1e+06; this is unresolved, not proof of an infinite payoff or no maximum"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "sigma": 0.05,
+                "phi": 0.95
+              },
+              "RF: delta: the open-domain probe exhausted signal_cap=1e+06; this is unresolved, not proof of an infinite payoff or no maximum; RL: delta: the open-domain probe exhausted signal_cap=1e+06; this is unresolved, not proof of an infinite payoff or no maximum"
+            ]
+          ],
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "label": "stock-cost variant",
+      "parameters": {
+        "sigma": 0.1,
+        "phi": 0.85,
+        "hatvarsigma": 0.3,
+        "kappa_d": 0.05
+      },
+      "best": "RL",
+      "complete": true,
+      "excluded": [],
+      "solutions": {
+        "RF": {
+          "point": {
+            "delta": 0.0,
+            "varsigma": 0.0
+          },
+          "kind": {
+            "delta": "lower corner",
+            "varsigma": "lower corner"
+          },
+          "payoffs": {
+            "x": 0.0031875000000000002,
+            "y": 0.0031875000000000002
+          },
+          "rankable": true,
+          "unresolved": false,
+          "feasibility_complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "varsigma = 0 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "delta = 0 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "reduced objective",
+              "status": "warning",
+              "detail": "delta: leader objective includes a follower reaction; raw partial derivatives are not an optimality certificate",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "first order",
+              "status": "ok",
+              "detail": "d/dvarsigma = -0.0126355 is consistent with the lower corner",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "joint curvature",
+              "status": "ok",
+              "detail": "boundary critical cone has no nonzero direction; necessary check only",
+              "required": true,
+              "verdict": true
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_x = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_y = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "ok",
+              "detail": "payoff <= ceiling 0.00637500 within 1e-09",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "search assurance",
+              "status": "warning",
+              "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_x: 0 of 229 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_y: 0 of 51297 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "competition",
+              "status": "warning",
+              "detail": "the payoff share channel does not respond to phi at this optimum: the share rule is inactive here, so the result is not about competition between the players",
+              "required": false,
+              "verdict": false
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "warning",
+              "detail": "the ceiling contains a decision variable, so it rises with the payoff it bounds and this check cannot fail; read it as uninformative here",
+              "required": false,
+              "verdict": null
+            }
+          ]
+        },
+        "RL": {
+          "point": {
+            "delta": 1.0499999999999998,
+            "varsigma": 0.3
+          },
+          "kind": {
+            "delta": "interior",
+            "varsigma": "upper corner"
+          },
+          "payoffs": {
+            "y": 0.0063750000000000005,
+            "x": 0.027562500000000007
+          },
+          "rankable": true,
+          "unresolved": false,
+          "feasibility_complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "varsigma = 0.3 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "delta = 1.05 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "stationarity",
+              "status": "ok",
+              "detail": "d/ddelta = 4.85722573273506e-18; tested against 1e-6",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "second order",
+              "status": "ok",
+              "detail": "d2/ddelta2 = -0.05 < 0",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "first order",
+              "status": "ok",
+              "detail": "d/dvarsigma = +0.0953257 is consistent with the upper corner",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "joint curvature",
+              "status": "ok",
+              "detail": "one-dimensional critical curvature: -0.0500000000000; necessary local condition, not a maximum certificate",
+              "required": true,
+              "verdict": true
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_y = 0.006375",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_x = 0.0275625",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 0.055125",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "ok",
+              "detail": "payoff <= ceiling 0.0851250 within 1e-09",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "search assurance",
+              "status": "warning",
+              "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_x: 0 of 1793 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_y: evaluated 1 time, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "competition",
+              "status": "warning",
+              "detail": "the payoff share channel does not respond to phi at this optimum: the share rule is inactive here, so the result is not about competition between the players",
+              "required": false,
+              "verdict": false
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "warning",
+              "detail": "the ceiling contains a decision variable, so it rises with the payoff it bounds and this check cannot fail; read it as uninformative here",
+              "required": false,
+              "verdict": null
+            }
+          ]
+        },
+        "DF": {
+          "point": {
+            "varsigma": 0.0
+          },
+          "kind": {
+            "varsigma": "lower corner"
+          },
+          "payoffs": {
+            "x": 0.0031875000000000002,
+            "y": 0.0031875000000000002
+          },
+          "rankable": true,
+          "unresolved": false,
+          "feasibility_complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "varsigma = 0 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "first order",
+              "status": "ok",
+              "detail": "d/dvarsigma = -0.0126355 is consistent with the lower corner",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "joint curvature",
+              "status": "ok",
+              "detail": "boundary critical cone has no nonzero direction; necessary check only",
+              "required": true,
+              "verdict": true
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_x = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_y = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "ok",
+              "detail": "payoff <= ceiling 0.00637500 within 1e-09",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "search assurance",
+              "status": "warning",
+              "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_x: evaluated 1 time, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_y: 0 of 225 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "competition",
+              "status": "warning",
+              "detail": "the payoff share channel does not respond to phi at this optimum: the share rule is inactive here, so the result is not about competition between the players",
+              "required": false,
+              "verdict": false
+            }
+          ]
+        },
+        "DL": {
+          "point": {
+            "varsigma": 0.0
+          },
+          "kind": {
+            "varsigma": "lower corner"
+          },
+          "payoffs": {
+            "y": 0.0031875000000000002,
+            "x": 0.0031875000000000002
+          },
+          "rankable": true,
+          "unresolved": false,
+          "feasibility_complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "varsigma = 0 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "first order",
+              "status": "ok",
+              "detail": "d/dvarsigma = -0.0126355 is consistent with the lower corner",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "joint curvature",
+              "status": "ok",
+              "detail": "boundary critical cone has no nonzero direction; necessary check only",
+              "required": true,
+              "verdict": true
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_y = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_x = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "ok",
+              "detail": "payoff <= ceiling 0.00637500 within 1e-09",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "search assurance",
+              "status": "warning",
+              "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_x: 0 of 225 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_y: evaluated 1 time, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "competition",
+              "status": "warning",
+              "detail": "the payoff share channel does not respond to phi at this optimum: the share rule is inactive here, so the result is not about competition between the players",
+              "required": false,
+              "verdict": false
+            }
+          ]
+        }
+      },
+      "claims": [
+        {
+          "claim": "pi_RL > pi_RF",
+          "passed": 9,
+          "failed": 0,
+          "skipped": 0,
+          "errors": 0,
+          "counterexamples": [],
+          "reasons": []
+        },
+        {
+          "claim": "pi_DF > pi_DL",
+          "passed": 0,
+          "failed": 9,
+          "skipped": 0,
+          "errors": 0,
+          "counterexamples": [
+            [
+              {
+                "hatvarsigma": 0.3,
+                "kappa_d": 0.05,
+                "sigma": 0.05,
+                "phi": 0.3
+              },
+              "gap = +0"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "kappa_d": 0.05,
+                "sigma": 0.05,
+                "phi": 0.625
+              },
+              "gap = +0"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "kappa_d": 0.05,
+                "sigma": 0.05,
+                "phi": 0.95
+              },
+              "gap = +0"
+            ]
+          ],
+          "reasons": []
+        },
+        {
+          "claim": "pi_RL > pi_DF",
+          "passed": 9,
+          "failed": 0,
+          "skipped": 0,
+          "errors": 0,
+          "counterexamples": [],
+          "reasons": []
+        },
+        {
+          "claim": "varsigma* is interior under RL",
+          "passed": 0,
+          "failed": 9,
+          "skipped": 0,
+          "errors": 0,
+          "counterexamples": [
+            [
+              {
+                "hatvarsigma": 0.3,
+                "kappa_d": 0.05,
+                "sigma": 0.05,
+                "phi": 0.3
+              },
+              "upper corner at 0.3000"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "kappa_d": 0.05,
+                "sigma": 0.05,
+                "phi": 0.625
+              },
+              "upper corner at 0.3000"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "kappa_d": 0.05,
+                "sigma": 0.05,
+                "phi": 0.95
+              },
+              "upper corner at 0.3000"
+            ]
+          ],
+          "reasons": []
+        },
+        {
+          "claim": "delta* is interior under RL",
+          "passed": 9,
+          "failed": 0,
+          "skipped": 0,
+          "errors": 0,
+          "counterexamples": [],
+          "reasons": []
+        },
+        {
+          "claim": "all optima feasible",
+          "passed": 9,
+          "failed": 0,
+          "skipped": 0,
+          "errors": 0,
+          "counterexamples": [],
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "label": "bounded-signal variant",
+      "parameters": {
+        "sigma": 0.1,
+        "phi": 0.85,
+        "hatvarsigma": 0.3,
+        "kappa_d": 0.05
+      },
+      "best": "RL",
+      "complete": true,
+      "excluded": [],
+      "solutions": {
+        "RF": {
+          "point": {
+            "delta": 0.0,
+            "varsigma": 0.0
+          },
+          "kind": {
+            "delta": "lower corner",
+            "varsigma": "lower corner"
+          },
+          "payoffs": {
+            "x": 0.0031875000000000002,
+            "y": 0.0031875000000000002
+          },
+          "rankable": true,
+          "unresolved": false,
+          "feasibility_complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "varsigma = 0 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "delta = 0 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "reduced objective",
+              "status": "warning",
+              "detail": "delta: leader objective includes a follower reaction; raw partial derivatives are not an optimality certificate",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "first order",
+              "status": "ok",
+              "detail": "d/dvarsigma = -0.0126355 is consistent with the lower corner",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "joint curvature",
+              "status": "ok",
+              "detail": "boundary critical cone has no nonzero direction; necessary check only",
+              "required": true,
+              "verdict": true
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_x = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_y = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "ok",
+              "detail": "payoff <= ceiling 0.00637500 within 1e-09",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "search assurance",
+              "status": "warning",
+              "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_x: 0 of 225 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_y: 0 of 50401 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "competition",
+              "status": "warning",
+              "detail": "the payoff share channel does not respond to phi at this optimum: the share rule is inactive here, so the result is not about competition between the players",
+              "required": false,
+              "verdict": false
+            }
+          ]
+        },
+        "RL": {
+          "point": {
+            "delta": 0.09999999999999999,
+            "varsigma": 0.3
+          },
+          "kind": {
+            "delta": "upper corner",
+            "varsigma": "upper corner"
+          },
+          "payoffs": {
+            "y": 0.006375,
+            "x": 0.005
+          },
+          "rankable": true,
+          "unresolved": false,
+          "feasibility_complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "varsigma = 0.3 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "delta = 0.1 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "first order",
+              "status": "ok",
+              "detail": "d/ddelta = +0.0475 is consistent with the upper corner",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "first order",
+              "status": "ok",
+              "detail": "d/dvarsigma = +0.00125 is consistent with the upper corner",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "joint curvature",
+              "status": "ok",
+              "detail": "boundary critical cone has no nonzero direction; necessary check only",
+              "required": true,
+              "verdict": true
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_y = 0.006375",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_x = 0.005",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 0.00525",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "ok",
+              "detail": "payoff <= ceiling 0.0138750 within 1e-09",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "search assurance",
+              "status": "warning",
+              "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_x: 0 of 1786 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_y: evaluated 1 time, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "competition",
+              "status": "warning",
+              "detail": "the payoff share channel does not respond to phi at this optimum: the share rule is inactive here, so the result is not about competition between the players",
+              "required": false,
+              "verdict": false
+            }
+          ]
+        },
+        "DF": {
+          "point": {
+            "varsigma": 0.0
+          },
+          "kind": {
+            "varsigma": "lower corner"
+          },
+          "payoffs": {
+            "x": 0.0031875000000000002,
+            "y": 0.0031875000000000002
+          },
+          "rankable": true,
+          "unresolved": false,
+          "feasibility_complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "varsigma = 0 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "first order",
+              "status": "ok",
+              "detail": "d/dvarsigma = -0.0126355 is consistent with the lower corner",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "joint curvature",
+              "status": "ok",
+              "detail": "boundary critical cone has no nonzero direction; necessary check only",
+              "required": true,
+              "verdict": true
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_x = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_y = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "ok",
+              "detail": "payoff <= ceiling 0.00637500 within 1e-09",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "search assurance",
+              "status": "warning",
+              "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_x: evaluated 1 time, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_y: 0 of 225 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "competition",
+              "status": "warning",
+              "detail": "the payoff share channel does not respond to phi at this optimum: the share rule is inactive here, so the result is not about competition between the players",
+              "required": false,
+              "verdict": false
+            }
+          ]
+        },
+        "DL": {
+          "point": {
+            "varsigma": 0.0
+          },
+          "kind": {
+            "varsigma": "lower corner"
+          },
+          "payoffs": {
+            "y": 0.0031875000000000002,
+            "x": 0.0031875000000000002
+          },
+          "rankable": true,
+          "unresolved": false,
+          "feasibility_complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "varsigma = 0 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "first order",
+              "status": "ok",
+              "detail": "d/dvarsigma = -0.0126355 is consistent with the lower corner",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "joint curvature",
+              "status": "ok",
+              "detail": "boundary critical cone has no nonzero direction; necessary check only",
+              "required": true,
+              "verdict": true
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_y = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_x = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 0.0031875",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "ok",
+              "detail": "payoff <= ceiling 0.00637500 within 1e-09",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "search assurance",
+              "status": "warning",
+              "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_x: 0 of 225 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_y: evaluated 1 time, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "competition",
+              "status": "warning",
+              "detail": "the payoff share channel does not respond to phi at this optimum: the share rule is inactive here, so the result is not about competition between the players",
+              "required": false,
+              "verdict": false
+            }
+          ]
+        }
+      },
+      "claims": [
+        {
+          "claim": "pi_RL > pi_RF",
+          "passed": 9,
+          "failed": 0,
+          "skipped": 0,
+          "errors": 0,
+          "counterexamples": [],
+          "reasons": []
+        },
+        {
+          "claim": "pi_DF > pi_DL",
+          "passed": 0,
+          "failed": 9,
+          "skipped": 0,
+          "errors": 0,
+          "counterexamples": [
+            [
+              {
+                "hatvarsigma": 0.3,
+                "kappa_d": 0.05,
+                "sigma": 0.05,
+                "phi": 0.3
+              },
+              "gap = +0"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "kappa_d": 0.05,
+                "sigma": 0.05,
+                "phi": 0.625
+              },
+              "gap = +0"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "kappa_d": 0.05,
+                "sigma": 0.05,
+                "phi": 0.95
+              },
+              "gap = +0"
+            ]
+          ],
+          "reasons": []
+        },
+        {
+          "claim": "pi_RL > pi_DF",
+          "passed": 9,
+          "failed": 0,
+          "skipped": 0,
+          "errors": 0,
+          "counterexamples": [],
+          "reasons": []
+        },
+        {
+          "claim": "varsigma* is interior under RL",
+          "passed": 0,
+          "failed": 9,
+          "skipped": 0,
+          "errors": 0,
+          "counterexamples": [
+            [
+              {
+                "hatvarsigma": 0.3,
+                "kappa_d": 0.05,
+                "sigma": 0.05,
+                "phi": 0.3
+              },
+              "upper corner at 0.3000"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "kappa_d": 0.05,
+                "sigma": 0.05,
+                "phi": 0.625
+              },
+              "upper corner at 0.3000"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "kappa_d": 0.05,
+                "sigma": 0.05,
+                "phi": 0.95
+              },
+              "upper corner at 0.3000"
+            ]
+          ],
+          "reasons": []
+        },
+        {
+          "claim": "delta* is interior under RL",
+          "passed": 0,
+          "failed": 9,
+          "skipped": 0,
+          "errors": 0,
+          "counterexamples": [
+            [
+              {
+                "hatvarsigma": 0.3,
+                "kappa_d": 0.05,
+                "sigma": 0.05,
+                "phi": 0.3
+              },
+              "upper corner at 0.05000"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "kappa_d": 0.05,
+                "sigma": 0.05,
+                "phi": 0.625
+              },
+              "upper corner at 0.05000"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "kappa_d": 0.05,
+                "sigma": 0.05,
+                "phi": 0.95
+              },
+              "upper corner at 0.05000"
+            ]
+          ],
+          "reasons": []
+        },
+        {
+          "claim": "all optima feasible",
+          "passed": 9,
+          "failed": 0,
+          "skipped": 0,
+          "errors": 0,
+          "counterexamples": [],
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "label": "readiness-lag variant",
+      "parameters": {
+        "sigma": 0.1,
+        "phi": 0.85,
+        "hatvarsigma": 0.3,
+        "kappa_d": 0.05,
+        "lambda": 0.1
+      },
+      "best": "RL",
+      "complete": true,
+      "excluded": [],
+      "solutions": {
+        "RF": {
+          "point": {
+            "delta": 0.0016853993031388762,
+            "varsigma": 0.1
+          },
+          "kind": {
+            "delta": "interior",
+            "varsigma": "lower corner"
+          },
+          "payoffs": {
+            "x": 0.004383535052438978,
+            "y": 0.0019913939332907482
+          },
+          "rankable": true,
+          "unresolved": false,
+          "feasibility_complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "varsigma = 0.1 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "delta = 0.0016854 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "reduced objective",
+              "status": "warning",
+              "detail": "delta: leader objective includes a follower reaction; raw partial derivatives are not an optimality certificate",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "first order",
+              "status": "ok",
+              "detail": "d/dvarsigma = -0.0112873 is consistent with the lower corner",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "joint curvature",
+              "status": "ok",
+              "detail": "boundary critical cone has no nonzero direction; necessary check only",
+              "required": true,
+              "verdict": true
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_x = 0.00438354",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_y = 0.00199139",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 0.00438361",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "ok",
+              "detail": "payoff <= ceiling 0.00891713 within 1e-09",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "search assurance",
+              "status": "warning",
+              "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_x: 0 of 229 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_y: 0 of 51297 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "competition",
+              "status": "ok",
+              "detail": "finite nonzero local share-channel sensitivity in phi",
+              "required": false,
+              "verdict": true
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "warning",
+              "detail": "the ceiling contains a decision variable, so it rises with the payoff it bounds and this check cannot fail; read it as uninformative here",
+              "required": false,
+              "verdict": null
+            }
+          ]
+        },
+        "RL": {
+          "point": {
+            "delta": 1.0499999999999998,
+            "varsigma": 0.3
+          },
+          "kind": {
+            "delta": "interior",
+            "varsigma": "upper corner"
+          },
+          "payoffs": {
+            "y": 0.0063750000000000005,
+            "x": 0.027562500000000007
+          },
+          "rankable": true,
+          "unresolved": false,
+          "feasibility_complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "varsigma = 0.3 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "delta = 1.05 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "stationarity",
+              "status": "ok",
+              "detail": "d/ddelta = 4.85722573273506e-18; tested against 1e-6",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "second order",
+              "status": "ok",
+              "detail": "d2/ddelta2 = -0.05 < 0",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "first order",
+              "status": "ok",
+              "detail": "d/dvarsigma = +0.0953257 is consistent with the upper corner",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "joint curvature",
+              "status": "ok",
+              "detail": "one-dimensional critical curvature: -0.0500000000000; necessary local condition, not a maximum certificate",
+              "required": true,
+              "verdict": true
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_y = 0.006375",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_x = 0.0275625",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 0.055125",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "ok",
+              "detail": "payoff <= ceiling 0.0851250 within 1e-09",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "search assurance",
+              "status": "warning",
+              "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_x: 0 of 1793 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_y: evaluated 1 time, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "competition",
+              "status": "warning",
+              "detail": "the payoff share channel does not respond to phi at this optimum: the share rule is inactive here, so the result is not about competition between the players",
+              "required": false,
+              "verdict": false
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "warning",
+              "detail": "the ceiling contains a decision variable, so it rises with the payoff it bounds and this check cannot fail; read it as uninformative here",
+              "required": false,
+              "verdict": null
+            }
+          ]
+        },
+        "DF": {
+          "point": {
+            "varsigma": 0.1
+          },
+          "kind": {
+            "varsigma": "lower corner"
+          },
+          "payoffs": {
+            "x": 0.004383464027881504,
+            "y": 0.0019915359721184964
+          },
+          "rankable": true,
+          "unresolved": false,
+          "feasibility_complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "varsigma = 0.1 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "first order",
+              "status": "ok",
+              "detail": "d/dvarsigma = -0.0112867 is consistent with the lower corner",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "joint curvature",
+              "status": "ok",
+              "detail": "boundary critical cone has no nonzero direction; necessary check only",
+              "required": true,
+              "verdict": true
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_x = 0.00438346",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_y = 0.00199154",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 0.00438346",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "ok",
+              "detail": "payoff <= ceiling 0.00887500 within 1e-09",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "search assurance",
+              "status": "warning",
+              "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_x: evaluated 1 time, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_y: 0 of 225 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "competition",
+              "status": "ok",
+              "detail": "finite nonzero local share-channel sensitivity in phi",
+              "required": false,
+              "verdict": true
+            }
+          ]
+        },
+        "DL": {
+          "point": {
+            "varsigma": 0.1
+          },
+          "kind": {
+            "varsigma": "lower corner"
+          },
+          "payoffs": {
+            "y": 0.004383464027881504,
+            "x": 0.0019915359721184964
+          },
+          "rankable": true,
+          "unresolved": false,
+          "feasibility_complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "varsigma = 0.1 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "first order",
+              "status": "ok",
+              "detail": "d/dvarsigma = -0.0112867 is consistent with the lower corner",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "joint curvature",
+              "status": "ok",
+              "detail": "boundary critical cone has no nonzero direction; necessary check only",
+              "required": true,
+              "verdict": true
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_y = 0.00438346",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_x = 0.00199154",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 0.00199154",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "ok",
+              "detail": "payoff <= ceiling 0.00887500 within 1e-09",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "search assurance",
+              "status": "warning",
+              "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_x: 0 of 225 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_y: evaluated 1 time, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "competition",
+              "status": "ok",
+              "detail": "finite nonzero local share-channel sensitivity in phi",
+              "required": false,
+              "verdict": true
+            }
+          ]
+        }
+      },
+      "claims": [
+        {
+          "claim": "pi_RL > pi_RF",
+          "passed": 9,
+          "failed": 0,
+          "skipped": 0,
+          "errors": 0,
+          "counterexamples": [],
+          "reasons": []
+        },
+        {
+          "claim": "pi_DF > pi_DL",
+          "passed": 9,
+          "failed": 0,
+          "skipped": 0,
+          "errors": 0,
+          "counterexamples": [],
+          "reasons": []
+        },
+        {
+          "claim": "pi_RL > pi_DF",
+          "passed": 9,
+          "failed": 0,
+          "skipped": 0,
+          "errors": 0,
+          "counterexamples": [],
+          "reasons": []
+        },
+        {
+          "claim": "varsigma* is interior under RL",
+          "passed": 0,
+          "failed": 9,
+          "skipped": 0,
+          "errors": 0,
+          "counterexamples": [
+            [
+              {
+                "hatvarsigma": 0.3,
+                "kappa_d": 0.05,
+                "lambda": 0.1,
+                "sigma": 0.05,
+                "phi": 0.3
+              },
+              "upper corner at 0.3000"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "kappa_d": 0.05,
+                "lambda": 0.1,
+                "sigma": 0.05,
+                "phi": 0.625
+              },
+              "upper corner at 0.3000"
+            ],
+            [
+              {
+                "hatvarsigma": 0.3,
+                "kappa_d": 0.05,
+                "lambda": 0.1,
+                "sigma": 0.05,
+                "phi": 0.95
+              },
+              "upper corner at 0.3000"
+            ]
+          ],
+          "reasons": []
+        },
+        {
+          "claim": "delta* is interior under RL",
+          "passed": 9,
+          "failed": 0,
+          "skipped": 0,
+          "errors": 0,
+          "counterexamples": [],
+          "reasons": []
+        },
+        {
+          "claim": "all optima feasible",
+          "passed": 9,
+          "failed": 0,
+          "skipped": 0,
+          "errors": 0,
+          "counterexamples": [],
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "quadrature": [
+    {
+      "model": "stock-cost variant",
+      "strategy": "RF",
+      "players": {
+        "x": {
+          "quadrature": 0.0031875,
+          "solver": 0.0031875000000000002,
+          "absolute_error": 4.336808689942018e-19
+        },
+        "y": {
+          "quadrature": 0.0031875,
+          "solver": 0.0031875000000000002,
+          "absolute_error": 4.336808689942018e-19
+        }
+      }
+    },
+    {
+      "model": "stock-cost variant",
+      "strategy": "RL",
+      "players": {
+        "x": {
+          "quadrature": 0.0275625,
+          "solver": 0.027562500000000007,
+          "absolute_error": 6.938893903907228e-18
+        },
+        "y": {
+          "quadrature": 0.006375,
+          "solver": 0.0063750000000000005,
+          "absolute_error": 8.673617379884035e-19
+        }
+      }
+    },
+    {
+      "model": "stock-cost variant",
+      "strategy": "DF",
+      "players": {
+        "x": {
+          "quadrature": 0.0031875,
+          "solver": 0.0031875000000000002,
+          "absolute_error": 4.336808689942018e-19
+        },
+        "y": {
+          "quadrature": 0.0031875,
+          "solver": 0.0031875000000000002,
+          "absolute_error": 4.336808689942018e-19
+        }
+      }
+    },
+    {
+      "model": "stock-cost variant",
+      "strategy": "DL",
+      "players": {
+        "x": {
+          "quadrature": 0.0031875,
+          "solver": 0.0031875000000000002,
+          "absolute_error": 4.336808689942018e-19
+        },
+        "y": {
+          "quadrature": 0.0031875,
+          "solver": 0.0031875000000000002,
+          "absolute_error": 4.336808689942018e-19
+        }
+      }
+    },
+    {
+      "model": "bounded-signal variant",
+      "strategy": "RF",
+      "players": {
+        "x": {
+          "quadrature": 0.0031875,
+          "solver": 0.0031875000000000002,
+          "absolute_error": 4.336808689942018e-19
+        },
+        "y": {
+          "quadrature": 0.0031875,
+          "solver": 0.0031875000000000002,
+          "absolute_error": 4.336808689942018e-19
+        }
+      }
+    },
+    {
+      "model": "bounded-signal variant",
+      "strategy": "RL",
+      "players": {
+        "x": {
+          "quadrature": 0.004999999999999999,
+          "solver": 0.005,
+          "absolute_error": 8.673617379884035e-19
+        },
+        "y": {
+          "quadrature": 0.006375,
+          "solver": 0.006375,
+          "absolute_error": 0.0
+        }
+      }
+    },
+    {
+      "model": "bounded-signal variant",
+      "strategy": "DF",
+      "players": {
+        "x": {
+          "quadrature": 0.0031875,
+          "solver": 0.0031875000000000002,
+          "absolute_error": 4.336808689942018e-19
+        },
+        "y": {
+          "quadrature": 0.0031875,
+          "solver": 0.0031875000000000002,
+          "absolute_error": 4.336808689942018e-19
+        }
+      }
+    },
+    {
+      "model": "bounded-signal variant",
+      "strategy": "DL",
+      "players": {
+        "x": {
+          "quadrature": 0.0031875,
+          "solver": 0.0031875000000000002,
+          "absolute_error": 4.336808689942018e-19
+        },
+        "y": {
+          "quadrature": 0.0031875,
+          "solver": 0.0031875000000000002,
+          "absolute_error": 4.336808689942018e-19
+        }
+      }
+    },
+    {
+      "model": "readiness-lag variant",
+      "strategy": "RF",
+      "players": {
+        "x": {
+          "quadrature": 0.004383535052438977,
+          "solver": 0.004383535052438978,
+          "absolute_error": 8.673617379884035e-19
+        },
+        "y": {
+          "quadrature": 0.0019913939332907482,
+          "solver": 0.0019913939332907482,
+          "absolute_error": 0.0
+        }
+      }
+    },
+    {
+      "model": "readiness-lag variant",
+      "strategy": "RL",
+      "players": {
+        "x": {
+          "quadrature": 0.0275625,
+          "solver": 0.027562500000000007,
+          "absolute_error": 6.938893903907228e-18
+        },
+        "y": {
+          "quadrature": 0.006375,
+          "solver": 0.0063750000000000005,
+          "absolute_error": 8.673617379884035e-19
+        }
+      }
+    },
+    {
+      "model": "readiness-lag variant",
+      "strategy": "DF",
+      "players": {
+        "x": {
+          "quadrature": 0.004383464027881504,
+          "solver": 0.004383464027881504,
+          "absolute_error": 0.0
+        },
+        "y": {
+          "quadrature": 0.0019915359721184964,
+          "solver": 0.0019915359721184964,
+          "absolute_error": 0.0
+        }
+      }
+    },
+    {
+      "model": "readiness-lag variant",
+      "strategy": "DL",
+      "players": {
+        "x": {
+          "quadrature": 0.0019915359721184964,
+          "solver": 0.0019915359721184964,
+          "absolute_error": 0.0
+        },
+        "y": {
+          "quadrature": 0.004383464027881504,
+          "solver": 0.004383464027881504,
+          "absolute_error": 0.0
+        }
+      }
+    },
+    {
+      "model": "logistic",
+      "strategy": "DF",
+      "players": {
+        "x": {
+          "quadrature": 0.014479697543678283,
+          "solver": 0.014479697543678257,
+          "absolute_error": 2.6020852139652106e-17
+        },
+        "y": {
+          "quadrature": 0.012085517127964856,
+          "solver": 0.012085517127964861,
+          "absolute_error": 5.204170427930421e-18
+        }
+      }
+    },
+    {
+      "model": "logistic",
+      "strategy": "DL",
+      "players": {
+        "x": {
+          "quadrature": 0.012085517127964856,
+          "solver": 0.012085517127964861,
+          "absolute_error": 5.204170427930421e-18
+        },
+        "y": {
+          "quadrature": 0.014479697543678283,
+          "solver": 0.014479697543678257,
+          "absolute_error": 2.6020852139652106e-17
+        }
+      }
+    },
+    {
+      "model": "asymmetric",
+      "strategy": "RF",
+      "players": {
+        "x": {
+          "quadrature": 0.002125,
+          "solver": 0.002125,
+          "absolute_error": 0.0
+        },
+        "y": {
+          "quadrature": 0.00425,
+          "solver": 0.00425,
+          "absolute_error": 0.0
+        }
+      }
+    },
+    {
+      "model": "asymmetric",
+      "strategy": "RL",
+      "players": {
+        "x": {
+          "quadrature": 0.027562499999999976,
+          "solver": 0.027562499999999986,
+          "absolute_error": 1.0408340855860843e-17
+        },
+        "y": {
+          "quadrature": 0.006375,
+          "solver": 0.006375,
+          "absolute_error": 0.0
+        }
+      }
+    },
+    {
+      "model": "asymmetric",
+      "strategy": "DF",
+      "players": {
+        "x": {
+          "quadrature": 0.002125,
+          "solver": 0.002125,
+          "absolute_error": 0.0
+        },
+        "y": {
+          "quadrature": 0.00425,
+          "solver": 0.00425,
+          "absolute_error": 0.0
+        }
+      }
+    },
+    {
+      "model": "asymmetric",
+      "strategy": "DL",
+      "players": {
+        "x": {
+          "quadrature": 0.002125,
+          "solver": 0.002125,
+          "absolute_error": 0.0
+        },
+        "y": {
+          "quadrature": 0.00425,
+          "solver": 0.00425,
+          "absolute_error": 0.0
+        }
+      }
+    }
+  ],
+  "finite_asymptote": {
+    "slice": "baseline RL, entry=0, sigma=.1 phi=.85 growth=.3",
+    "expression": "0.006375*(0.85*delta + 1)/(0.85*delta + 2)",
+    "limit": 0.006375,
+    "warning": "conditional slice; solver finite-cap status is unresolved"
+  },
+  "analytic_sequential_toy": {
+    "reference": {
+      "delta": 0.5,
+      "varsigma": 0.25,
+      "pi_x": 0.125
+    },
+    "computed": {
+      "point": {
+        "delta": 0.5000000072333128,
+        "varsigma": 0.2500000036166564
+      },
+      "kind": {
+        "delta": "interior",
+        "varsigma": "interior"
+      },
+      "payoffs": {
+        "x": 0.125,
+        "y": -0.0
+      },
+      "rankable": true,
+      "unresolved": false,
+      "feasibility_complete": true,
+      "findings": [
+        {
+          "check": "bounds",
+          "status": "ok",
+          "detail": "delta = 0.5 is in range",
+          "required": true,
+          "verdict": null
+        },
+        {
+          "check": "bounds",
+          "status": "ok",
+          "detail": "varsigma = 0.25 is in range",
+          "required": true,
+          "verdict": null
+        },
+        {
+          "check": "reduced objective",
+          "status": "warning",
+          "detail": "delta: leader objective includes a follower reaction; raw partial derivatives are not an optimality certificate",
+          "required": false,
+          "verdict": null
+        },
+        {
+          "check": "stationarity",
+          "status": "ok",
+          "detail": "d/dvarsigma = 0.0; tested against 1e-6",
+          "required": true,
+          "verdict": null
+        },
+        {
+          "check": "second order",
+          "status": "ok",
+          "detail": "d2/dvarsigma2 = -2 < 0",
+          "required": false,
+          "verdict": null
+        },
+        {
+          "check": "payoff finite",
+          "status": "ok",
+          "detail": "pi_x = 0.125",
+          "required": false,
+          "verdict": null
+        },
+        {
+          "check": "payoff finite",
+          "status": "ok",
+          "detail": "pi_y = 0",
+          "required": false,
+          "verdict": null
+        },
+        {
+          "check": "payoff sign",
+          "status": "ok",
+          "detail": "gross payoff = 1.09547",
+          "required": false,
+          "verdict": null
+        },
+        {
+          "check": "payoff magnitude",
+          "status": "ok",
+          "detail": "payoff <= ceiling 1.25000 within 1e-09",
+          "required": true,
+          "verdict": null
+        },
+        {
+          "check": "search assurance",
+          "status": "warning",
+          "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+          "required": false,
+          "verdict": null
+        },
+        {
+          "check": "evaluation coverage",
+          "status": "ok",
+          "detail": "pi_x: 0 of 225 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+          "required": false,
+          "verdict": null
+        },
+        {
+          "check": "evaluation coverage",
+          "status": "ok",
+          "detail": "pi_y: 0 of 50403 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+          "required": false,
+          "verdict": null
+        },
+        {
+          "check": "competition",
+          "status": "warning",
+          "detail": "no finite nonzero sensitivity established; unavailable: phi: ValueError: custom payoff/share path requires a share_sensitivity hook",
+          "required": false,
+          "verdict": null
+        }
+      ]
+    },
+    "decision_max_error": 7.233312837584549e-09
+  }
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "round": 7,
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/core_env/bin/python",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/verify_round7_fixes.py",
+      "--out",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/old_probes_core/round7.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.30920838200108847,
+    "outside_checkout": true
+  },
+  {
+    "round": 8,
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/core_env/bin/python",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/verify_round8_fixes.py",
+      "--out",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/old_probes_core/round8.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.5012376049999148,
+    "outside_checkout": true
+  },
+  {
+    "round": 9,
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/core_env/bin/python",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/probe_round9.py",
+      "--out",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/old_probes_core/round9.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.8500858609986608,
+    "outside_checkout": true
+  },
+  {
+    "round": 10,
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/core_env/bin/python",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/verify_round10_fixes.py",
+      "--out",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/old_probes_core/round10.json"
+    ],
+    "returncode": 0,
+    "seconds": 2.363098087000253,
+    "outside_checkout": true
+  },
+  {
+    "round": 11,
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/core_env/bin/python",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/verify_round11_fixes.py",
+      "--out",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/old_probes_core/round11.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.5017730450053932,
+    "outside_checkout": true
+  },
+  {
+    "round": 12,
+    "command": [
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/core_env/bin/python",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/verify_round12_fixes.py",
+      "--out",
+      "/workspace/scratch/a8bea0bd94a7/revision_v0211/evidence/old_probes_core/round12.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.8171391659998335,
+    "outside_checkout": true
+  }
+]

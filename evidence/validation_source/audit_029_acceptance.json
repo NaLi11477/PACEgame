@@ -1,0 +1,658 @@
+{
+  "environment": {
+    "pacegame": "0.2.11",
+    "import_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/pacegame/__init__.py",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "sympy": "1.14.0",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+  },
+  "groups": {
+    "R10-01_ceiling": {
+      "accepted": true,
+      "original_counterexamples": [
+        {
+          "ceiling": "9007199254740992",
+          "target": "9007199254740993",
+          "exact_excess": "1",
+          "must_violate": true,
+          "low": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit29_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit29_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 9.0072e+15",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "violation",
+                "detail": "payoff exceeds the model's own ceiling 9.00720E+15; retained excess 1.00000 > 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "ranking_complete": false,
+          "best": null,
+          "excluded": [
+            "RL"
+          ],
+          "claims": [
+            {
+              "claim": "all optima feasible",
+              "passed": 0,
+              "failed": 1,
+              "skipped": 0,
+              "errors": 0
+            },
+            {
+              "claim": "pi_RL within the demand ceiling",
+              "passed": 0,
+              "failed": 0,
+              "skipped": 1,
+              "errors": 0
+            }
+          ]
+        },
+        {
+          "ceiling": "1152921504606846976",
+          "target": "1152921504606847104",
+          "exact_excess": "128",
+          "must_violate": true,
+          "low": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit29_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit29_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1.15292e+18",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "violation",
+                "detail": "payoff exceeds the model's own ceiling 1.15292E+18; retained excess 128.000 > 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "ranking_complete": false,
+          "best": null,
+          "excluded": [
+            "RL"
+          ],
+          "claims": [
+            {
+              "claim": "all optima feasible",
+              "passed": 0,
+              "failed": 1,
+              "skipped": 0,
+              "errors": 0
+            },
+            {
+              "claim": "pi_RL within the demand ceiling",
+              "passed": 0,
+              "failed": 0,
+              "skipped": 1,
+              "errors": 0
+            }
+          ]
+        },
+        {
+          "ceiling": "100000000000000000000",
+          "target": "100000000000000004096",
+          "exact_excess": "4096",
+          "must_violate": true,
+          "low": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit29_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit29_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1e+20",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "violation",
+                "detail": "payoff exceeds the model's own ceiling 1.00000E+20; retained excess 4096.00 > 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "ranking_complete": false,
+          "best": null,
+          "excluded": [
+            "RL"
+          ],
+          "claims": [
+            {
+              "claim": "all optima feasible",
+              "passed": 0,
+              "failed": 1,
+              "skipped": 0,
+              "errors": 0
+            },
+            {
+              "claim": "pi_RL within the demand ceiling",
+              "passed": 0,
+              "failed": 0,
+              "skipped": 1,
+              "errors": 0
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "ceiling": "1099511627776",
+          "target": "1099511627777",
+          "exact_excess": "1",
+          "must_violate": true,
+          "low": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit29_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit29_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1.09951e+12",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "violation",
+                "detail": "payoff exceeds the model's own ceiling 1.09951E+12; retained excess 1.00000 > 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "ranking_complete": false,
+          "best": null,
+          "excluded": [
+            "RL"
+          ],
+          "claims": [
+            {
+              "claim": "all optima feasible",
+              "passed": 0,
+              "failed": 1,
+              "skipped": 0,
+              "errors": 0
+            },
+            {
+              "claim": "pi_RL within the demand ceiling",
+              "passed": 0,
+              "failed": 0,
+              "skipped": 1,
+              "errors": 0
+            }
+          ]
+        },
+        {
+          "ceiling": "1152921504606846976",
+          "target": "1152921504606847232",
+          "exact_excess": "256",
+          "must_violate": true,
+          "low": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit29_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit29_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1.15292e+18",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "violation",
+                "detail": "payoff exceeds the model's own ceiling 1.15292E+18; retained excess 256.000 > 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "ranking_complete": false,
+          "best": null,
+          "excluded": [
+            "RL"
+          ],
+          "claims": [
+            {
+              "claim": "all optima feasible",
+              "passed": 0,
+              "failed": 1,
+              "skipped": 0,
+              "errors": 0
+            },
+            {
+              "claim": "pi_RL within the demand ceiling",
+              "passed": 0,
+              "failed": 0,
+              "skipped": 1,
+              "errors": 0
+            }
+          ]
+        },
+        {
+          "ceiling": "1152921504606846976",
+          "target": "1152921504606846976",
+          "exact_excess": "0",
+          "must_violate": false,
+          "low": {
+            "ok": true,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit29_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit29_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1.15292e+18",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 1.15292E+18 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "ranking_complete": true,
+          "best": "RL",
+          "excluded": [],
+          "claims": [
+            {
+              "claim": "all optima feasible",
+              "passed": 1,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 0
+            },
+            {
+              "claim": "pi_RL within the demand ceiling",
+              "passed": 1,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 0
+            }
+          ]
+        },
+        {
+          "ceiling": "1152921504606846976",
+          "target": "1152921504606846720",
+          "exact_excess": "-256",
+          "must_violate": false,
+          "low": {
+            "ok": true,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit29_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit29_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1.15292e+18",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 1.15292E+18 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "ranking_complete": true,
+          "best": "RL",
+          "excluded": [],
+          "claims": [
+            {
+              "claim": "all optima feasible",
+              "passed": 1,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 0
+            },
+            {
+              "claim": "pi_RL within the demand ceiling",
+              "passed": 1,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 0
+            }
+          ]
+        }
+      ],
+      "stricter_Bounded_control": [
+        {
+          "claim": "all optima feasible",
+          "passed": 1,
+          "failed": 0,
+          "skipped": 0,
+          "errors": 0
+        },
+        {
+          "claim": "pi_RL within the demand ceiling",
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0,
+          "errors": 0
+        }
+      ],
+      "unavailable": {
+        "ok": true,
+        "complete": false,
+        "findings": [
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "audit29_u = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "fixed variable",
+            "status": "ok",
+            "detail": "audit29_u: singleton interval; no feasible direction, no one-sided KKT test",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 1",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "payoff magnitude",
+            "status": "warning",
+            "detail": "requested ceiling comparison unavailable: missing",
+            "required": true,
+            "verdict": null
+          }
+        ]
+      },
+      "scope": "Deliberately injected over-ceiling output; fixed domains isolate the diagnostic guard. Necessary checks do not certify global optimality."
+    },
+    "R10-02_signs": {
+      "accepted": true,
+      "parameters": [
+        {
+          "field": "signal_cost",
+          "rejected": true,
+          "exception": "ValueError",
+          "reason": "kappa_d must be nonnegative"
+        },
+        {
+          "field": "timing_cost",
+          "rejected": true,
+          "exception": "ValueError",
+          "reason": "kappa_t must be nonnegative"
+        }
+      ],
+      "direct_solve": [
+        {
+          "field": "signal_cost",
+          "rejected": true,
+          "exception": "ValueError",
+          "reason": "kappa_d must be nonnegative"
+        },
+        {
+          "field": "timing_cost",
+          "rejected": true,
+          "exception": "ValueError",
+          "reason": "kappa_t must be nonnegative"
+        }
+      ],
+      "normal_sign_controls": [
+        {
+          "field": "signal_cost",
+          "value": "-1/1000000",
+          "rejected": true,
+          "exception": "ValueError",
+          "reason": "kappa_d must be nonnegative"
+        },
+        {
+          "field": "signal_cost",
+          "value": "0",
+          "rejected": false,
+          "complete": true,
+          "payoffs": {
+            "DF": 0.0031875000000000002
+          }
+        },
+        {
+          "field": "signal_cost",
+          "value": "1/1000000",
+          "rejected": false,
+          "complete": true,
+          "payoffs": {
+            "DF": 0.0031875000000000002
+          }
+        },
+        {
+          "field": "timing_cost",
+          "value": "-1/1000000",
+          "rejected": true,
+          "exception": "ValueError",
+          "reason": "kappa_t must be nonnegative"
+        },
+        {
+          "field": "timing_cost",
+          "value": "0",
+          "rejected": false,
+          "complete": true,
+          "payoffs": {
+            "DF": 0.0031875000000000002
+          }
+        },
+        {
+          "field": "timing_cost",
+          "value": "1/1000000",
+          "rejected": false,
+          "complete": true,
+          "payoffs": {
+            "DF": 0.0031865
+          }
+        }
+      ],
+      "public_mutations": [
+        {
+          "field": "signal_cost",
+          "numeric": {
+            "rejected": true,
+            "exception": "ValueError",
+            "reason": "signal_cost must be nonnegative"
+          },
+          "direct_solve": {
+            "rejected": true,
+            "exception": "ValueError",
+            "reason": "signal_cost must be nonnegative"
+          }
+        },
+        {
+          "field": "timing_cost",
+          "numeric": {
+            "rejected": true,
+            "exception": "ValueError",
+            "reason": "timing_cost must be nonnegative"
+          },
+          "direct_solve": {
+            "rejected": true,
+            "exception": "ValueError",
+            "reason": "timing_cost must be nonnegative"
+          }
+        },
+        {
+          "field": "phi_coefficient",
+          "numeric": {
+            "rejected": true,
+            "exception": "ValueError",
+            "reason": "phi coefficient must be nonnegative"
+          },
+          "direct_solve": {
+            "rejected": true,
+            "exception": "ValueError",
+            "reason": "phi coefficient must be nonnegative"
+          }
+        }
+      ],
+      "negative_expression": {
+        "rejected": true,
+        "exception": "ValueError",
+        "reason": "signal_cost must be nonnegative"
+      }
+    },
+    "R10_numeric_range": {
+      "accepted": true,
+      "cases": [
+        {
+          "value": "1/10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "rejected": true,
+          "exception": "ValueError",
+          "reason": "kappa_d is outside the supported binary64 range"
+        },
+        {
+          "value": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "rejected": true,
+          "exception": "ValueError",
+          "reason": "kappa_d is outside the supported binary64 range"
+        },
+        {
+          "value": "nan",
+          "rejected": true,
+          "exception": "ValueError",
+          "reason": "kappa_d must be a finite real number"
+        },
+        {
+          "value": "oo",
+          "rejected": true,
+          "exception": "ValueError",
+          "reason": "kappa_d must be a finite real number"
+        },
+        {
+          "value": "I/10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "rejected": true,
+          "exception": "ValueError",
+          "reason": "kappa_d must be a finite real number"
+        }
+      ],
+      "policy": "Retained finite-real and domain signs before binary64 checks; reject nonzero-to-zero underflow and nonfinite conversion; preserve supplied numeric values."
+    }
+  },
+  "all_accepted": true
+}

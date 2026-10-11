@@ -1,0 +1,5 @@
+Looking in links: /workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/vendor
+Processing ./revision_v0211/work/PACEgame_v0_2_11/vendor/sympy-1.14.0-py3-none-any.whl
+Processing ./revision_v0211/work/PACEgame_v0_2_11/vendor/mpmath-1.3.0-py3-none-any.whl
+Installing collected packages: mpmath, sympy
+Successfully installed mpmath-1.3.0 sympy-1.14.0

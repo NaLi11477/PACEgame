@@ -1,0 +1,9 @@
+{
+  "wheel_sha256": "e262475e08da36b5b82a1eaa67eaf79d07c55a8446ebf74ba881848d8b0940ae",
+  "environments": [
+    "source",
+    "wheel",
+    "core"
+  ],
+  "all_39_command_receipts_match_final_wheel": true
+}

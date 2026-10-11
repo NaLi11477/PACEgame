@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/workspace/scratch/a8bea0bd94a7/revision_v0210/build_env/bin/python",
+    "-m",
+    "build",
+    "--sdist",
+    "--wheel",
+    "--no-isolation",
+    "--outdir",
+    "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11/dist",
+    "/workspace/scratch/a8bea0bd94a7/revision_v0211/work/PACEgame_v0_2_11"
+  ],
+  "returncode": 0,
+  "seconds": 0.5443345660023624,
+  "build_environment_reused": true,
+  "description_history_corrected_before_final_validation": true
+}

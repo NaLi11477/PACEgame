@@ -1,0 +1,2467 @@
+[
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_all_unresolved_has_no_best",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_benchmark_failure_cannot_be_a_timing_result",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_broken_feasibility_cannot_pass",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_cli_unknown_set_is_refused",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_cli_zero_points_is_refused",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_empty_claim_list_refused",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_evaluator_retries_exact_after_local_failure",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_finite_asymptote_is_not_infinite_payoff",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_first_order_condition_is_checked_inside",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_flat_optimal_signal_does_not_become_a_noise_slope",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_grid_must_have_coverage",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_invalid_entry_floor_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_invalid_lifecycle_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_invalid_method_and_cap_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_joint_saddle_is_detected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_matching_signal_is_not_symmetric_decision_rights",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_nan_bound_is_refused",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_negative_parameters_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_nonfinite_parameters_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_one_quality_is_not_symmetric",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_open_threshold_cannot_use_cap_payoffs",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_sign_relation_typo_is_refused",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_sign_zero_parameter_uses_feasible_stencil",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_skips_do_not_establish_a_whole_grid_claim",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_time_symbol_invalidates_cached_payoffs",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_unadmitted_strategy_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_unknown_grid_parameter_is_refused",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_unknown_strategy_is_an_error",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_unknown_sweep_is_refused",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_020.Tests.test_unresolved_candidates_are_excluded",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_all_zero_is_not_a_strict_reversal",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_both_decisions_fixed_have_no_feasible_kkt_direction",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_both_public_crossing_apis_keep_sampled_root",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_chosen_signal_bound_is_preserved_when_capacity_contract_changes",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_endpoint_tie_is_not_a_strict_reversal",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_explicit_infinite_domain_is_not_unknown_bounds",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_fixed_entry_has_analytic_signal_and_no_false_kkt",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_fixed_low_level_point_skips_one_sided_test",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_fixed_signal_is_not_a_lower_corner",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_incomplete_required_checks_exclude_ranking_and_feasible_pass",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_interior_passes_resolved_valid_candidate",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_interior_skips_invalid_parent",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_interior_skips_unresolved_parent",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_invalid_numeric_bounds_cannot_report_complete_feasibility",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_invalid_tolerance_and_nonfinite_scan_are_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_logistic_horizon_is_entry_upper_bound",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_missing_bounds_are_incomplete_not_in_range",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_missing_requested_ceiling_is_recorded_incomplete",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_narrow_nonzero_intervals_keep_interior_and_corners",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_negative_net_positive_gross_is_legal",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_negative_net_with_omitted_gross_is_not_negative_demand",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_no_share_parameters_is_skipped",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_partial_unknown_plus_active_is_evidenced_activity",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_partial_unknown_plus_zero_remains_unknown",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_same_sign_around_zero_run_is_not_reversal",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_sensitivity_all_zero_is_false_but_not_invalid_payoff",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_sensitivity_finite_active_has_evidence",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_sensitivity_unknown_does_not_pass",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_sweep_complete_exit_is_zero",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_sweep_malformed_exit_is_two",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_sweep_unresolved_exit_is_one",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_timing_cost_stays_nonnegative_over_general_horizon",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_touching_zero_is_not_a_strict_reversal",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_two_phase_nonunit_horizon_respects_analytic_integral",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_unknown_supplied_gross_makes_required_check_incomplete",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_unsampled_simple_root_is_refined",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_zero_ceiling_violation_does_not_divide_by_zero",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_021.Audit021.test_zero_plateau_returns_sampled_representative",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestMixedEndpointGeometry.test_collapsed_mixed_nonzero_is_not_fixed",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestMixedEndpointGeometry.test_exact_collapsed_control_still_rejects",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestMixedEndpointGeometry.test_float_parameter_substitution_preserves_width",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestMixedEndpointGeometry.test_invalid_intervals_never_pass_rank_or_claims",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestMixedEndpointGeometry.test_normal_mixed_interval_still_ranks",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestMixedEndpointGeometry.test_representable_narrow_mixed_control_passes",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestMixedEndpointGeometry.test_true_mixed_singleton_is_fixed",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestMixedEndpointGeometry.test_two_mixed_reversed_intervals_reject",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestPayoffAdmission.test_admission_occurs_after_retained_substitution",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestPayoffAdmission.test_main_solver_nonreal_guard_stays_effective",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestPayoffAdmission.test_negative_net_with_omitted_gross_is_legal",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestPayoffAdmission.test_negative_net_with_positive_gross_is_legal",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestPayoffAdmission.test_nonfinite_net_and_gross_reject",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestPayoffAdmission.test_nonreal_realised_payoff_is_not_silently_projected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestPayoffAdmission.test_real_numeric_controls_pass",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestPayoffAdmission.test_small_and_underflow_nonreal_gross_reject_with_or_without_ceiling",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestPayoffAdmission.test_small_and_underflow_nonreal_net_reject_with_or_without_ceiling",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestPayoffAdmission.test_unresolved_gross_admission_is_required_unavailable",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestPayoffAdmission.test_unresolved_net_admission_is_required_unavailable",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestToleranceAdmission.test_negative_underflow_rejects_before_conversion",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestToleranceAdmission.test_nonreal_nonfinite_and_unresolved_reject",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestToleranceAdmission.test_original_rational_ceiling_tolerance_is_preserved",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestToleranceAdmission.test_original_rational_gross_tolerance_is_preserved",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestToleranceAdmission.test_overflow_has_explicit_range_error",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestToleranceAdmission.test_positive_underflow_has_explicit_range_error",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0210.TestToleranceAdmission.test_zero_and_normal_inside_outside_controls",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_absolute_tolerances_preserved",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_bind_each_candidate",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_bind_each_perturbed_parameter",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_legal_owner_fixed",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_legal_owner_interior",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_legal_owner_lower",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_legal_owner_skipped",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_offset_100000000000000000000_False",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_offset_100000000000000000000_True",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_offset_1152921504606846976_False",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_offset_1152921504606846976_True",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_offset_9007199254740992_False",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_offset_9007199254740992_True",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_owner_complex_fixed",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_owner_complex_interior",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_owner_complex_lower",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_owner_complex_skipped",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_owner_infinity_fixed",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_owner_infinity_interior",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_owner_infinity_lower",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_owner_infinity_skipped",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_owner_nan_fixed",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_owner_nan_interior",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_owner_nan_lower",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_owner_nan_skipped",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_owner_tiny_complex_fixed",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_owner_tiny_complex_interior",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_owner_tiny_complex_lower",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_owner_tiny_complex_skipped",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_owner_unknown_fixed",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_owner_unknown_interior",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_owner_unknown_lower",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_owner_unknown_skipped",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_representable_0_1",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_representable_1099511627776_1",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_representable_9007199254740992_2",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_result_range_unavailable",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_retained_crossing",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_retained_slope_gap",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_retained_slope_payoff",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_retained_slope_rival",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_unknown_comparison_incomplete",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_0211.Round12.test_unknown_weak_never_passes",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_analytic_share_response_at_positive_stock",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_cost_only_parameter_cannot_establish_competition",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_custom_explicit_channel_hook_is_used",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_custom_payoff_without_channel_contract_is_unknown",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_empty_claim_iterables_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_explicit_invalidate_recomputes",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_extreme_finite_payoffs_overflow_has_no_sign_verdict",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_genuine_share_channel_with_cost_still_active",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_inherited_string_slot_is_seen",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_invalid_claim_type_rejected_before_sweep",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_invalid_flat_tolerances_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_lifecycle_overlap_is_held_fixed",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_nonfinite_negative_complex_tolerances_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_one_shot_claims_match_list_for_true_and_false",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_ordinary_derivative_remains_finite_positive",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_overflow_numerator_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_response_sign_rejects_nonfinite_values",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_same_named_classes_do_not_share_cache",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_sign_claim_rejects_nonfinite_external_response",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_signal_cost_path_excluded",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_skips_and_errors_remain_distinct_for_generators",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_slots_mutation_roundtrip_matches_integral_and_fresh_model",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_slotted_share_state_mutation_changes_payoff",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_zero_and_default_tolerance_preserve_violations",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_022.Audit022.test_zero_and_partial_accounting_are_incomplete",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_both_derivatives_match_exact_analytic_reference",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_custom_player_names_bind_actual_payoff",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_default_pool_matches_explicit_pool",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_dictionary_order_is_semantically_irrelevant",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_empty_values_validate_pool_then_return_empty",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_fixed_decision_response_stays_on_derivative_interface",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_flat_payoff_is_not_a_strict_sign",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_focal_positive_and_rival_negative_claims",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_gap_interface_does_not_ignore_explicit_target",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_integer_and_string_keys_match_fresh_and_analytic",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_invalid_pools_rejected_before_solves",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_key_mutation_roundtrip",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_legacy_focal_alias_is_unchanged",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_malformed_or_decision_targets_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_nested_dictionary_key_change_recomputes",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_numeric_public_value_types_can_change_semantics",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_once_strategy_pool_is_consumed_once",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_rival_overflow_retains_numerical_range_error",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_rival_statics_map_keeps_payoff_target",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_same_name_wrong_flags_is_not_admitted",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_same_named_symbol_assumptions_are_distinct",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_sequence_order_is_preserved_and_container_type_is_seen",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_set_order_ignored_and_set_type_seen",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_single_point_generator_still_supported",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_sweep_all_iterable_types_equal_over_multiple_points",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_unknown_derivative_parameter_rejected_early",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_unknown_payoff_target_rejected_before_evaluation",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_unknown_strategy_rejected_before_sign_samples",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_values_generator_is_consumed_once",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_023.Audit023.test_whitespace_grammar_keeps_correct_label",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.CandidateMetadata.test_correct_interior_still_fails_stationarity",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.CandidateMetadata.test_extra_kind_coordinate_rejects",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.CandidateMetadata.test_fixed_on_nonzero_interval_cannot_pass",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.CandidateMetadata.test_interior_at_upper_boundary_cannot_pass",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.CandidateMetadata.test_legacy_singleton_corner_remains_fixed",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.CandidateMetadata.test_lower_corner_at_interior_cannot_pass",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.CandidateMetadata.test_missing_coordinate_rejects_and_checks_reversed_interval",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.CandidateMetadata.test_missing_declared_bounds_rejects",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.CandidateMetadata.test_missing_owned_coordinate_rejects",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.CandidateMetadata.test_narrow_nonzero_interval_preserves_interior",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.CandidateMetadata.test_nonstring_kind_cannot_pass",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.CandidateMetadata.test_omitted_kind_infers_actual_corner",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.CandidateMetadata.test_search_limit_cannot_be_complete",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.CandidateMetadata.test_singleton_passes_without_kkt",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.CandidateMetadata.test_skip_does_not_bypass_metadata",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.CandidateMetadata.test_true_upper_corner_passes",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.CandidateMetadata.test_unknown_kind_cannot_pass",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.CandidateMetadata.test_upper_corner_at_interior_cannot_pass",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.ExpressionParameters.test_compound_coefficient_statics_selects_either_player",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.ExpressionParameters.test_compound_share_requires_only_free_symbol",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.ExpressionParameters.test_constant_share_has_no_external_phi",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.ExpressionParameters.test_expression_domain_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.ExpressionParameters.test_missing_free_symbol_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.ExpressionParameters.test_mutated_expression_inventory_tracks_current_coefficient",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.ExpressionParameters.test_nonfinite_constant_coefficient_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.ExpressionParameters.test_other_builtin_expression_inventories",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.ExpressionParameters.test_same_named_distinct_symbols_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.PlayerQuality.test_custom_no_argument_symmetry_hook_preserved",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.PlayerQuality.test_custom_player_names_bind_quality",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.PlayerQuality.test_equal_actual_quality_is_interchangeable",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.PlayerQuality.test_mutated_unknown_player_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.PlayerQuality.test_partial_dictionary_uses_actual_default_and_no_role_gap",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.PlayerQuality.test_symbolic_quality_uses_identity_and_default",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_024.PlayerQuality.test_unrelated_quality_player_rejected_at_game_boundary",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.BoundaryCurvatureTests.test_audited_joint_corner_is_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.BoundaryCurvatureTests.test_concave_corner_remains_valid",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.BoundaryCurvatureTests.test_flat_curvature_discloses_higher_order_limit",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.BoundaryCurvatureTests.test_interior_hessian_solver_control_preserved",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.BoundaryCurvatureTests.test_mixed_boundary_interior_positive_curvature_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.BoundaryCurvatureTests.test_positive_eigenvalue_in_infeasible_direction_not_false_failure",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.BoundaryCurvatureTests.test_solver_corner_cannot_rank",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.BoundaryCurvatureTests.test_strict_boundary_gradient_removes_noncritical_direction",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.BoundaryCurvatureTests.test_three_dimensional_boundary_cone_is_explicitly_incomplete",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.BoundaryCurvatureTests.test_upper_lower_orientation_is_checked",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.ExactDomainTests.test_cli_precision_unavailable_is_unresolved_exit",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.ExactDomainTests.test_collapsed_domain_inferred_label_incomplete",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.ExactDomainTests.test_collapsed_domain_is_not_fixed",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.ExactDomainTests.test_collapsed_domain_lower_label_incomplete",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.ExactDomainTests.test_narrow_nonzero_domain_preserved",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.ExactDomainTests.test_precision_failure_cannot_establish_claim",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.ExactDomainTests.test_ranking_cannot_return_precision_invalid_candidate",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.ExactDomainTests.test_rescaled_linear_control_returns_upper",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.ExactDomainTests.test_reversed_exact_interval_detected_before_float",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.ExactDomainTests.test_reversed_exact_interval_solver_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.ExactDomainTests.test_solver_raises_typed_precision_error",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.ExactDomainTests.test_symbolic_width_survives_float_parameter_substitution",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.ExactDomainTests.test_true_exact_large_singleton_preserved",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.PlayerIdentityTests.test_custom_players_keep_two_payoff_keys",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.PlayerIdentityTests.test_default_players_keep_two_payoff_keys",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.PlayerIdentityTests.test_duplicate_constructor_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.PlayerIdentityTests.test_duplicate_mutation_rejected_at_public_boundaries",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.SymbolContractTests.test_constructor_rejects_decision_as_parameter",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.SymbolContractTests.test_constructor_rejects_signal_entry_identity",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.SymbolContractTests.test_constructor_rejects_time_as_rate",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.SymbolContractTests.test_constructor_rejects_time_entry_identity",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.SymbolContractTests.test_independent_rate_expression_matches_constant",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.SymbolContractTests.test_mutated_decision_coefficient_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.SymbolContractTests.test_mutated_signal_alias_rejected_by_solver",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.SymbolContractTests.test_mutated_time_rate_rejected_before_public_work",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.SymbolContractTests.test_same_named_distinct_structural_symbols_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.SymbolContractTests.test_same_named_parameter_structural_symbols_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_025.SymbolContractTests.test_structural_symbols_must_be_scalar",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.CandidatePrecision.test_binary_candidate_outside",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.CandidatePrecision.test_cli_precision_exit",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.CandidatePrecision.test_collapsed_r6_control",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.CandidatePrecision.test_dependent_claim_error",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.CandidatePrecision.test_exact_lower_outside",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.CandidatePrecision.test_exact_tolerance_threshold",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.CandidatePrecision.test_exact_upper_outside",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.CandidatePrecision.test_high_precision_candidate_outside",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.CandidatePrecision.test_low_exact_legal_but_unavailable_coordinates",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.CandidatePrecision.test_low_unrepresentable_singleton",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.CandidatePrecision.test_noncollapsed_domain_solver",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.CandidatePrecision.test_parameter_offset_not_rounded_before_guard",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.CandidatePrecision.test_payoff_cancellation_cannot_silently_agree",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.CandidatePrecision.test_ranking_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.CandidatePrecision.test_rational_tenth_singleton",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.CandidatePrecision.test_representable_large_interval",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.CandidatePrecision.test_representable_large_singleton",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.CandidatePrecision.test_shifted_equivalent_negative_net",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.CandidatePrecision.test_unrepresentable_singleton_solver",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.ScalarBoundaryCurvature.test_concave_lower_passes",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.ScalarBoundaryCurvature.test_concave_upper_passes",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.ScalarBoundaryCurvature.test_fixed_neighbor_positive_curvature",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.ScalarBoundaryCurvature.test_fixed_only_has_no_direction",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.ScalarBoundaryCurvature.test_flat_higher_order_scope",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.ScalarBoundaryCurvature.test_single_scalar_positive_curvature",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.ScalarBoundaryCurvature.test_solver_positive_interior_control",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_026.ScalarBoundaryCurvature.test_strict_inward_gradient_removes_direction",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_actual_binary_tenth",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_candidate_0_audit_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_candidate_0_z_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_candidate_1_audit_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_candidate_1_z_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_critical_hessian_0_False",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_critical_hessian_0_True",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_critical_hessian_1_False",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_critical_hessian_1_True",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_exact_fallback_0",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_exact_fallback_1",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_interior_gradient_0_audit_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_interior_gradient_0_z_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_interior_gradient_1_audit_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_interior_gradient_1_z_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_local_polishing_0_audit_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_local_polishing_0_z_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_local_polishing_1_audit_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_local_polishing_1_z_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_model_coefficient_validation",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_objective_0_audit_u_1_False",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_objective_0_audit_u_1_True",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_objective_0_audit_u_2_False",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_objective_0_audit_u_2_True",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_objective_0_z_u_1_False",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_objective_0_z_u_1_True",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_objective_0_z_u_2_False",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_objective_0_z_u_2_True",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_objective_1_audit_u_1_False",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_objective_1_audit_u_1_True",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_objective_1_audit_u_2_False",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_objective_1_audit_u_2_True",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_objective_1_z_u_1_False",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_objective_1_z_u_1_True",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_objective_1_z_u_2_False",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_objective_1_z_u_2_True",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_unavailable_derivative_incomplete",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_027.RetainedValues.test_unavailable_payoff_comparison_incomplete",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.JointScope.test_distinct_objectives_not_combined",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.JointScope.test_fixed_coordinate_excluded",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.JointScope.test_huge_concave_boundary",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.JointScope.test_interior_automatic_saddle",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.JointScope.test_interior_concave",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.JointScope.test_interior_explicit_saddle",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.JointScope.test_interior_huge_retained_spectrum",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.JointScope.test_interior_three_dimensions",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.JointScope.test_main_interior_control_still_rankable",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.JointScope.test_mixed_huge_retained_spectrum",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.JointScope.test_negative_cross_positive_eigenvalue_outside_cone",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.JointScope.test_positive_cross_below_envelope",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.JointScope.test_precision_beyond_fixed_80_digits",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.JointScope.test_rank_and_feasible_do_not_accept_wrong_origin",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.JointScope.test_skipped_earlier_stage",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.JointScope.test_unavailable_joint_hessian_blocks_completion",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.JointScope.test_upper_lower_orientation",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.JointScope.test_upper_upper_orientation",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.RetainedBoundary.test_solve_correct_or_excluded_100000000000000000000_audit_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.RetainedBoundary.test_solve_correct_or_excluded_100000000000000000000_z_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.RetainedBoundary.test_solve_correct_or_excluded_1099511627776_audit_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.RetainedBoundary.test_solve_correct_or_excluded_1099511627776_z_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.RetainedBoundary.test_solve_correct_or_excluded_1152921504606846976_audit_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.RetainedBoundary.test_solve_correct_or_excluded_1152921504606846976_z_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.RetainedBoundary.test_solve_correct_or_excluded_9007199254740992_audit_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.RetainedBoundary.test_solve_correct_or_excluded_9007199254740992_z_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.RetainedBoundary.test_wrong_origin_100000000000000000000_audit_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.RetainedBoundary.test_wrong_origin_100000000000000000000_z_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.RetainedBoundary.test_wrong_origin_1099511627776_audit_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.RetainedBoundary.test_wrong_origin_1099511627776_z_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.RetainedBoundary.test_wrong_origin_1152921504606846976_audit_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.RetainedBoundary.test_wrong_origin_1152921504606846976_z_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.RetainedBoundary.test_wrong_origin_9007199254740992_audit_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_028.RetainedBoundary.test_wrong_origin_9007199254740992_z_u",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestRetainedCeiling.test_absolute_tolerance_is_preserved_at_large_scale",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestRetainedCeiling.test_bounded_uses_retained_payoff_with_its_existing_stricter_tolerance",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestRetainedCeiling.test_equal_and_below_ceiling_controls_pass",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestRetainedCeiling.test_explicit_positive_infinity_stays_uninformative",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestRetainedCeiling.test_negative_ceiling_uses_retained_difference",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestRetainedCeiling.test_nonreal_and_nonfinite_ceilings_are_unavailable",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestRetainedCeiling.test_public_equal_and_below_controls_pass",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestRetainedCeiling.test_public_rank_and_claims_exclude_original_counterexamples",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestRetainedCeiling.test_symbolic_ceiling_is_required_unavailable",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestRetainedCeiling.test_three_original_over_ceiling_outputs_fail",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestRetainedCeiling.test_visible_large_excess_controls_still_fail",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestStrictInputSigns.test_both_original_negative_parameters_are_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestStrictInputSigns.test_direct_solve_rejects_both_negative_parameters",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestStrictInputSigns.test_legal_small_positive_expression_that_underflows_is_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestStrictInputSigns.test_nonfinite_and_complex_constant_costs_are_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestStrictInputSigns.test_nonfinite_and_complex_parameters_are_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestStrictInputSigns.test_numeric_preserves_supplied_rational_before_substitution",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestStrictInputSigns.test_ordinary_negative_costs_continue_to_reject",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestStrictInputSigns.test_positive_symbol_zero_and_negative_are_rejected",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestStrictInputSigns.test_positive_underflow_constant_coefficients_have_range_error",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestStrictInputSigns.test_positive_underflow_parameters_have_explicit_range_error",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestStrictInputSigns.test_public_mutations_reject_on_direct_solve_boundary",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestStrictInputSigns.test_three_original_public_mutations_reject_on_numeric_boundary",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestStrictInputSigns.test_underflow_cannot_hide_negative_cost_expression",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_audit_029.TestStrictInputSigns.test_zero_and_ordinary_positive_costs_remain_valid",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestAuditRegressions.test_a_ceiling_that_moves_with_the_payoff_is_declared_uninformative",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestAuditRegressions.test_a_cost_may_make_the_net_payoff_negative_without_a_violation",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestAuditRegressions.test_a_lifecycle_without_a_capacity_says_the_check_did_not_run",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestAuditRegressions.test_an_inapplicable_claim_is_not_counted_as_a_failure",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestAuditRegressions.test_every_shipped_example_parses_on_the_declared_minimum_python",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestAuditRegressions.test_the_before_and_after_claim_lists_are_identical",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestAuditRegressions.test_the_solver_records_the_method_it_was_asked_for",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestCommandLine.test_a_degenerate_step_count_is_refused",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestCommandLine.test_a_malformed_override_is_refused_not_a_traceback",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestCommandLine.test_an_unknown_swept_parameter_is_refused_by_name",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestCommandLine.test_examples_extraction_writes_the_script",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestCommandLine.test_models_lists_every_registered_model",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestCommandLine.test_repair_switches_on_a_positive_signal_cost",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestCommandLine.test_solve_reports_the_unresolved_signal_of_the_baseline_model",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestDecisionStatics.test_a_decision_variable_can_be_differentiated_like_a_payoff",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestDecisionStatics.test_a_payoff_gap_can_be_differentiated",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestDecisionStatics.test_a_quantity_that_is_not_a_decision_is_refused_by_name",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestEquilibrium.test_an_endpoint_tie_is_not_reported_as_a_crossing",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestEquilibrium.test_sweep_returns_one_outcome_per_value",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestEquilibrium.test_threshold_finds_a_crossing_when_one_exists",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestEquilibrium.test_threshold_returns_none_when_no_crossing_exists",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestEquilibrium.test_ties_are_reported_as_ties",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestFeasibility.test_a_clean_point_passes_every_check",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestFeasibility.test_a_payoff_above_the_demand_ceiling_is_flagged",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestOtherModels.test_a_different_lifecycle_and_share_rule_give_an_interior_optimum",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestOtherModels.test_a_model_without_a_signal_admits_only_silent_strategies",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestOtherModels.test_asymmetric_quality_changes_payoffs_but_not_the_equilibrium",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestPackage.test_every_registered_model_has_a_default_point",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestPackage.test_four_standard_strategies_cover_the_two_by_two",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestPackage.test_version_is_exposed",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestParameters.test_a_missing_parameter_is_named_rather_than_failing_later",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestParameters.test_every_primitive_contributes_to_the_parameter_table",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestParameters.test_unknown_names_are_ignored_rather_than_refused",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestPayoffs.test_every_strategy_has_a_payoff_for_both_players",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestPayoffs.test_payoff_at_simultaneous_entry_is_the_symmetric_split",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestPayoffs.test_symmetric_strategies_mirror_each_other",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestPlotting.test_a_sweep_renders_when_matplotlib_is_present",
+    "status": "skipped",
+    "detail": "matplotlib not installed"
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestPlotting.test_importing_the_package_does_not_pull_in_matplotlib",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestPlotting.test_the_plot_helpers_explain_themselves_without_matplotlib",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestPrimitives.test_a_second_lifecycle_satisfies_the_same_interface",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestPrimitives.test_a_share_rule_that_does_not_sum_to_one_is_refused",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestPrimitives.test_logit_shares_sum_to_one",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestPrimitives.test_pioneer_keeps_its_stock_and_follower_may_not",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestPrimitives.test_proportional_shares_sum_to_one",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestPublishedSpecification.test_a_costless_signal_is_unresolved_at_a_finite_cap",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestPublishedSpecification.test_the_follower_never_waits",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestPublishedSpecification.test_the_reported_stationary_point_is_outside_the_feasible_set",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestReadinessLag.test_a_positive_lag_creates_a_first_mover_advantage",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestReadinessLag.test_a_zero_lag_leaves_leading_and_following_identical",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestReadinessLag.test_the_follower_cannot_enter_before_the_lag",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestRepairedSpecification.test_a_costly_signal_has_an_interior_level",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestRepairedSpecification.test_every_optimum_is_feasible",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestRepairedSpecification.test_signalling_and_following_is_the_equilibrium",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestRepairedSpecification.test_the_late_entrant_now_waits",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestShippedFiles.test_every_shipped_example_extracts_byte_for_byte",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestShippedFiles.test_the_tests_are_importable_from_an_installed_package",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestStatics.test_a_missing_parameter_is_refused_by_name",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestStatics.test_a_uniform_sign_is_reported_as_uniform",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestStatics.test_no_critical_value_is_reported_when_the_sign_never_turns",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV012Regressions.test_a_credibility_ceiling_bounds_the_signal_without_a_cost",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV012Regressions.test_a_divergent_strategy_is_not_crowned_and_not_ruled_on",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV012Regressions.test_a_large_but_genuine_optimum_is_not_called_unbounded",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV012Regressions.test_an_inactive_share_rule_is_reported",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV012Regressions.test_sign_claims_are_covered_at_last",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV012Regressions.test_the_ranking_reports_that_it_is_not_a_nash_equilibrium",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV012Regressions.test_the_rival_can_be_given_the_announcement_channel",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV012Regressions.test_the_share_rule_actually_bites_in_the_logistic_model",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV013Regressions.test_a_divergent_strategy_is_not_reported_as_tied",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV013Regressions.test_a_lifecycle_from_the_previous_release_still_works",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV013Regressions.test_an_inactive_share_rule_can_be_asserted_over_a_grid",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV013Regressions.test_role_conflict_is_withheld_when_the_players_are_not_alike",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV013Regressions.test_the_competition_check_sees_every_share_rule_symbol",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV013Regressions.test_the_demand_path_is_integrated_once_per_solve",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV013Regressions.test_the_logistic_stock_and_demand_level_share_an_origin",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV014Regressions.test_a_bounded_ceiling_is_not_called_uninformative",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV014Regressions.test_a_bounded_ceiling_still_bites",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV014Regressions.test_a_subclass_that_overrides_payoffs_is_honoured",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV014Regressions.test_an_all_divergent_outcome_says_there_is_no_ranking",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV014Regressions.test_symmetry_asks_about_the_signalling_channel_too",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV014Regressions.test_the_payoffs_are_built_once_per_strategy",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV014Regressions.test_withholding_the_gap_does_not_withhold_the_caveat",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV015Regressions.test_a_payoff_that_is_not_a_number_is_a_violation",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV015Regressions.test_available_says_no_when_matplotlib_cannot_be_imported",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV015Regressions.test_competitive_refuses_a_divergent_strategy",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV015Regressions.test_every_shipped_model_reports_a_finite_payoff",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV015Regressions.test_mutating_a_game_in_place_does_not_return_stale_payoffs",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV015Regressions.test_replace_does_not_carry_the_previous_models_payoffs",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV015Regressions.test_the_evaluation_route_is_reported_when_it_is_not_the_direct_one",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV015Regressions.test_the_logistic_payoff_matches_its_exact_value",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV015Regressions.test_the_logit_sensitivity_moves_the_payoff",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV015Regressions.test_the_memo_is_not_a_constructor_parameter",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV015Regressions.test_the_two_evaluation_routes_are_actually_compared",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV016Regressions.test_a_player_evaluated_once_still_reports_its_route",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV016Regressions.test_a_search_over_part_of_its_domain_is_a_violation",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV016Regressions.test_both_players_payoffs_are_cross_checked",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV016Regressions.test_escalation_does_not_stick",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV016Regressions.test_evaluation_coverage_fails_when_too_much_cannot_be_evaluated",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV016Regressions.test_evaluation_escalates_at_the_point_that_needs_it",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV016Regressions.test_rescues_and_failures_are_reported_apart",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV016Regressions.test_the_benchmark_script_refuses_to_certify_a_busy_machine",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV016Regressions.test_the_benchmark_script_ships_in_both_copies",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestV016Regressions.test_the_fingerprint_walks_containers",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestVerification.test_a_claim_that_raises_is_recorded_not_propagated",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestVerification.test_a_true_claim_holds_and_a_false_one_reports_where",
+    "status": "passed",
+    "detail": null
+  },
+  {
+    "id": "pacegame.tests.test_pacegame.TestVerification.test_the_report_renders_as_markdown",
+    "status": "passed",
+    "detail": null
+  }
+]

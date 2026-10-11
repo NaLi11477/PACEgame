@@ -1,0 +1,15 @@
+# Eighth audit revision 0.2.7
+
+R8-01 is one confirmed P1 defect with parameter-objective, candidate-expression and false-rejection variants. Ordinary Float substitution could erase a coefficient before search or change the point used for derivatives. Three executable acceptance groups cover this single finding.
+
+For A=10^20 or 2^60, a supplied Float sigma has actual rational value A. On u in [0,1], (sigma-A+1)*u or its squared-coordinate variant has maximum 1 at u=1. The revised search returns that point and payoff, rejects the wrong lower point using derivative 1 or curvature 2, and retains the correct strict-gradient upper point with Integer parameters. Coordinates audit_u and z_u test both symbol ordering cases. Ranking and Feasible dependencies use the corrected result.
+
+For target -u^2, candidate offset-A+1 with offset=Float(A) is the same retained point as literal 1. Both are classified at the upper bound and fail its derivative -2 condition. Membership, point dictionaries and diagnostics use that same value. Interior-gradient, local-polishing and boundary/mixed Hessian controls also preserve the nonzero coefficient.
+
+`core.numeric.exact_numeric` replaces Float atoms in the expression and replacement values with their actual rationals before arithmetic. Solver objective construction, symbolic fallback, polishing, diagnostics, model coefficient validation, ceiling checks and sensitivity evaluation use this helper. Necessary unavailable curvature or independent final-payoff checks produce required warnings and `complete=False`, excluding ranking. This retains supplied values; it cannot recover terms rounded away before an expression reaches the API or infer intended decimal values.
+
+Compiled binary64 evaluation can still suffer arithmetic cancellation or rounding. The final retained-value comparison remains a scoped guard at the selected point, not a proof that all search evaluations are accurate. The R7 representable-domain cancellation control must still exclude its unreliable candidate. Domain conversion precision checks, finite search, reduced sequential objectives, flat higher orders and critical cones above dimension two retain their limits.
+
+The regression suite retains all 327 parent behavior tests and adds 38 controls, totaling 365. Eight exporters cover 30 acceptance groups: 27 retained plus three R8-01 groups. Actual execution receipts are in evidence; hosted CI configuration alone is not an executed platform claim. The complete Word and XeLaTeX manuscripts share one content source. Revision acceptance remains subject to independent re-audit and outstanding author, contact, archive and publisher-template conditions.
+
+The original threshold regression sampled half its crossing, inside an exact lower-entry tie plateau. It now checks that exact tie and samples the nonzero branch at 0.9 times the crossing, preserving both strict crossing assertions. This correction is recorded separately from R8-01; no solver tolerance or necessary-condition verdict is weakened.

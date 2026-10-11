@@ -1,0 +1,10 @@
+{
+  "version": "0.2.5",
+  "pins": {
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "matplotlib": "3.10.8",
+    "numpy": "2.3.5"
+  },
+  "scope": "Core solver tests and all acceptance exporters require only SymPy and mpmath. Matplotlib and NumPy are optional figure dependencies. Pins record this release environment, not a cross-platform bitwise guarantee."
+}

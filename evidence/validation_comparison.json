@@ -1,0 +1,116 @@
+{
+  "environments": [
+    "source",
+    "wheel",
+    "core"
+  ],
+  "acceptance_groups": [
+    {
+      "exporter": "audit_021_acceptance.json",
+      "count": 7,
+      "all_accepted": true,
+      "source_wheel_equal": true,
+      "source_core_equal": true
+    },
+    {
+      "exporter": "audit_022_acceptance.json",
+      "count": 5,
+      "all_accepted": true,
+      "source_wheel_equal": true,
+      "source_core_equal": true
+    },
+    {
+      "exporter": "audit_023_acceptance.json",
+      "count": 3,
+      "all_accepted": true,
+      "source_wheel_equal": true,
+      "source_core_equal": true
+    },
+    {
+      "exporter": "audit_024_acceptance.json",
+      "count": 5,
+      "all_accepted": true,
+      "source_wheel_equal": true,
+      "source_core_equal": true
+    },
+    {
+      "exporter": "audit_025_acceptance.json",
+      "count": 5,
+      "all_accepted": true,
+      "source_wheel_equal": true,
+      "source_core_equal": true
+    },
+    {
+      "exporter": "audit_026_acceptance.json",
+      "count": 2,
+      "all_accepted": true,
+      "source_wheel_equal": true,
+      "source_core_equal": true
+    },
+    {
+      "exporter": "audit_027_acceptance.json",
+      "count": 3,
+      "all_accepted": true,
+      "source_wheel_equal": true,
+      "source_core_equal": true
+    },
+    {
+      "exporter": "audit_028_acceptance.json",
+      "count": 3,
+      "all_accepted": true,
+      "source_wheel_equal": true,
+      "source_core_equal": true
+    },
+    {
+      "exporter": "audit_029_acceptance.json",
+      "count": 3,
+      "all_accepted": true,
+      "source_wheel_equal": true,
+      "source_core_equal": true
+    },
+    {
+      "exporter": "audit_0210_acceptance.json",
+      "count": 3,
+      "all_accepted": true,
+      "source_wheel_equal": true,
+      "source_core_equal": true
+    },
+    {
+      "exporter": "audit_0211_acceptance.json",
+      "count": 2,
+      "all_accepted": true,
+      "source_wheel_equal": true,
+      "source_core_equal": true
+    }
+  ],
+  "excluded_group_fields": {
+    "R6-05": [
+      "installed_versions",
+      "installed_matches_snapshot"
+    ]
+  },
+  "groups_per_environment": 41,
+  "baseline": {
+    "cases": {
+      "source_wheel_core_equal": true,
+      "frozen_release_exact_equal": true,
+      "parent_differences": []
+    },
+    "quadrature": {
+      "source_wheel_core_equal": true,
+      "frozen_release_exact_equal": true,
+      "parent_differences": []
+    },
+    "finite_asymptote": {
+      "source_wheel_core_equal": true,
+      "frozen_release_exact_equal": true,
+      "parent_differences": []
+    },
+    "analytic_sequential_toy": {
+      "source_wheel_core_equal": true,
+      "frozen_release_exact_equal": true,
+      "parent_differences": []
+    }
+  },
+  "all_comparisons_passed": true
+}

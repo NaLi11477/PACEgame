@@ -1,0 +1,448 @@
+{
+  "version": "0.2.11",
+  "import_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/core_env/lib/python3.12/site-packages/pacegame/__init__.py",
+  "groups": {
+    "R7-01": {
+      "lower": {
+        "ok": false,
+        "complete": false,
+        "findings": [
+          {
+            "check": "bounds",
+            "status": "violation",
+            "detail": "audit_u = 100000000000000000000 below its lower bound 100000000000000000001 in retained interval (100000000000000000001, 100000000000000032769) at absolute tolerance 1e-09",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "bounds precision",
+            "status": "warning",
+            "detail": "audit_u: bounds precision unavailable: endpoint 100000000000000000001 has binary64 coordinate error 1, exceeding absolute tolerance 4835703278458517/4835703278458516698824704; translate/rescale the model or use independently validated higher-precision coordinates",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 1",
+            "required": false,
+            "verdict": null
+          }
+        ]
+      },
+      "upper": {
+        "ok": false,
+        "complete": false,
+        "findings": [
+          {
+            "check": "bounds",
+            "status": "violation",
+            "detail": "audit_u = 100000000000000032770 exceeds its upper bound 100000000000000032769 in retained interval (100000000000000000001, 100000000000000032769) at absolute tolerance 1e-09",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "bounds precision",
+            "status": "warning",
+            "detail": "audit_u: bounds precision unavailable: endpoint 100000000000000000001 has binary64 coordinate error 1, exceeding absolute tolerance 4835703278458517/4835703278458516698824704; translate/rescale the model or use independently validated higher-precision coordinates",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 1",
+            "required": false,
+            "verdict": null
+          }
+        ]
+      },
+      "solver": {
+        "type": "BoundsPrecisionError",
+        "reason": "bounds precision unavailable: endpoint 100000000000000000001 has binary64 coordinate error 1, exceeding absolute tolerance 1e-09; translate/rescale the model or use independently validated higher-precision coordinates"
+      },
+      "ranking": {
+        "type": "BoundsPrecisionError",
+        "reason": "bounds precision unavailable: endpoint 100000000000000000001 has binary64 coordinate error 1, exceeding absolute tolerance 1e-09; translate/rescale the model or use independently validated higher-precision coordinates"
+      },
+      "singleton": {
+        "type": "BoundsPrecisionError",
+        "reason": "bounds precision unavailable: endpoint 100000000000000000001 has binary64 coordinate error 1, exceeding absolute tolerance 1e-09; translate/rescale the model or use independently validated higher-precision coordinates"
+      },
+      "shifted": {
+        "point": {
+          "audit_u": "1.00000000000000"
+        },
+        "point_exact_rationals": {
+          "audit_u": "1"
+        },
+        "kind": {
+          "audit_u": "lower corner"
+        },
+        "payoffs": {
+          "x": -1.0,
+          "y": 0.0
+        },
+        "rankable": true,
+        "report": {
+          "ok": true,
+          "complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "audit_u = 1 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "first order",
+              "status": "ok",
+              "detail": "d/daudit_u = -1 is consistent with the lower corner",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "joint curvature",
+              "status": "ok",
+              "detail": "boundary critical cone has no nonzero direction; necessary check only",
+              "required": true,
+              "verdict": true
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_x = -1",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_y = 0",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 1",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "ok",
+              "detail": "payoff <= ceiling 1.00000 within 1e-09",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "search assurance",
+              "status": "warning",
+              "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_x: 0 of 225 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_y: evaluated 1 time, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "competition",
+              "status": "warning",
+              "detail": "the payoff share channel does not respond to phi at this optimum: the share rule is inactive here, so the result is not about competition between the players",
+              "required": false,
+              "verdict": false
+            }
+          ]
+        }
+      },
+      "cancellation": {
+        "point": {
+          "audit_u": "1.00000000000000e+20"
+        },
+        "point_exact_rationals": {
+          "audit_u": "100000000000000000000"
+        },
+        "kind": {
+          "audit_u": "lower corner"
+        },
+        "payoffs": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "rankable": false,
+        "report": {
+          "ok": false,
+          "complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "audit_u = 1e+20 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "first order",
+              "status": "ok",
+              "detail": "d/daudit_u = -1 is consistent with the lower corner",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "joint curvature",
+              "status": "ok",
+              "detail": "boundary critical cone has no nonzero direction; necessary check only",
+              "required": true,
+              "verdict": true
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_x = 0",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_y = 0",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 1",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "ok",
+              "detail": "payoff <= ceiling 1.00000 within 1e-09",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "search assurance",
+              "status": "warning",
+              "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation",
+              "status": "violation",
+              "detail": "the reported pi_x 0 and the symbolic 1 disagree, so the checks and the number on screen are not about the same quantity",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_x: 0 of 84 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_y: evaluated 1 time, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "competition",
+              "status": "warning",
+              "detail": "the payoff share channel does not respond to phi at this optimum: the share rule is inactive here, so the result is not about competition between the players",
+              "required": false,
+              "verdict": false
+            }
+          ]
+        }
+      },
+      "accepted": true
+    },
+    "R7-02": {
+      "low": {
+        "ok": false,
+        "complete": true,
+        "findings": [
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "audit_u = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "bounds",
+            "status": "ok",
+            "detail": "audit_v = 0 is in range",
+            "required": true,
+            "verdict": null
+          },
+          {
+            "check": "first order",
+            "status": "ok",
+            "detail": "d/daudit_u = +0 is consistent with the lower corner",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "fixed variable",
+            "status": "ok",
+            "detail": "audit_v: singleton interval; no feasible direction, no one-sided KKT test",
+            "required": false,
+            "verdict": null
+          },
+          {
+            "check": "joint curvature",
+            "status": "violation",
+            "detail": "one-dimensional critical curvature: 2.00000000000; necessary local condition, not a maximum certificate",
+            "required": true,
+            "verdict": false
+          },
+          {
+            "check": "payoff sign",
+            "status": "ok",
+            "detail": "gross payoff = 1",
+            "required": false,
+            "verdict": null
+          }
+        ]
+      },
+      "solver_correct_interior": {
+        "point": {
+          "audit_u": "7.07106781186548e-5",
+          "audit_v": "0.0"
+        },
+        "point_exact_rationals": {
+          "audit_u": "5217527130133113/73786976294838206464",
+          "audit_v": "0"
+        },
+        "kind": {
+          "audit_u": "interior",
+          "audit_v": "fixed"
+        },
+        "payoffs": {
+          "x": 2.5e-09,
+          "y": 0.0
+        },
+        "rankable": true,
+        "report": {
+          "ok": true,
+          "complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "audit_u = 7.07107e-05 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "audit_v = 0 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "stationarity",
+              "status": "ok",
+              "detail": "d/daudit_u = -6.237424383280933e-21; tested against 1e-6",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "second order",
+              "status": "ok",
+              "detail": "d2/daudit_u2 = -4 < 0",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "fixed variable",
+              "status": "ok",
+              "detail": "audit_v: singleton interval; no feasible direction, no one-sided KKT test",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_x = 2.5e-09",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_y = 0",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 1",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "ok",
+              "detail": "payoff <= ceiling 1.00000 within 1e-09",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "search assurance",
+              "status": "warning",
+              "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_x: 0 of 227 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_y: evaluated 1 time, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "competition",
+              "status": "warning",
+              "detail": "the payoff share channel does not respond to phi at this optimum: the share rule is inactive here, so the result is not about competition between the players",
+              "required": false,
+              "verdict": false
+            }
+          ]
+        }
+      },
+      "accepted": true
+    }
+  },
+  "all_accepted": true
+}

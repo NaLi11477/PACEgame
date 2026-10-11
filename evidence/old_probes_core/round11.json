@@ -1,0 +1,1654 @@
+{
+  "version": "0.2.11",
+  "audit_round": 11,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "sympy": "1.14.0",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "package_path": "/workspace/scratch/a8bea0bd94a7/revision_v0211/core_env/lib/python3.12/site-packages/pacegame/__init__.py"
+  },
+  "production_files_modified": false,
+  "expected_parent_defects": false,
+  "findings": {
+    "R11-01": {
+      "priority": "P2",
+      "accepted": true,
+      "cases": [
+        {
+          "lo": "1.00000000000000",
+          "hi": "100000000000000000001/100000000000000000000",
+          "exact_width": "1/100000000000000000000",
+          "exact_relation": "nonzero",
+          "binary64_endpoints_equal": true,
+          "pre_retention_subtraction": "0",
+          "low": {
+            "ok": true,
+            "complete": false,
+            "findings": [
+              {
+                "check": "bounds precision",
+                "status": "warning",
+                "detail": "audit11_u: bounds precision unavailable: non-singleton or unresolved interval (1, 100000000000000000001/100000000000000000000) collapses after numerical substitution/conversion; rescale the model or use independently validated higher-precision coordinates",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "solve": {
+            "rejected": true,
+            "exception": "BoundsPrecisionError",
+            "reason": "bounds precision unavailable: non-singleton or unresolved interval (1, 100000000000000000001/100000000000000000000) collapses after numerical substitution/conversion; rescale the model or use independently validated higher-precision coordinates"
+          },
+          "ranking": {
+            "rejected": true,
+            "exception": "BoundsPrecisionError",
+            "reason": "bounds precision unavailable: non-singleton or unresolved interval (1, 100000000000000000001/100000000000000000000) collapses after numerical substitution/conversion; rescale the model or use independently validated higher-precision coordinates"
+          },
+          "claims": [
+            {
+              "claim": "all optima feasible",
+              "passed": 0,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 1
+            },
+            {
+              "claim": "pi_RL within the demand ceiling",
+              "passed": 0,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 1
+            }
+          ],
+          "confirmed_false_fixed_pass": false
+        },
+        {
+          "lo": "1.00000000000000",
+          "hi": "99999999999999999999/100000000000000000000",
+          "exact_width": "-1/100000000000000000000",
+          "exact_relation": "reversed",
+          "binary64_endpoints_equal": true,
+          "pre_retention_subtraction": "0",
+          "low": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "violation",
+                "detail": "audit11_u: lower bound exceeds upper bound",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "solve": {
+            "rejected": true,
+            "exception": "ValueError",
+            "reason": "invalid independent bounds for audit11_u: lower bound exceeds upper bound"
+          },
+          "ranking": {
+            "rejected": true,
+            "exception": "ValueError",
+            "reason": "invalid independent bounds for audit11_u: lower bound exceeds upper bound"
+          },
+          "claims": [
+            {
+              "claim": "all optima feasible",
+              "passed": 0,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 1
+            },
+            {
+              "claim": "pi_RL within the demand ceiling",
+              "passed": 0,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 1
+            }
+          ],
+          "confirmed_false_fixed_pass": false
+        },
+        {
+          "lo": "0.100000000000000",
+          "hi": "10000000000000000001/100000000000000000000",
+          "exact_width": "-19039126589757/3435973836800000000000000000000",
+          "exact_relation": "reversed",
+          "binary64_endpoints_equal": true,
+          "pre_retention_subtraction": "0",
+          "low": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "violation",
+                "detail": "audit11_u: lower bound exceeds upper bound",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "solve": {
+            "rejected": true,
+            "exception": "ValueError",
+            "reason": "invalid independent bounds for audit11_u: lower bound exceeds upper bound"
+          },
+          "ranking": {
+            "rejected": true,
+            "exception": "ValueError",
+            "reason": "invalid independent bounds for audit11_u: lower bound exceeds upper bound"
+          },
+          "claims": [
+            {
+              "claim": "all optima feasible",
+              "passed": 0,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 1
+            },
+            {
+              "claim": "pi_RL within the demand ceiling",
+              "passed": 0,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 1
+            }
+          ],
+          "confirmed_false_fixed_pass": false
+        }
+      ],
+      "controls": [
+        {
+          "lo": "1",
+          "hi": "100000000000000000001/100000000000000000000",
+          "exact_width": "1/100000000000000000000",
+          "exact_relation": "nonzero",
+          "binary64_endpoints_equal": true,
+          "pre_retention_subtraction": "1/100000000000000000000",
+          "low": {
+            "ok": true,
+            "complete": false,
+            "findings": [
+              {
+                "check": "bounds precision",
+                "status": "warning",
+                "detail": "audit11_u: bounds precision unavailable: non-singleton or unresolved interval (1, 100000000000000000001/100000000000000000000) collapses after numerical substitution/conversion; rescale the model or use independently validated higher-precision coordinates",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "solve": {
+            "rejected": true,
+            "exception": "BoundsPrecisionError",
+            "reason": "bounds precision unavailable: non-singleton or unresolved interval (1, 100000000000000000001/100000000000000000000) collapses after numerical substitution/conversion; rescale the model or use independently validated higher-precision coordinates"
+          },
+          "ranking": {
+            "rejected": true,
+            "exception": "BoundsPrecisionError",
+            "reason": "bounds precision unavailable: non-singleton or unresolved interval (1, 100000000000000000001/100000000000000000000) collapses after numerical substitution/conversion; rescale the model or use independently validated higher-precision coordinates"
+          },
+          "claims": [
+            {
+              "claim": "all optima feasible",
+              "passed": 0,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 1
+            },
+            {
+              "claim": "pi_RL within the demand ceiling",
+              "passed": 0,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 1
+            }
+          ],
+          "confirmed_false_fixed_pass": false
+        },
+        {
+          "lo": "1",
+          "hi": "99999999999999999999/100000000000000000000",
+          "exact_width": "-1/100000000000000000000",
+          "exact_relation": "reversed",
+          "binary64_endpoints_equal": true,
+          "pre_retention_subtraction": "-1/100000000000000000000",
+          "low": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "violation",
+                "detail": "audit11_u: lower bound exceeds upper bound",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "solve": {
+            "rejected": true,
+            "exception": "ValueError",
+            "reason": "invalid independent bounds for audit11_u: lower bound exceeds upper bound"
+          },
+          "ranking": {
+            "rejected": true,
+            "exception": "ValueError",
+            "reason": "invalid independent bounds for audit11_u: lower bound exceeds upper bound"
+          },
+          "claims": [
+            {
+              "claim": "all optima feasible",
+              "passed": 0,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 1
+            },
+            {
+              "claim": "pi_RL within the demand ceiling",
+              "passed": 0,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 1
+            }
+          ],
+          "confirmed_false_fixed_pass": false
+        },
+        {
+          "lo": "1.00000000000000",
+          "hi": "1",
+          "exact_width": "0",
+          "exact_relation": "fixed",
+          "binary64_endpoints_equal": true,
+          "pre_retention_subtraction": "0",
+          "low": {
+            "ok": true,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit11_u = 1 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "solve": {
+            "rejected": false,
+            "rankable": true,
+            "point": {
+              "audit11_u": "1.00000000000000"
+            },
+            "kind": {
+              "audit11_u": "fixed"
+            },
+            "payoffs": {
+              "x": -1.0,
+              "y": 0.0
+            },
+            "feasibility": {
+              "ok": true,
+              "complete": true,
+              "findings": [
+                {
+                  "check": "bounds",
+                  "status": "ok",
+                  "detail": "audit11_u = 1 is in range",
+                  "required": true,
+                  "verdict": null
+                },
+                {
+                  "check": "fixed variable",
+                  "status": "ok",
+                  "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+                  "required": false,
+                  "verdict": null
+                },
+                {
+                  "check": "payoff finite",
+                  "status": "ok",
+                  "detail": "pi_x = -1",
+                  "required": false,
+                  "verdict": null
+                },
+                {
+                  "check": "payoff finite",
+                  "status": "ok",
+                  "detail": "pi_y = 0",
+                  "required": false,
+                  "verdict": null
+                },
+                {
+                  "check": "payoff sign",
+                  "status": "ok",
+                  "detail": "gross payoff = 1",
+                  "required": false,
+                  "verdict": null
+                },
+                {
+                  "check": "payoff magnitude",
+                  "status": "ok",
+                  "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                  "required": true,
+                  "verdict": null
+                },
+                {
+                  "check": "search assurance",
+                  "status": "warning",
+                  "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+                  "required": false,
+                  "verdict": null
+                },
+                {
+                  "check": "evaluation coverage",
+                  "status": "ok",
+                  "detail": "pi_x: evaluated 2 times, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+                  "required": false,
+                  "verdict": null
+                },
+                {
+                  "check": "evaluation coverage",
+                  "status": "ok",
+                  "detail": "pi_y: evaluated 1 time, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+                  "required": false,
+                  "verdict": null
+                },
+                {
+                  "check": "competition",
+                  "status": "warning",
+                  "detail": "the payoff share channel does not respond to phi at this optimum: the share rule is inactive here, so the result is not about competition between the players",
+                  "required": false,
+                  "verdict": false
+                }
+              ]
+            }
+          },
+          "ranking": {
+            "rejected": false,
+            "best": "RL",
+            "complete": true,
+            "excluded": []
+          },
+          "claims": [
+            {
+              "claim": "all optima feasible",
+              "passed": 1,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 0
+            },
+            {
+              "claim": "pi_RL within the demand ceiling",
+              "passed": 1,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 0
+            }
+          ],
+          "confirmed_false_fixed_pass": false
+        },
+        {
+          "lo": "1.00000000000000",
+          "hi": "11/10",
+          "exact_width": "1/10",
+          "exact_relation": "nonzero",
+          "binary64_endpoints_equal": false,
+          "pre_retention_subtraction": "0.100000000000000",
+          "low": {
+            "ok": true,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit11_u = 1 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "first order",
+                "status": "ok",
+                "detail": "d/daudit11_u = -1 is consistent with the lower corner",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "joint curvature",
+                "status": "ok",
+                "detail": "boundary critical cone has no nonzero direction; necessary check only",
+                "required": true,
+                "verdict": true
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "solve": {
+            "rejected": false,
+            "rankable": true,
+            "point": {
+              "audit11_u": "1.00000000000000"
+            },
+            "kind": {
+              "audit11_u": "lower corner"
+            },
+            "payoffs": {
+              "x": -1.0,
+              "y": 0.0
+            },
+            "feasibility": {
+              "ok": true,
+              "complete": true,
+              "findings": [
+                {
+                  "check": "bounds",
+                  "status": "ok",
+                  "detail": "audit11_u = 1 is in range",
+                  "required": true,
+                  "verdict": null
+                },
+                {
+                  "check": "first order",
+                  "status": "ok",
+                  "detail": "d/daudit11_u = -1 is consistent with the lower corner",
+                  "required": false,
+                  "verdict": null
+                },
+                {
+                  "check": "joint curvature",
+                  "status": "ok",
+                  "detail": "boundary critical cone has no nonzero direction; necessary check only",
+                  "required": true,
+                  "verdict": true
+                },
+                {
+                  "check": "payoff finite",
+                  "status": "ok",
+                  "detail": "pi_x = -1",
+                  "required": false,
+                  "verdict": null
+                },
+                {
+                  "check": "payoff finite",
+                  "status": "ok",
+                  "detail": "pi_y = 0",
+                  "required": false,
+                  "verdict": null
+                },
+                {
+                  "check": "payoff sign",
+                  "status": "ok",
+                  "detail": "gross payoff = 1",
+                  "required": false,
+                  "verdict": null
+                },
+                {
+                  "check": "payoff magnitude",
+                  "status": "ok",
+                  "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                  "required": true,
+                  "verdict": null
+                },
+                {
+                  "check": "search assurance",
+                  "status": "warning",
+                  "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+                  "required": false,
+                  "verdict": null
+                },
+                {
+                  "check": "evaluation coverage",
+                  "status": "ok",
+                  "detail": "pi_x: 0 of 225 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+                  "required": false,
+                  "verdict": null
+                },
+                {
+                  "check": "evaluation coverage",
+                  "status": "ok",
+                  "detail": "pi_y: evaluated 1 time, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+                  "required": false,
+                  "verdict": null
+                },
+                {
+                  "check": "competition",
+                  "status": "warning",
+                  "detail": "the payoff share channel does not respond to phi at this optimum: the share rule is inactive here, so the result is not about competition between the players",
+                  "required": false,
+                  "verdict": false
+                }
+              ]
+            }
+          },
+          "ranking": {
+            "rejected": false,
+            "best": "RL",
+            "complete": true,
+            "excluded": []
+          },
+          "claims": [
+            {
+              "claim": "all optima feasible",
+              "passed": 1,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 0
+            },
+            {
+              "claim": "pi_RL within the demand ceiling",
+              "passed": 1,
+              "failed": 0,
+              "skipped": 0,
+              "errors": 0
+            }
+          ],
+          "confirmed_false_fixed_pass": true
+        }
+      ],
+      "representable_narrow_control": {
+        "lo": "1.00000000000000",
+        "hi": "1099511627777/1099511627776",
+        "exact_width": "1/1099511627776",
+        "exact_relation": "nonzero",
+        "binary64_endpoints_equal": false,
+        "pre_retention_subtraction": "9.09494701772928e-13",
+        "low": {
+          "ok": true,
+          "complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "audit11_u = 1 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "first order",
+              "status": "ok",
+              "detail": "d/daudit11_u = -1 is consistent with the lower corner",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "joint curvature",
+              "status": "ok",
+              "detail": "boundary critical cone has no nonzero direction; necessary check only",
+              "required": true,
+              "verdict": true
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 1",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff magnitude",
+              "status": "ok",
+              "detail": "payoff <= ceiling 2.00000 within 1e-09",
+              "required": true,
+              "verdict": null
+            }
+          ]
+        },
+        "solve": {
+          "rejected": false,
+          "rankable": true,
+          "point": {
+            "audit11_u": "1.00000000000000"
+          },
+          "kind": {
+            "audit11_u": "lower corner"
+          },
+          "payoffs": {
+            "x": -1.0,
+            "y": 0.0
+          },
+          "feasibility": {
+            "ok": true,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit11_u = 1 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "first order",
+                "status": "ok",
+                "detail": "d/daudit11_u = -1 is consistent with the lower corner",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "joint curvature",
+                "status": "ok",
+                "detail": "boundary critical cone has no nonzero direction; necessary check only",
+                "required": true,
+                "verdict": true
+              },
+              {
+                "check": "payoff finite",
+                "status": "ok",
+                "detail": "pi_x = -1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff finite",
+                "status": "ok",
+                "detail": "pi_y = 0",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "search assurance",
+                "status": "warning",
+                "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "evaluation coverage",
+                "status": "ok",
+                "detail": "pi_x: 0 of 225 points could not be evaluated at all (0.0%), 0 (0.0%) needed a slower route, up to direct",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "evaluation coverage",
+                "status": "ok",
+                "detail": "pi_y: evaluated 1 time, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "competition",
+                "status": "warning",
+                "detail": "the payoff share channel does not respond to phi at this optimum: the share rule is inactive here, so the result is not about competition between the players",
+                "required": false,
+                "verdict": false
+              }
+            ]
+          }
+        },
+        "ranking": {
+          "rejected": false,
+          "best": "RL",
+          "complete": true,
+          "excluded": []
+        },
+        "claims": [
+          {
+            "claim": "all optima feasible",
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "errors": 0
+          },
+          {
+            "claim": "pi_RL within the demand ceiling",
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "errors": 0
+          }
+        ],
+        "confirmed_false_fixed_pass": true
+      },
+      "policy": "Retain both endpoints before subtraction; reject reversed and unavailable domains before ranking; verification records computation errors, never passes."
+    },
+    "R11-02": {
+      "priority": "P2",
+      "accepted": true,
+      "cases": [
+        {
+          "tol": "-1/10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "exact_tol_negative": true,
+          "payoff": "0",
+          "ceiling": "0",
+          "rejected": true,
+          "exception": "ValueError",
+          "reason": "tol must be a finite nonnegative real number"
+        },
+        {
+          "tol": "1/10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "exact_tol_negative": false,
+          "payoff": "1/20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "ceiling": "0",
+          "rejected": true,
+          "exception": "ValueError",
+          "reason": "tol is outside the supported binary64 range"
+        },
+        {
+          "tol": "-1/1000000000000",
+          "exact_tol_negative": true,
+          "payoff": "0",
+          "ceiling": "0",
+          "rejected": true,
+          "exception": "ValueError",
+          "reason": "tol must be a finite nonnegative real number"
+        },
+        {
+          "tol": "0",
+          "exact_tol_negative": false,
+          "payoff": "0",
+          "ceiling": "0",
+          "rejected": false,
+          "report": {
+            "ok": true,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit11_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 0",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 0 within 0.0",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          }
+        },
+        {
+          "tol": "1/1000000000",
+          "exact_tol_negative": false,
+          "payoff": "1/2000000000",
+          "ceiling": "0",
+          "rejected": false,
+          "report": {
+            "ok": true,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit11_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 5e-10",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 0 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          }
+        },
+        {
+          "tol": "1/1000000000",
+          "exact_tol_negative": false,
+          "payoff": "1/500000000",
+          "ceiling": "0",
+          "rejected": false,
+          "report": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit11_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 2e-09",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "violation",
+                "detail": "payoff exceeds the model's own ceiling 0; retained excess 2.00000E-9 > 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          }
+        }
+      ],
+      "original_rational_tolerance_controls": [
+        {
+          "tol": "1/10",
+          "exact_tol_negative": false,
+          "payoff": "1/10",
+          "ceiling": "0",
+          "rejected": false,
+          "report": {
+            "ok": true,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit11_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 0.1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 0 within 0.1",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          }
+        },
+        {
+          "tol": "1/10",
+          "exact_tol_negative": false,
+          "payoff": "10000000000000000001/100000000000000000000",
+          "ceiling": "0",
+          "rejected": false,
+          "report": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit11_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 0.1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "violation",
+                "detail": "payoff exceeds the model's own ceiling 0; retained excess 0.100000 > 0.1",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          }
+        }
+      ],
+      "policy": "Retained finite-real/sign admission before conversion; explicit nonzero binary64 underflow/overflow rejection; retain admitted absolute thresholds."
+    },
+    "R11-03": {
+      "priority": "P2",
+      "accepted": true,
+      "cases": [
+        {
+          "imaginary_part": "1/10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "exact_payoff_is_real": false,
+          "no_ceiling": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit11_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "with_finite_ceiling": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit11_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          }
+        },
+        {
+          "imaginary_part": "1/10000000000",
+          "exact_payoff_is_real": false,
+          "no_ceiling": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit11_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "with_finite_ceiling": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit11_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          }
+        },
+        {
+          "imaginary_part": "1/1000000",
+          "exact_payoff_is_real": false,
+          "no_ceiling": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit11_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          },
+          "with_finite_ceiling": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit11_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          }
+        },
+        {
+          "imaginary_part": "0",
+          "exact_payoff_is_real": true,
+          "no_ceiling": {
+            "ok": true,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit11_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              }
+            ]
+          },
+          "with_finite_ceiling": {
+            "ok": true,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit11_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "ok",
+                "detail": "gross payoff = 1",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          }
+        }
+      ],
+      "gross_only": [
+        {
+          "imaginary_part": "1/10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "ceiling": null,
+          "report": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit11_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          }
+        },
+        {
+          "imaginary_part": "1/10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "ceiling": 2,
+          "report": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit11_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          }
+        },
+        {
+          "imaginary_part": "1/10000000000",
+          "ceiling": null,
+          "report": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit11_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          }
+        },
+        {
+          "imaginary_part": "1/10000000000",
+          "ceiling": 2,
+          "report": {
+            "ok": false,
+            "complete": true,
+            "findings": [
+              {
+                "check": "bounds",
+                "status": "ok",
+                "detail": "audit11_u = 0 is in range",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "fixed variable",
+                "status": "ok",
+                "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+                "required": false,
+                "verdict": null
+              },
+              {
+                "check": "payoff sign",
+                "status": "violation",
+                "detail": "the supplied payoff is not a finite real number",
+                "required": true,
+                "verdict": null
+              },
+              {
+                "check": "payoff magnitude",
+                "status": "ok",
+                "detail": "payoff <= ceiling 2.00000 within 1e-09",
+                "required": true,
+                "verdict": null
+              }
+            ]
+          }
+        }
+      ],
+      "unknown_admission_controls": [
+        {
+          "ok": true,
+          "complete": false,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "audit11_u = 0 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "fixed variable",
+              "status": "ok",
+              "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff",
+              "status": "warning",
+              "detail": "retained payoff finite-real admission unavailable",
+              "required": true,
+              "verdict": null
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "complete": false,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "audit11_u = 0 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "fixed variable",
+              "status": "ok",
+              "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "warning",
+              "detail": "retained payoff finite-real admission unavailable",
+              "required": true,
+              "verdict": null
+            }
+          ]
+        }
+      ],
+      "legal_negative_net_controls": [
+        {
+          "ok": true,
+          "complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "audit11_u = 0 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "fixed variable",
+              "status": "ok",
+              "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "warning",
+              "detail": "gross payoff not supplied; sign test skipped",
+              "required": false,
+              "verdict": null
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "complete": true,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "audit11_u = 0 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "fixed variable",
+              "status": "ok",
+              "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff sign",
+              "status": "ok",
+              "detail": "gross payoff = 1",
+              "required": false,
+              "verdict": null
+            }
+          ]
+        }
+      ],
+      "main_solver_control": {
+        "rankable": false,
+        "feasibility": {
+          "ok": false,
+          "complete": false,
+          "findings": [
+            {
+              "check": "bounds",
+              "status": "ok",
+              "detail": "audit11_u = 0 is in range",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "owner payoff (audit11_u)",
+              "status": "violation",
+              "detail": "the supplied payoff is not a finite real number",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "fixed variable",
+              "status": "ok",
+              "detail": "audit11_u: singleton interval; no feasible direction, no one-sided KKT test",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "violation",
+              "detail": "the supplied payoff is not a finite real number",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "payoff finite",
+              "status": "ok",
+              "detail": "pi_y = 0",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "payoff",
+              "status": "violation",
+              "detail": "the supplied payoff is not a finite real number",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "search assurance",
+              "status": "warning",
+              "detail": "product grid and local refinement give a numerical candidate, not a global optimality certificate; refine or validate independently",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation",
+              "status": "warning",
+              "detail": "pi_x could not be evaluated symbolically, so the two routes were not compared here",
+              "required": true,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "warning",
+              "detail": "pi_x: evaluated 2 times, too few for a rate; 2 could not be evaluated, 0 needed a slower route (up to direct)",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "evaluation coverage",
+              "status": "ok",
+              "detail": "pi_y: evaluated 1 time, too few for a rate; 0 could not be evaluated, 0 needed a slower route (up to direct)",
+              "required": false,
+              "verdict": null
+            },
+            {
+              "check": "competition",
+              "status": "warning",
+              "detail": "the payoff share channel does not respond to phi at this optimum: the share rule is inactive here, so the result is not about competition between the players",
+              "required": false,
+              "verdict": false
+            }
+          ]
+        }
+      },
+      "policy": "Strict retained finite-real admission for net, supplied gross and realised payoffs; unknown is required unavailable; optional absent gross and negative net remain lawful."
+    }
+  },
+  "all_revision_criteria_passed": true,
+  "parent_defects_observed": false,
+  "independent_reaudit": "pending"
+}

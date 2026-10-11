@@ -1,0 +1,5 @@
+{
+  "initial_targeted_test_assertion_correction": "Known invalid payoffs are complete violations; only unresolved admission requires complete=False. Corrected 16 overstrict test assertions to the documented report contract. All initial observations were already violations. No production change was needed for this correction.",
+  "draft_count_correction": "load_suite discovered 493 total and 43 new methods; corrected initial 495/45 notes before final build and validation. Manuscript first draft exceeded historical body limit at 3061; shortened introduction to 2979 without removing scope or limitations.",
+  "history_label_correction": "First full validation passed. Corrected the inherited R11 README title to its original v0.2.10 and rewrote current release_scope for R12. Rebuilt metadata and distributions, reinstalled wheels, and reran all three suites and exporters against final wheel. Earlier pass excluded from delivery evidence."
+}

@@ -1,0 +1,9 @@
+{
+  "source": "Noto Serif CJK SC Regular; frozen full OFL source",
+  "source_sha256": "2a2eae2628df83556c54018c41e20fa532c1b862c5256ae8b3f23feb918d12ca",
+  "derivative_family": "PACEgame Revision 0211 CJK",
+  "requested_unicode_count": 560,
+  "derivative_sha256": "504ff950a3c3caf5a895763a4081e17f3248ed57eaae6d37b31dbb67b763ceb8",
+  "license": "SIL Open Font License 1.1; bundled OFL.txt",
+  "purpose": "Unique family avoids collision with older incomplete audit font subsets."
+}

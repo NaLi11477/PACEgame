@@ -1,0 +1,35 @@
+{
+  "accepted": true,
+  "word_pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "tex_pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "review": "Every final page PNG inspected; readable text, complete tables/figures, no missing glyphs, clipping, overlap or misplaced footer.",
+  "word_sha256": "8ae2e889684f36a2342eba470f9f7202f2e2f0878701c8957d431373248753a6",
+  "tex_sha256": "d73fcf5ffcc9c8e0586f9576e39a07f05204e5d2546a5dfa9965ddfa76ab90a0",
+  "tex_compilation_passes": 2,
+  "overfull_boxes": false,
+  "missing_character_warnings": false
+}
